@@ -1,0 +1,5539 @@
+[
+  {
+    "id": "acs",
+    "topology": "acs",
+    "sg": "P63/mmc",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Trigonal prism",
+        "type": "O6A",
+        "d": 60,
+        "e": 120,
+        "t": 90,
+        "z": "In"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 0,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "acs(1)",
+      "acs(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "acs-b",
+    "topology": "acs-b",
+    "sg": "P-6m2",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Trigonal prism",
+        "type": "O6A",
+        "d": 60,
+        "e": 120,
+        "t": 90,
+        "z": "In"
+      },
+      "o2": {
+        "cn": 6,
+        "geo": "Trigonal prism",
+        "type": "O6d",
+        "d": 0,
+        "e": "120/120",
+        "t": 90,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "acs-b(1)",
+      "acs-b(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "agw",
+    "topology": "agw",
+    "sg": "P63/mmc",
+    "nodes": {
+      "o1": {
+        "cn": 12,
+        "geo": "TP+6Tp",
+        "type": "O12A",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4e",
+        "d": 0,
+        "e": 132.328,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "agw"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "bcu",
+    "topology": "bcu",
+    "sg": "Im-3m",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 0,
+        "e": 180,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "bcu"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "bcu-b",
+    "topology": "bcu-b",
+    "sg": "Pm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 8,
+        "geo": "Cuboid",
+        "type": "O8a",
+        "d": "-",
+        "e": "90/70.6",
+        "t": 90,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "bcu-b(1)",
+      "bcu-b(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "bla",
+    "topology": "bla",
+    "sg": "Cmmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4e",
+        "d": "-",
+        "e": 135,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "bla"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "bod",
+    "topology": "bod",
+    "sg": "P-43m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3b",
+        "d": 24.7,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "bod(1)",
+      "bod(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "boe",
+    "topology": "boe",
+    "sg": "P23",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 79.2,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3b",
+        "d": 12.8,
+        "e": 120,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "boe(1)",
+      "boe(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "bor",
+    "topology": "bor",
+    "sg": "P-43m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3b",
+        "d": 19.5,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "bor(1)",
+      "bor(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "cef",
+    "topology": "cef",
+    "sg": "P-6m2",
+    "nodes": {
+      "o1": {
+        "cn": 12,
+        "geo": "TP+6Tp",
+        "type": "O12A",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4k",
+        "d": 32.2,
+        "e": 145.638,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "cef(1)",
+      "cef(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ceq",
+    "topology": "ceq",
+    "sg": "P-62m",
+    "nodes": {
+      "o1": {
+        "cn": 12,
+        "geo": "TP+6Tp",
+        "type": "O12A",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 6,
+        "geo": "Trigonal prism",
+        "type": "O6c",
+        "d": 0,
+        "e": "120/29",
+        "t": 90,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "ceq"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "csq",
+    "topology": "csq",
+    "sg": "P6/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4b",
+        "d": 12.2,
+        "e": 72.4,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "csq(1)",
+      "csq(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ctn",
+    "topology": "ctn",
+    "sg": "I-43d",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3a",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "ctn(1)",
+      "ctn(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ctn-d",
+    "topology": "ctn-d",
+    "sg": "I-43d",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3a",
+        "d": 2,
+        "e": 120,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "ctn-d(1)",
+      "ctn-d(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "cut",
+    "topology": "cut",
+    "sg": "P4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4b",
+        "d": 0,
+        "e": 70.5,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "cut(1)",
+      "cut(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "cxg",
+    "topology": "cxg",
+    "sg": "P4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 16,
+        "geo": "Cub+8Tp",
+        "type": "O16A",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4l",
+        "d": 25.3,
+        "e": 121.4,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "cxg(1)",
+      "cxg(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "cza",
+    "topology": "cza",
+    "sg": "Pm-3n",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Td+4Tp",
+        "type": "O8B",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "X"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3a",
+        "d": 5.8,
+        "e": 120,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "cza(1)",
+      "cza(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "dia",
+    "topology": "dia",
+    "sg": "Fd-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 0,
+        "e": 180,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "dia"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "dia-b",
+    "topology": "dia-b",
+    "sg": "F-43m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4h",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "dia-b"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "dia-f",
+    "topology": "dia-f",
+    "sg": "I4(1)/amd",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2c",
+        "d": 20.1,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "dia-f(1)",
+      "dia-f(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "dmd",
+    "topology": "dmd",
+    "sg": "P4(2)/mmc",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4b",
+        "d": 0,
+        "e": 70.5,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "dmd"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "dne",
+    "topology": "dne",
+    "sg": "F-43m",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 6,
+        "geo": "Hexagonal planar",
+        "type": "O6e",
+        "d": 28.1,
+        "e": 81.9,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "dne(1)",
+      "dne(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "dnp",
+    "topology": "dnp",
+    "sg": "P6/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 12,
+        "geo": "TP+6Tp",
+        "type": "O12A",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 8,
+        "geo": "Cuboid",
+        "type": "O8c",
+        "d": "-",
+        "e": "173.118/29",
+        "t": 90,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "dnp(1)",
+      "dnp(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "dnr",
+    "topology": "dnr",
+    "sg": "P6/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4d",
+        "d": 7.2,
+        "e": 123.4,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "dnr(1)",
+      "dnr(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "dpc",
+    "topology": "dpc",
+    "sg": "Fd-3c",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 35.3,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4j",
+        "d": 0,
+        "e": 137.4,
+        "t": 90,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "dpc"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "eed",
+    "topology": "eed",
+    "sg": "P42/mcm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4f",
+        "d": 0,
+        "e": 54.9,
+        "t": 90,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "eed"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "eft",
+    "topology": "eft",
+    "sg": "P4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8b",
+        "d": "-",
+        "e": "90/70.5",
+        "t": 90,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "eft(1)",
+      "eft(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "epf",
+    "topology": "epf",
+    "sg": "I41/amd",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Td+4Tp",
+        "type": "O8B",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "X"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4e",
+        "d": "-",
+        "e": 147.6,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "epf"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "epn",
+    "topology": "epn",
+    "sg": "Pm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4l",
+        "d": 24.1,
+        "e": 126.9,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "epn(1)",
+      "epn(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "epz",
+    "topology": "epz",
+    "sg": "I4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Td+4Tp",
+        "type": "O8B",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "X"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4e",
+        "d": 17.6,
+        "e": 149.4,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "epz(1)",
+      "epz(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "eta",
+    "topology": "eta",
+    "sg": "P6(2)22",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 50.3,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 4.6,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "eta(1)",
+      "eta(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "etb",
+    "topology": "etb",
+    "sg": "R-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 3.9,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "etb(1)",
+      "etb(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "etq",
+    "topology": "etq",
+    "sg": "I432",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 23.6,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2b",
+        "d": 0,
+        "e": 156.8,
+        "t": 0,
+        "z": "out"
+      }
+    },
+    "conf": [
+      "etq(1)",
+      "etq(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ffc",
+    "topology": "ffc",
+    "sg": "P4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4d",
+        "d": 0,
+        "e": 121.8,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "ffc(1)",
+      "ffc(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ffj",
+    "topology": "ffj",
+    "sg": "Pm-3",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3b",
+        "d": 30.3,
+        "e": 120,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "ffj(1)",
+      "ffj(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "fjh",
+    "topology": "fjh",
+    "sg": "I4/mcm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/54.7",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4c",
+        "d": 0.7,
+        "e": 91,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "fjh(1)",
+      "fjh(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "flt",
+    "topology": "flt",
+    "sg": "I4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4h",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "flt(1)",
+      "flt(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "flu",
+    "topology": "flu",
+    "sg": "Fm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4h",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "flu"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "fof",
+    "topology": "fof",
+    "sg": "R-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4c",
+        "d": 0,
+        "e": 94.5,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "fof"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "fog",
+    "topology": "fog",
+    "sg": "R-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4b",
+        "d": 0,
+        "e": 76.8,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "fog"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "gee",
+    "topology": "gee",
+    "sg": "Pm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/0",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4c",
+        "d": 15.9,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "gee"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "het",
+    "topology": "het",
+    "sg": "I-43m",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4i",
+        "d": 0,
+        "e": 130.1,
+        "t": 90,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "het"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "hey",
+    "topology": "hey",
+    "sg": "I432",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 46.5,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4c",
+        "d": 13.5,
+        "e": 90,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "hey"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "hof",
+    "topology": "hof",
+    "sg": "I4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 0,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "hof(1)",
+      "hof(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "hxg",
+    "topology": "hxg",
+    "sg": "Pn-3m",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Hexgonal planar",
+        "type": "O6C",
+        "d": 0,
+        "e": 60,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 0,
+        "e": 180,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "hxg"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "hxg-b",
+    "topology": "hxg-b",
+    "sg": "Fd-3m",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Hexgonal planar",
+        "type": "O6C",
+        "d": 0,
+        "e": 60,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 6,
+        "geo": "Hexagonal planar",
+        "type": "O6a",
+        "d": 0,
+        "e": "120/60",
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "hxg-b"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "iab",
+    "topology": "iab",
+    "sg": "I41/amd",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/54.7",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4c",
+        "d": "-",
+        "e": 95,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "iab"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "iac-d",
+    "topology": "iac-d",
+    "sg": "Ia-3d",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 70.5,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4g",
+        "d": 0,
+        "e": 78.1,
+        "t": 90,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "iac-d"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "jaj",
+    "topology": "jaj",
+    "sg": "P42/mnm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4j",
+        "d": "-",
+        "e": 139.6,
+        "t": 90,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "jaj"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "jhw",
+    "topology": "jhw",
+    "sg": "P4/mnc",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4j",
+        "d": "-",
+        "e": 149.4,
+        "t": 78.4,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "jhw"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "jjt",
+    "topology": "jjt",
+    "sg": "P-62c",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Trigonal prism",
+        "type": "O6A",
+        "d": 60,
+        "e": 120,
+        "t": 90,
+        "z": "In"
+      },
+      "o2": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6b",
+        "d": 0,
+        "e": "120 / 128.7",
+        "t": 45.8,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "jjt(1)",
+      "jjt(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "jph",
+    "topology": "jph",
+    "sg": "I41/amd",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/61.2",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 2.6,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "jph(1)",
+      "jph(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "lcs",
+    "topology": "lcs",
+    "sg": "Ia-3d",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2b",
+        "d": 0,
+        "e": 162.5,
+        "t": 0,
+        "z": "Out"
+      }
+    },
+    "conf": [
+      "lcs(1)",
+      "lcs(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "lcs-b",
+    "topology": "lcs-b",
+    "sg": "I-43d",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4j",
+        "d": "-",
+        "e": 136.1,
+        "t": 90,
+        "z": "Out"
+      }
+    },
+    "conf": [
+      "lcs-b"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "lcs-f",
+    "topology": "lcs-f",
+    "sg": "Ia-3d",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 75.1,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2c",
+        "d": 17.3,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "lcs-f(1)",
+      "lcs-f(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "lig",
+    "topology": "lig",
+    "sg": "I4(1)/amd",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 0,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "lig(1)",
+      "lig(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "lil",
+    "topology": "lil",
+    "sg": "Imma",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4b",
+        "d": 0,
+        "e": 76.6,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "lil"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "lim",
+    "topology": "lim",
+    "sg": "Imma",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4d",
+        "d": 0,
+        "e": 126.2,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "lim"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "lnj",
+    "topology": "lnj",
+    "sg": "P63/mmc",
+    "nodes": {
+      "o1": {
+        "cn": 12,
+        "geo": "TP+6Tp",
+        "type": "O12A",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 3.3,
+        "e": 173.352,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "lnj(1)",
+      "lnj(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "lon-b",
+    "topology": "lon-b",
+    "sg": "P6(3)mc",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4h",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "lon-b"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "lvt",
+    "topology": "lvt",
+    "sg": "I41/amd",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4C",
+        "d": 0,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2b",
+        "d": 8.41,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "lvt(1)",
+      "lvt(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "lvt-b",
+    "topology": "lvt-b",
+    "sg": "Imma",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4C",
+        "d": 0,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4d",
+        "d": 0,
+        "e": 118.4,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "lvt-b"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "maw",
+    "topology": "maw",
+    "sg": "Im-3m",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/0",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2b",
+        "d": 11.2,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "maw(1)",
+      "maw(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "mmm",
+    "topology": "mmm",
+    "sg": "P4/nmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Td+4Tp",
+        "type": "O8B",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "X"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4e",
+        "d": "-",
+        "e": 141.5,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "mmm"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "nba",
+    "topology": "nba",
+    "sg": "Pm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2c",
+        "d": 0,
+        "e": 148.2,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "nba(1)",
+      "nba(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "nbo",
+    "topology": "nbo",
+    "sg": "Im-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4C",
+        "d": 0,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 0,
+        "e": 180,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "nbo"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "nbo-b",
+    "topology": "nbo-b",
+    "sg": "Pm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4C",
+        "d": 0,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4c",
+        "d": 0,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "nbo-b"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "noh",
+    "topology": "noh",
+    "sg": "Pa-3",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 65.3,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 5.7,
+        "e": 179.8,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "noh(1)",
+      "noh(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ntt",
+    "topology": "ntt",
+    "sg": "Fm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4b",
+        "d": 0.1,
+        "e": 70.5,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "ntt(1)",
+      "ntt(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ofp",
+    "topology": "ofp",
+    "sg": "I-42m",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Td+4Tp",
+        "type": "O8B",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "X"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4j",
+        "d": "-",
+        "e": 150.7,
+        "t": 90,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "ofp"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "oku",
+    "topology": "oku",
+    "sg": "I4(1)32",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 11.1,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2b",
+        "d": 7,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "oku(1)",
+      "oku(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "okv",
+    "topology": "okv",
+    "sg": "I4(1)32",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 15.3,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 1,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "okv(1)",
+      "okv(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ood",
+    "topology": "ood",
+    "sg": "P6/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 12,
+        "geo": "TP+6Tp",
+        "type": "O12A",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4e",
+        "d": 3.3,
+        "e": 150.995,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "ood(1)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "pbg",
+    "topology": "pbg",
+    "sg": "Ia-3d",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 56.8,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 1.8,
+        "e": 179.9,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "pbg(1)",
+      "pbg(1)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "pbp",
+    "topology": "pbp",
+    "sg": "Im-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 4.5,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "pbp(1)",
+      "pbp(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "pcu-g",
+    "topology": "pcu-g",
+    "sg": "Ia-3",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 74.8,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2b",
+        "d": 6.8,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "pcu-g(1)",
+      "pcu-g(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "pcu-h",
+    "topology": "pcu-h",
+    "sg": "R-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2b",
+        "d": 7.6,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "pcu-h(1)",
+      "pcu-h(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ptd",
+    "topology": "ptd",
+    "sg": "Pm-3",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3b",
+        "d": 12.2,
+        "e": 120,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "ptd(1)",
+      "ptd(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "pto",
+    "topology": "pto",
+    "sg": "Pm-3n",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4C",
+        "d": 0,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3a",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "pto"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "pts",
+    "topology": "pts",
+    "sg": "P4(2)/mmc",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4b",
+        "d": 0,
+        "e": 70.5,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "pts"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "pyd",
+    "topology": "pyd",
+    "sg": "Fd-3m",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2c",
+        "d": 16.8,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "pyd(1)",
+      "pyd(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "pyo",
+    "topology": "pyo",
+    "sg": "P4(1)32",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 17.3,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3a",
+        "d": 5.9,
+        "e": 120,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "pyo(1)",
+      "pyo(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "reo",
+    "topology": "reo",
+    "sg": "Pm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2b",
+        "d": 9.7,
+        "e": 180,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "reo(1)",
+      "reo(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "rhr",
+    "topology": "rhr",
+    "sg": "Im-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4C",
+        "d": 0,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2b",
+        "d": 8.418,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "rhr(1)",
+      "rhr(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "rhr-b",
+    "topology": "rhr-b",
+    "sg": "Pm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4C",
+        "d": 0,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4d",
+        "d": 8.381,
+        "e": 119.2,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "rhr-b(1)",
+      "rhr-b(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "scu",
+    "topology": "scu",
+    "sg": "P4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4b",
+        "d": 0,
+        "e": 70.5,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "scu"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "she",
+    "topology": "she",
+    "sg": "Im-3m",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Hexgonal planar",
+        "type": "O6C",
+        "d": 0,
+        "e": 60,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "square planar",
+        "type": "O4c",
+        "d": 0,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "she"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "sod",
+    "topology": "sod",
+    "sg": "Im-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2b",
+        "d": 0,
+        "e": 160,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "sod(1)",
+      "sod(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "sod-b",
+    "topology": "sod-b",
+    "sg": "Pm-3n",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4g",
+        "d": 0,
+        "e": 70.6,
+        "t": 90,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "sod-b(1)",
+      "sod-b(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "sod-f",
+    "topology": "sod-f",
+    "sg": "Im-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2c",
+        "d": 21.2,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "sod-f(1)",
+      "sod-f(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "srs",
+    "topology": "srs",
+    "sg": "I4(1)32",
+    "nodes": {
+      "o1": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3A",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 0,
+        "e": 180,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "srs"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "srs-b",
+    "topology": "srs-b",
+    "sg": "P4(3)32",
+    "nodes": {
+      "o1": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3A",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3a",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "srs-b"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "srs-b*",
+    "topology": "srs-b*",
+    "sg": "R3",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 70.5,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 0,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "srs-b*(1)",
+      "srs-b*(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ssa",
+    "topology": "ssa",
+    "sg": "P63/mmc",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4C",
+        "d": 0,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4e",
+        "d": 0,
+        "e": 136.9,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "ssa"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ssb",
+    "topology": "ssb",
+    "sg": "I4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4C",
+        "d": 0,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4d",
+        "d": 0,
+        "e": 117.7,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "ssb"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "stj",
+    "topology": "stj",
+    "sg": "I4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4d",
+        "d": 0,
+        "e": 126.2,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "stj"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "stp",
+    "topology": "stp",
+    "sg": "P6/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Trigonal prism",
+        "type": "O6A",
+        "d": 60,
+        "e": 120,
+        "t": 90,
+        "z": "In"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4d",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "stp(1)",
+      "stp(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "stu",
+    "topology": "stu",
+    "sg": "I4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4c",
+        "d": 2.1,
+        "e": 96.1,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "stu(1)",
+      "stu(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "stw",
+    "topology": "stw",
+    "sg": "I4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4k",
+        "d": 20.5,
+        "e": 138.2,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "stw(1)",
+      "stw(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "stx",
+    "topology": "stx",
+    "sg": "I4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4b",
+        "d": 0,
+        "e": 76.6,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "stx"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "sty",
+    "topology": "sty",
+    "sg": "P6(3)/mmc",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4d",
+        "d": 0,
+        "e": 127.8,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "sty"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "sur",
+    "topology": "sur",
+    "sg": "Cccm",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4b",
+        "d": 0,
+        "e": 76.6,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "sur"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tbd",
+    "topology": "tbd",
+    "sg": "Fm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3b",
+        "d": 24.7,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "tbd(1)",
+      "tbd(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tbo",
+    "topology": "tbo",
+    "sg": "Fm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4C",
+        "d": 0,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3a",
+        "d": 9.732,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "tbo"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tbo-b",
+    "topology": "tbo-b",
+    "sg": "I4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4d",
+        "d": "-",
+        "e": 125.1,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "tbo-b"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tfa",
+    "topology": "tfa",
+    "sg": "I-4m2",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4h",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "tfa(1)",
+      "tfa(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tfb",
+    "topology": "tfb",
+    "sg": "Fm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4c",
+        "d": 15,
+        "e": 90,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "tfb"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tfe",
+    "topology": "tfe",
+    "sg": "Pm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3a",
+        "d": 6.1,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "tfe"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tfi",
+    "topology": "tfi",
+    "sg": "P42/mmc",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4d",
+        "d": 0,
+        "e": 109.5,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "tfi(1)",
+      "tfi(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tfj",
+    "topology": "tfj",
+    "sg": "I4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Sp+4Tp",
+        "type": "O8C",
+        "d": 0,
+        "e": 120,
+        "t": "0/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4f",
+        "d": 0,
+        "e": 58.2,
+        "t": 90,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "tfj(1)",
+      "tfj(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tfk",
+    "topology": "tfk",
+    "sg": "P4(2)/mmc",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4d",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "tfk(1)",
+      "tfk(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tfp",
+    "topology": "tfp",
+    "sg": "P6/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4d",
+        "d": 0,
+        "e": 120.1,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "tfp(1)",
+      "tfp(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tfv",
+    "topology": "tfv",
+    "sg": "P-4n2",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4j",
+        "d": "-",
+        "e": 150,
+        "t": 78.5,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "tfv"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "the",
+    "topology": "the",
+    "sg": "Pm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3b",
+        "d": 19.5,
+        "e": 120,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "the(1)",
+      "the(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ths",
+    "topology": "ths",
+    "sg": "I4(1)/amd",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2a",
+        "d": 0,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "ths(1)",
+      "ths(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tot",
+    "topology": "tot",
+    "sg": "P4(2)32",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 35.3,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4f",
+        "d": 0,
+        "e": 59.9,
+        "t": 90,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "tot"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tsg",
+    "topology": "tsg",
+    "sg": "#REF!",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Trigonal prism",
+        "type": "O6A",
+        "d": 60,
+        "e": 120,
+        "t": 90,
+        "z": "In"
+      },
+      "o2": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6b",
+        "d": 0,
+        "e": "120 / 121.3",
+        "t": 90,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "tsg(1)",
+      "tsg(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ttp",
+    "topology": "ttp",
+    "sg": "#REF!",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Trigonal prism",
+        "type": "O6A",
+        "d": 60,
+        "e": 120,
+        "t": 90,
+        "z": "In"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4d",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "ttp(1)",
+      "ttp(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ttx",
+    "topology": "ttx",
+    "sg": "#REF!",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Trigonal prism",
+        "type": "O6A",
+        "d": 60,
+        "e": 120,
+        "t": 90,
+        "z": "In"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4a",
+        "d": 0,
+        "e": 60,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "ttx(1)",
+      "ttx(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "tty",
+    "topology": "tty",
+    "sg": "P4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4a",
+        "d": 0,
+        "e": 58.2,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "tty(1)",
+      "tty(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "twt",
+    "topology": "twt",
+    "sg": "P6(2)22",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2b",
+        "d": 7.3,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "twt(1)",
+      "twt(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "ucp",
+    "topology": "ucp",
+    "sg": "Pm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4b",
+        "d": 4.6,
+        "e": 75.8,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "ucp(1)",
+      "ucp(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "urt",
+    "topology": "urt",
+    "sg": "I4/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 16,
+        "geo": "Cub+8Tp",
+        "type": "O16A",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4d",
+        "d": "-",
+        "e": 122.5,
+        "t": 0,
+        "z": "in, out"
+      }
+    },
+    "conf": [
+      "urt"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "uta",
+    "topology": "uta",
+    "sg": "Fd-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2b",
+        "d": 10.6,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "uta(1)",
+      "uta(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "xaa",
+    "topology": "xaa",
+    "sg": "Fm-3m",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4B",
+        "d": 0,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 3,
+        "geo": "Trigonal planar",
+        "type": "O3a",
+        "d": 5.3,
+        "e": 120,
+        "t": 0,
+        "z": "x"
+      }
+    },
+    "conf": [
+      "xaa"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "xbl",
+    "topology": "xbl",
+    "sg": "Pm-3n",
+    "nodes": {
+      "o1": {
+        "cn": 4,
+        "geo": "Tetrahedron",
+        "type": "O4A",
+        "d": 0,
+        "e": 109.5,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4g",
+        "d": 0,
+        "e": 70.5,
+        "t": 90,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "xbl"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "xly",
+    "topology": "xly",
+    "sg": "P6/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4d",
+        "d": 12.2,
+        "e": 107.6,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "xly(1)",
+      "xly(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "xlz",
+    "topology": "xlz",
+    "sg": "P6/mmm",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Cube",
+        "type": "O8A",
+        "d": 35.3,
+        "e": 90,
+        "t": 90,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Tp+Tp",
+        "type": "O4b",
+        "d": 12.2,
+        "e": 72.4,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "xlz(1)",
+      "xlz(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "xux",
+    "topology": "xux",
+    "sg": "I-4m2",
+    "nodes": {
+      "o1": {
+        "cn": 8,
+        "geo": "Td+4Tp",
+        "type": "O8B",
+        "d": 0,
+        "e": 120,
+        "t": "90/90",
+        "z": "X"
+      },
+      "o2": {
+        "cn": 2,
+        "geo": "Linear",
+        "type": "O2c",
+        "d": 17.6,
+        "e": 180,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "xux(1)",
+      "xux(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  },
+  {
+    "id": "zyg",
+    "topology": "zyg",
+    "sg": "P6(3)/mcm",
+    "nodes": {
+      "o1": {
+        "cn": 6,
+        "geo": "Tp+3Tp",
+        "type": "O6B",
+        "d": 0,
+        "e": 120,
+        "t": 45,
+        "z": "x"
+      },
+      "o2": {
+        "cn": 4,
+        "geo": "Square planar",
+        "type": "O4b",
+        "d": 7.2,
+        "e": 76.3,
+        "t": 0,
+        "z": "in"
+      }
+    },
+    "conf": [
+      "zyg(1)",
+      "zyg(2)"
+    ],
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "metrics": {},
+    "drive": "",
+    "thumb": "",
+    "priority": "",
+    "status": "",
+    "notes": ""
+  }
+]
