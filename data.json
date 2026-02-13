@@ -24,8 +24,8 @@
       }
     },
     "conf": [
-      "acs(1)",
-      "acs(2)"
+      "acs1",
+      "acs2"
     ],
     "linkers": {
       "A": {
@@ -40,7 +40,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "acs1": {
+        "porosity": {
+          "pld": 14.71948,
+          "lcd": 17.33209,
+          "gsa": 5845.83,
+          "vsa": 1556.48
+        },
+        "structure": {
+          "cell_volume": 85703.3,
+          "density_mech": 0.266256
+        },
+        "mechanical": {
+          "bulk_gpa": 2.864138853,
+          "shear_gpa": 1.382826956,
+          "young_gpa": 3.573394038
+        },
+        "stability": {
+          "min_eigen_0k": 0.276713407,
+          "min_eigen_298k": -0.040098302
+        },
+        "thermo": {
+          "density_thermo": 0.266256,
+          "f0_kjmol_atom": -4.106595661
+        }
+      },
+      "acs2": {
+        "porosity": {
+          "pld": 21.66239,
+          "lcd": 23.12536,
+          "gsa": 6016.38,
+          "vsa": 1274.77
+        },
+        "structure": {
+          "cell_volume": 107696.0,
+          "density_mech": 0.211884
+        },
+        "mechanical": {
+          "bulk_gpa": 2.758016506,
+          "shear_gpa": 1.165389599,
+          "young_gpa": 3.064533114
+        },
+        "stability": {
+          "min_eigen_0k": 0.726666143,
+          "min_eigen_298k": 0.170634012
+        },
+        "thermo": {
+          "density_thermo": 0.211884,
+          "f0_kjmol_atom": -4.150917388
+        }
+      }
+    }
   },
   {
     "id": "acs-b",
@@ -67,8 +119,8 @@
       }
     },
     "conf": [
-      "acs-b(1)",
-      "acs-b(2)"
+      "acs-b1",
+      "acs-b2"
     ],
     "linkers": {
       "A": {
@@ -83,7 +135,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "acs-b1": {
+        "porosity": {
+          "pld": 15.75221,
+          "lcd": 16.00207,
+          "gsa": 3648.6,
+          "vsa": 1744.65
+        },
+        "structure": {
+          "cell_volume": 45797.9,
+          "density_mech": 0.478169
+        },
+        "mechanical": {
+          "bulk_gpa": 5.907856568,
+          "shear_gpa": 2.859791585,
+          "young_gpa": 7.3873817
+        },
+        "stability": {
+          "min_eigen_0k": 1.216773279,
+          "min_eigen_298k": 1.097272863
+        },
+        "thermo": {
+          "density_thermo": 0.478169,
+          "f0_kjmol_atom": -7.8439129
+        }
+      },
+      "acs-b2": {
+        "porosity": {
+          "pld": 10.56085,
+          "lcd": 11.56468,
+          "gsa": 3826.53,
+          "vsa": 2177.1
+        },
+        "structure": {
+          "cell_volume": 38490.5,
+          "density_mech": 0.568948
+        },
+        "mechanical": {
+          "bulk_gpa": 4.58285817,
+          "shear_gpa": 3.770433033,
+          "young_gpa": 8.876886323
+        },
+        "stability": {
+          "min_eigen_0k": 0.684796127,
+          "min_eigen_298k": 0.747336856
+        },
+        "thermo": {
+          "density_thermo": 0.568948,
+          "f0_kjmol_atom": -7.24929996
+        }
+      }
+    }
   },
   {
     "id": "agw",
@@ -125,7 +229,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "agw": {
+        "porosity": {
+          "pld": 10.68343,
+          "lcd": 15.6029,
+          "gsa": 6490.55,
+          "vsa": 2153.82
+        },
+        "structure": {
+          "cell_volume": 24127.6,
+          "density_mech": 0.331839
+        },
+        "mechanical": {
+          "bulk_gpa": 5.701330419,
+          "shear_gpa": 2.533072399,
+          "young_gpa": 6.618960288
+        },
+        "stability": {
+          "min_eigen_0k": 1.431197648,
+          "min_eigen_298k": 0.232410068
+        },
+        "thermo": {
+          "density_thermo": 0.331839,
+          "f0_kjmol_atom": -5.652018307
+        }
+      }
+    }
   },
   {
     "id": "bcu",
@@ -167,7 +298,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "bcu": {
+        "porosity": {
+          "pld": 15.41833,
+          "lcd": 17.67949,
+          "gsa": 6014.81,
+          "vsa": 1343.79
+        },
+        "structure": {
+          "cell_volume": 22982.5,
+          "density_mech": 0.223413
+        },
+        "mechanical": {
+          "bulk_gpa": 5.300881159,
+          "shear_gpa": 2.249768974,
+          "young_gpa": 5.912813077
+        },
+        "stability": {
+          "min_eigen_0k": 0.360679976,
+          "min_eigen_298k": 0.104333857
+        },
+        "thermo": {
+          "density_thermo": 0.223413,
+          "f0_kjmol_atom": -3.408669199
+        }
+      }
+    }
   },
   {
     "id": "bcu-b",
@@ -194,8 +352,8 @@
       }
     },
     "conf": [
-      "bcu-b(1)",
-      "bcu-b(2)"
+      "bcu-b1",
+      "bcu-b2"
     ],
     "linkers": {
       "A": {
@@ -210,7 +368,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "bcu-b1": {
+        "porosity": {
+          "pld": 11.59905,
+          "lcd": 13.01062,
+          "gsa": 4934.75,
+          "vsa": 1957.37
+        },
+        "structure": {
+          "cell_volume": 75929.1,
+          "density_mech": 0.396649
+        },
+        "mechanical": {
+          "bulk_gpa": 13.3449523,
+          "shear_gpa": 4.174176225,
+          "young_gpa": 11.34016304
+        },
+        "stability": {
+          "min_eigen_0k": 1.150818081,
+          "min_eigen_298k": 0.281603408
+        },
+        "thermo": {
+          "density_thermo": 0.396649,
+          "f0_kjmol_atom": -3.527422299
+        }
+      },
+      "bcu-b2": {
+        "porosity": {
+          "pld": 10.29685,
+          "lcd": 11.60732,
+          "gsa": 4914.61,
+          "vsa": 2040.17
+        },
+        "structure": {
+          "cell_volume": 72550.1,
+          "density_mech": 0.415123
+        },
+        "mechanical": {
+          "bulk_gpa": 9.512200705,
+          "shear_gpa": 4.218925401,
+          "young_gpa": 11.02657823
+        },
+        "stability": {
+          "min_eigen_0k": 0.997645169,
+          "min_eigen_298k": 0.330019957
+        },
+        "thermo": {
+          "density_thermo": 0.415123,
+          "f0_kjmol_atom": -3.54301946
+        }
+      }
+    }
   },
   {
     "id": "bla",
@@ -252,7 +462,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "bla": {
+        "porosity": {
+          "pld": 14.69013,
+          "lcd": 19.9445,
+          "gsa": 6263.38,
+          "vsa": 1533.84
+        },
+        "structure": {
+          "cell_volume": 48871.3,
+          "density_mech": 0.24489
+        },
+        "mechanical": {
+          "bulk_gpa": 4.085829002,
+          "shear_gpa": 1.60145096,
+          "young_gpa": 4.249192338
+        },
+        "stability": {
+          "min_eigen_0k": 0.959672434,
+          "min_eigen_298k": 0.103358449
+        },
+        "thermo": {
+          "density_thermo": 0.24489,
+          "f0_kjmol_atom": -5.198329987
+        }
+      }
+    }
   },
   {
     "id": "bod",
@@ -279,8 +516,8 @@
       }
     },
     "conf": [
-      "bod(1)",
-      "bod(2)"
+      "bod1",
+      "bod2"
     ],
     "linkers": {
       "A": {
@@ -295,7 +532,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "bod1": {
+        "porosity": {
+          "pld": 21.31458,
+          "lcd": 28.11778,
+          "gsa": 7058.73,
+          "vsa": 799.125
+        },
+        "structure": {
+          "cell_volume": 38882.4,
+          "density_mech": 0.113211
+        },
+        "mechanical": {
+          "bulk_gpa": 1.229352523,
+          "shear_gpa": 0.199190362,
+          "young_gpa": 0.566950347
+        },
+        "stability": {
+          "min_eigen_0k": 0.21330045,
+          "min_eigen_298k": 0.011859681
+        },
+        "thermo": {
+          "density_thermo": 0.113211,
+          "f0_kjmol_atom": -3.978001843
+        }
+      },
+      "bod2": {
+        "porosity": {
+          "pld": 25.32583,
+          "lcd": 32.01944,
+          "gsa": 7116.53,
+          "vsa": 729.554
+        },
+        "structure": {
+          "cell_volume": 42939.0,
+          "density_mech": 0.102515
+        },
+        "mechanical": {
+          "bulk_gpa": 1.588800791,
+          "shear_gpa": 0.24283843,
+          "young_gpa": 0.693198259
+        },
+        "stability": {
+          "min_eigen_0k": 0.276618621,
+          "min_eigen_298k": 0.003352738
+        },
+        "thermo": {
+          "density_thermo": 0.102515,
+          "f0_kjmol_atom": -4.181874267
+        }
+      }
+    }
   },
   {
     "id": "boe",
@@ -322,8 +611,8 @@
       }
     },
     "conf": [
-      "boe(1)",
-      "boe(2)"
+      "boe1",
+      "boe2"
     ],
     "linkers": {
       "A": {
@@ -338,7 +627,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "boe1": {
+        "porosity": {
+          "pld": 15.47142,
+          "lcd": 20.61533,
+          "gsa": 7120.17,
+          "vsa": 1025.97
+        },
+        "structure": {
+          "cell_volume": 30549.1,
+          "density_mech": 0.144093
+        },
+        "mechanical": {
+          "bulk_gpa": 2.045335086,
+          "shear_gpa": 0.266746529,
+          "young_gpa": 0.76690062
+        },
+        "stability": {
+          "min_eigen_0k": 0.21814072,
+          "min_eigen_298k": 0.056003951
+        },
+        "thermo": {
+          "density_thermo": 0.144093,
+          "f0_kjmol_atom": -3.73457557
+        }
+      },
+      "boe2": {
+        "porosity": {
+          "pld": 18.07536,
+          "lcd": 22.285,
+          "gsa": 7176.53,
+          "vsa": 944.283
+        },
+        "structure": {
+          "cell_volume": 33454.4,
+          "density_mech": 0.131579
+        },
+        "mechanical": {
+          "bulk_gpa": 2.80332073,
+          "shear_gpa": 0.422257604,
+          "young_gpa": 1.206209955
+        },
+        "stability": {
+          "min_eigen_0k": 0.460571095,
+          "min_eigen_298k": 0.050715617
+        },
+        "thermo": {
+          "density_thermo": 0.131579,
+          "f0_kjmol_atom": -3.833871967
+        }
+      }
+    }
   },
   {
     "id": "bor",
@@ -365,8 +706,8 @@
       }
     },
     "conf": [
-      "bor(1)",
-      "bor(2)"
+      "bor1",
+      "bor2"
     ],
     "linkers": {
       "A": {
@@ -381,7 +722,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "bor1": {
+        "porosity": {
+          "pld": 12.88678,
+          "lcd": 16.68331,
+          "gsa": 6259.74,
+          "vsa": 1514.31
+        },
+        "structure": {
+          "cell_volume": 100053.0,
+          "density_mech": 0.241912
+        },
+        "mechanical": {
+          "bulk_gpa": 3.897874655,
+          "shear_gpa": 1.157462334,
+          "young_gpa": 3.159638563
+        },
+        "stability": {
+          "min_eigen_0k": 1.439087096,
+          "min_eigen_298k": 0.520339414
+        },
+        "thermo": {
+          "density_thermo": 0.241912,
+          "f0_kjmol_atom": -4.831186971
+        }
+      },
+      "bor2": {
+        "porosity": {
+          "pld": 10.72048,
+          "lcd": 12.87986,
+          "gsa": 6277.36,
+          "vsa": 1675.75
+        },
+        "structure": {
+          "cell_volume": 90668.3,
+          "density_mech": 0.266951
+        },
+        "mechanical": {
+          "bulk_gpa": 3.519929535,
+          "shear_gpa": 0.941887037,
+          "young_gpa": 2.594264083
+        },
+        "stability": {
+          "min_eigen_0k": 1.13881938,
+          "min_eigen_298k": 0.530735888
+        },
+        "thermo": {
+          "density_thermo": 0.266951,
+          "f0_kjmol_atom": -4.837985924
+        }
+      }
+    }
   },
   {
     "id": "cef",
@@ -408,8 +801,8 @@
       }
     },
     "conf": [
-      "cef(1)",
-      "cef(2)"
+      "cef1",
+      "cef2"
     ],
     "linkers": {
       "A": {
@@ -424,7 +817,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "cef1": {
+        "porosity": {
+          "pld": 13.81043,
+          "lcd": 15.02835,
+          "gsa": 5376.68,
+          "vsa": 2161.82
+        },
+        "structure": {
+          "cell_volume": 27933.8,
+          "density_mech": 0.402073
+        },
+        "mechanical": {
+          "bulk_gpa": 4.421615417,
+          "shear_gpa": 2.621943292,
+          "young_gpa": 6.567659479
+        },
+        "stability": {
+          "min_eigen_0k": 0.656199934,
+          "min_eigen_298k": -0.048710018
+        },
+        "thermo": {
+          "density_thermo": 0.402073,
+          "f0_kjmol_atom": -6.660070156
+        }
+      },
+      "cef2": {
+        "porosity": {
+          "pld": 11.52531,
+          "lcd": 13.94677,
+          "gsa": 6201.64,
+          "vsa": 2448.55
+        },
+        "structure": {
+          "cell_volume": 75857.9,
+          "density_mech": 0.394823
+        },
+        "mechanical": {
+          "bulk_gpa": 6.712649435,
+          "shear_gpa": 1.759276724,
+          "young_gpa": 4.853796361
+        },
+        "stability": {
+          "min_eigen_0k": 0.436779391,
+          "min_eigen_298k": -0.15799473
+        },
+        "thermo": {
+          "density_thermo": 0.394823,
+          "f0_kjmol_atom": -6.395212536
+        }
+      }
+    }
   },
   {
     "id": "ceq",
@@ -466,7 +911,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ceq": {
+        "porosity": {
+          "pld": 7.38343,
+          "lcd": 9.31576,
+          "gsa": 4859.75,
+          "vsa": 2561.28
+        },
+        "structure": {
+          "cell_volume": 57457.4,
+          "density_mech": 0.52704
+        },
+        "mechanical": {
+          "bulk_gpa": 11.85015926,
+          "shear_gpa": 4.47311906,
+          "young_gpa": 11.91958237
+        },
+        "stability": {
+          "min_eigen_0k": 3.487132295,
+          "min_eigen_298k": 2.171771438
+        },
+        "thermo": {
+          "density_thermo": 0.52704,
+          "f0_kjmol_atom": -9.789862645
+        }
+      }
+    }
   },
   {
     "id": "csq",
@@ -493,8 +965,8 @@
       }
     },
     "conf": [
-      "csq(1)",
-      "csq(2)"
+      "csq1",
+      "csq2"
     ],
     "linkers": {
       "A": {
@@ -509,7 +981,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "csq1": {
+        "porosity": {
+          "pld": 48.85851,
+          "lcd": 51.02566,
+          "gsa": 5644.36,
+          "vsa": 1025.7
+        },
+        "structure": {
+          "cell_volume": 123422.0,
+          "density_mech": 0.181721
+        },
+        "mechanical": {
+          "bulk_gpa": 3.316447613,
+          "shear_gpa": 1.527872006,
+          "young_gpa": 3.973435003
+        },
+        "stability": {
+          "min_eigen_0k": 0.226889887,
+          "min_eigen_298k": 0.13260495
+        },
+        "thermo": {
+          "density_thermo": 0.181721,
+          "f0_kjmol_atom": -4.11006
+        }
+      },
+      "csq2": {
+        "porosity": {
+          "pld": 48.85873,
+          "lcd": 51.02449,
+          "gsa": 5644.31,
+          "vsa": 1025.69
+        },
+        "structure": {
+          "cell_volume": 123422.0,
+          "density_mech": 0.181721
+        },
+        "mechanical": {
+          "bulk_gpa": 3.311735374,
+          "shear_gpa": 1.529411397,
+          "young_gpa": 3.976151176
+        },
+        "stability": {
+          "min_eigen_0k": 0.226791474,
+          "min_eigen_298k": 0.130723842
+        },
+        "thermo": {
+          "density_thermo": 0.181721,
+          "f0_kjmol_atom": -4.09835
+        }
+      }
+    }
   },
   {
     "id": "ctn",
@@ -536,8 +1060,8 @@
       }
     },
     "conf": [
-      "ctn(1)",
-      "ctn(2)"
+      "ctn1",
+      "ctn2"
     ],
     "linkers": {
       "A": {
@@ -552,7 +1076,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ctn1": {
+        "porosity": {
+          "pld": 7.46101,
+          "lcd": 8.27297,
+          "gsa": 5526.48,
+          "vsa": 2442.38
+        },
+        "structure": {
+          "cell_volume": 122796.0,
+          "density_mech": 0.44194
+        },
+        "mechanical": {
+          "bulk_gpa": 17.6108022,
+          "shear_gpa": 5.644531511,
+          "young_gpa": 15.29906627
+        },
+        "stability": {
+          "min_eigen_0k": 7.411867042,
+          "min_eigen_298k": 3.383307598
+        },
+        "thermo": {
+          "density_thermo": 0.44194,
+          "f0_kjmol_atom": -4.310429844
+        }
+      },
+      "ctn2": {
+        "porosity": {
+          "pld": 7.47047,
+          "lcd": 8.14074,
+          "gsa": 5546.3,
+          "vsa": 2448.06
+        },
+        "structure": {
+          "cell_volume": 122950.0,
+          "density_mech": 0.441386
+        },
+        "mechanical": {
+          "bulk_gpa": 18.0555757,
+          "shear_gpa": 5.618484085,
+          "young_gpa": 15.27141352
+        },
+        "stability": {
+          "min_eigen_0k": 6.725527803,
+          "min_eigen_298k": 3.133952586
+        },
+        "thermo": {
+          "density_thermo": 0.441386,
+          "f0_kjmol_atom": -4.313442273
+        }
+      }
+    }
   },
   {
     "id": "ctn-d",
@@ -579,8 +1155,8 @@
       }
     },
     "conf": [
-      "ctn-d(1)",
-      "ctn-d(2)"
+      "ctn-d1",
+      "ctn-d2"
     ],
     "linkers": {
       "A": {
@@ -595,7 +1171,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ctn-d1": {
+        "porosity": {
+          "pld": 13.85649,
+          "lcd": 16.85315,
+          "gsa": 7154.76,
+          "vsa": 1341.89
+        },
+        "structure": {
+          "cell_volume": 65524.1,
+          "density_mech": 0.187552
+        },
+        "mechanical": {
+          "bulk_gpa": 4.852076175,
+          "shear_gpa": 0.455634961,
+          "young_gpa": 1.325417051
+        },
+        "stability": {
+          "min_eigen_0k": 0.499659376,
+          "min_eigen_298k": -0.077607896
+        },
+        "thermo": {
+          "density_thermo": 0.187552,
+          "f0_kjmol_atom": -4.042981889
+        }
+      },
+      "ctn-d2": {
+        "porosity": {
+          "pld": 14.37601,
+          "lcd": 16.74383,
+          "gsa": 7099.99,
+          "vsa": 1313.04
+        },
+        "structure": {
+          "cell_volume": 66414.9,
+          "density_mech": 0.184936
+        },
+        "mechanical": {
+          "bulk_gpa": 6.103790493,
+          "shear_gpa": 0.819626548,
+          "young_gpa": 2.353534222
+        },
+        "stability": {
+          "min_eigen_0k": 0.895193604,
+          "min_eigen_298k": -0.000354656
+        },
+        "thermo": {
+          "density_thermo": 0.184936,
+          "f0_kjmol_atom": -4.399623333
+        }
+      }
+    }
   },
   {
     "id": "cut",
@@ -622,8 +1250,8 @@
       }
     },
     "conf": [
-      "cut(1)",
-      "cut(2)"
+      "cut1",
+      "cut2"
     ],
     "linkers": {
       "A": {
@@ -638,7 +1266,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "cut1": {
+        "porosity": {
+          "pld": 27.24553,
+          "lcd": 30.61956,
+          "gsa": 5786.79,
+          "vsa": 1185.84
+        },
+        "structure": {
+          "cell_volume": 36482.8,
+          "density_mech": 0.204922
+        },
+        "mechanical": {
+          "bulk_gpa": 3.953136852,
+          "shear_gpa": 1.606416528,
+          "young_gpa": 4.244333382
+        },
+        "stability": {
+          "min_eigen_0k": 0.127280008,
+          "min_eigen_298k": 0.027820817
+        },
+        "thermo": {
+          "density_thermo": 0.204922,
+          "f0_kjmol_atom": -4.174072978
+        }
+      },
+      "cut2": {
+        "porosity": {
+          "pld": 26.36981,
+          "lcd": 29.80764,
+          "gsa": 5683.38,
+          "vsa": 1145.09
+        },
+        "structure": {
+          "cell_volume": 37105.9,
+          "density_mech": 0.201481
+        },
+        "mechanical": {
+          "bulk_gpa": 5.401576176,
+          "shear_gpa": 1.455187585,
+          "young_gpa": 4.00583779
+        },
+        "stability": {
+          "min_eigen_0k": 0.130487363,
+          "min_eigen_298k": 0.040090969
+        },
+        "thermo": {
+          "density_thermo": 0.201481,
+          "f0_kjmol_atom": -4.133601585
+        }
+      }
+    }
   },
   {
     "id": "cxg",
@@ -665,8 +1345,8 @@
       }
     },
     "conf": [
-      "cxg(1)",
-      "cxg(2)"
+      "cxg1",
+      "cxg2"
     ],
     "linkers": {
       "A": {
@@ -681,7 +1361,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "cxg1": {
+        "porosity": {
+          "pld": 16.63608,
+          "lcd": 20.11066,
+          "gsa": 5825.23,
+          "vsa": 1914.9
+        },
+        "structure": {
+          "cell_volume": 35317.8,
+          "density_mech": 0.328725
+        },
+        "mechanical": {
+          "bulk_gpa": 8.863839741,
+          "shear_gpa": 1.976839889,
+          "young_gpa": 5.520146506
+        },
+        "stability": {
+          "min_eigen_0k": 0.657527576,
+          "min_eigen_298k": 0.233109064
+        },
+        "thermo": {
+          "density_thermo": 0.328725,
+          "f0_kjmol_atom": -8.527268355
+        }
+      },
+      "cxg2": {
+        "porosity": {
+          "pld": 16.92254,
+          "lcd": 18.91388,
+          "gsa": 4883.24,
+          "vsa": 1882.35
+        },
+        "structure": {
+          "cell_volume": 30118.6,
+          "density_mech": 0.385472
+        },
+        "mechanical": {
+          "bulk_gpa": 5.276150465,
+          "shear_gpa": 2.029505544,
+          "young_gpa": 5.396574194
+        },
+        "stability": {
+          "min_eigen_0k": 1.278995938,
+          "min_eigen_298k": 0.203570229
+        },
+        "thermo": {
+          "density_thermo": 0.385472,
+          "f0_kjmol_atom": -8.530841452
+        }
+      }
+    }
   },
   {
     "id": "cza",
@@ -708,8 +1440,8 @@
       }
     },
     "conf": [
-      "cza(1)",
-      "cza(2)"
+      "cza1",
+      "cza2"
     ],
     "linkers": {
       "A": {
@@ -724,7 +1456,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "cza1": {
+        "porosity": {
+          "pld": 3.8752,
+          "lcd": 9.74893,
+          "gsa": 6126.33,
+          "vsa": 3200.18
+        },
+        "structure": {
+          "cell_volume": 16536.4,
+          "density_mech": 0.522364
+        },
+        "mechanical": {
+          "bulk_gpa": 5.353839759,
+          "shear_gpa": 2.669921815,
+          "young_gpa": 6.868078193
+        },
+        "stability": {
+          "min_eigen_0k": 2.123594237,
+          "min_eigen_298k": 0.173051597
+        },
+        "thermo": {
+          "density_thermo": 0.522364,
+          "f0_kjmol_atom": -7.192361866
+        }
+      },
+      "cza2": {
+        "porosity": {
+          "pld": 4.98565,
+          "lcd": 8.55991,
+          "gsa": 3785.33,
+          "vsa": 2275.58
+        },
+        "structure": {
+          "cell_volume": 114952.0,
+          "density_mech": 0.601157
+        },
+        "mechanical": {
+          "bulk_gpa": 3.506682611,
+          "shear_gpa": 2.484131059,
+          "young_gpa": 6.028795309
+        },
+        "stability": {
+          "min_eigen_0k": 2.091937517,
+          "min_eigen_298k": 0.168542499
+        },
+        "thermo": {
+          "density_thermo": 0.601157,
+          "f0_kjmol_atom": -7.024718156
+        }
+      }
+    }
   },
   {
     "id": "dia",
@@ -766,7 +1550,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "dia": {
+        "porosity": {
+          "pld": 15.42672,
+          "lcd": 18.27792,
+          "gsa": 6953.36,
+          "vsa": 1244.57
+        },
+        "structure": {
+          "cell_volume": 29131.4,
+          "density_mech": 0.178988
+        },
+        "mechanical": {
+          "bulk_gpa": 4.75900938,
+          "shear_gpa": 0.69470484,
+          "young_gpa": 1.98740932
+        },
+        "stability": {
+          "min_eigen_0k": 0.660260958,
+          "min_eigen_298k": 0.46302946
+        },
+        "thermo": {
+          "density_thermo": 0.178988,
+          "f0_kjmol_atom": -3.396403549
+        }
+      }
+    }
   },
   {
     "id": "dia-b",
@@ -808,7 +1619,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "dia-b": {
+        "porosity": {
+          "pld": 5.27057,
+          "lcd": 7.0518,
+          "gsa": 4358.86,
+          "vsa": 2746.85
+        },
+        "structure": {
+          "cell_volume": 31411.0,
+          "density_mech": 0.630177
+        },
+        "mechanical": {
+          "bulk_gpa": 22.57105353,
+          "shear_gpa": 9.023762622,
+          "young_gpa": 23.88788064
+        },
+        "stability": {
+          "min_eigen_0k": 8.146637233,
+          "min_eigen_298k": 0.986350812
+        },
+        "thermo": {
+          "density_thermo": 0.630177,
+          "f0_kjmol_atom": -4.40598265
+        }
+      }
+    }
   },
   {
     "id": "dia-f",
@@ -835,8 +1673,8 @@
       }
     },
     "conf": [
-      "dia-f(1)",
-      "dia-f(2)"
+      "dia-f1",
+      "dia-f2"
     ],
     "linkers": {
       "A": {
@@ -851,7 +1689,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "dia-f1": {
+        "porosity": {
+          "pld": 21.4477,
+          "lcd": 27.32811,
+          "gsa": 7702.59,
+          "vsa": 793.619
+        },
+        "structure": {
+          "cell_volume": 83388.4,
+          "density_mech": 0.103033
+        },
+        "mechanical": {
+          "bulk_gpa": 0.479908056,
+          "shear_gpa": 0.173447405,
+          "young_gpa": 0.464395279
+        },
+        "stability": {
+          "min_eigen_0k": 0.099376127,
+          "min_eigen_298k": 0.101055016
+        },
+        "thermo": {
+          "density_thermo": 0.103033,
+          "f0_kjmol_atom": -2.479387277
+        }
+      },
+      "dia-f2": {
+        "porosity": {
+          "pld": 26.56027,
+          "lcd": 33.08134,
+          "gsa": 7730.8,
+          "vsa": 575.225
+        },
+        "structure": {
+          "cell_volume": 115470.0,
+          "density_mech": 0.0744069
+        },
+        "mechanical": {
+          "bulk_gpa": 0.707965596,
+          "shear_gpa": 0.221771979,
+          "young_gpa": 0.602413437
+        },
+        "stability": {
+          "min_eigen_0k": 0.019867791,
+          "min_eigen_298k": -0.420532163
+        },
+        "thermo": {
+          "density_thermo": 0.074407,
+          "f0_kjmol_atom": -2.598972199
+        }
+      }
+    }
   },
   {
     "id": "dmd",
@@ -893,7 +1783,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "dmd": {
+        "porosity": {
+          "pld": 16.74185,
+          "lcd": 18.8851,
+          "gsa": 5839.72,
+          "vsa": 1405.96
+        },
+        "structure": {
+          "cell_volume": 82217.2,
+          "density_mech": 0.240758
+        },
+        "mechanical": {
+          "bulk_gpa": 2.617158085,
+          "shear_gpa": 0.93724387,
+          "young_gpa": 2.511883763
+        },
+        "stability": {
+          "min_eigen_0k": 0.209370259,
+          "min_eigen_298k": -2.372829786
+        },
+        "thermo": {
+          "density_thermo": 0.240758,
+          "f0_kjmol_atom": -4.346717684
+        }
+      }
+    }
   },
   {
     "id": "dne",
@@ -920,8 +1837,8 @@
       }
     },
     "conf": [
-      "dne(1)",
-      "dne(2)"
+      "dne1",
+      "dne2"
     ],
     "linkers": {
       "A": {
@@ -936,7 +1853,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "dne1": {
+        "porosity": {
+          "pld": 9.64098,
+          "lcd": 17.73351,
+          "gsa": 6044.38,
+          "vsa": 2083.03
+        },
+        "structure": {
+          "cell_volume": 94853.2,
+          "density_mech": 0.344622
+        },
+        "mechanical": {
+          "bulk_gpa": 3.628605908,
+          "shear_gpa": 1.93799634,
+          "young_gpa": 4.935351091
+        },
+        "stability": {
+          "min_eigen_0k": 2.325062458,
+          "min_eigen_298k": 0.057201529
+        },
+        "thermo": {
+          "density_thermo": 0.344622,
+          "f0_kjmol_atom": -7.981415514
+        }
+      },
+      "dne2": {
+        "porosity": {
+          "pld": 13.6361,
+          "lcd": 22.64343,
+          "gsa": 6147.38,
+          "vsa": 1699.44
+        },
+        "structure": {
+          "cell_volume": 118244.0,
+          "density_mech": 0.27645
+        },
+        "mechanical": {
+          "bulk_gpa": 5.15255742,
+          "shear_gpa": 2.638160707,
+          "young_gpa": 6.760643235
+        },
+        "stability": {
+          "min_eigen_0k": 3.405982072,
+          "min_eigen_298k": 0.069634606
+        },
+        "thermo": {
+          "density_thermo": 0.27645,
+          "f0_kjmol_atom": -7.928122125
+        }
+      }
+    }
   },
   {
     "id": "dnp",
@@ -963,8 +1932,8 @@
       }
     },
     "conf": [
-      "dnp(1)",
-      "dnp(2)"
+      "dnp1",
+      "dnp2"
     ],
     "linkers": {
       "A": {
@@ -979,7 +1948,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "dnp1": {
+        "porosity": {
+          "pld": 39.67141,
+          "lcd": 40.99011,
+          "gsa": 6244.7,
+          "vsa": 1164.42
+        },
+        "structure": {
+          "cell_volume": 90691.5,
+          "density_mech": 0.186465
+        },
+        "mechanical": {
+          "bulk_gpa": 3.22270881,
+          "shear_gpa": 1.195989419,
+          "young_gpa": 3.192982404
+        },
+        "stability": {
+          "min_eigen_0k": 0.753168995,
+          "min_eigen_298k": 0.144806965
+        },
+        "thermo": {
+          "density_thermo": 0.186465,
+          "f0_kjmol_atom": -7.220877874
+        }
+      },
+      "dnp2": {
+        "porosity": {
+          "pld": 41.95525,
+          "lcd": 43.10003,
+          "gsa": 6230.15,
+          "vsa": 1194.74
+        },
+        "structure": {
+          "cell_volume": 88184.3,
+          "density_mech": 0.191767
+        },
+        "mechanical": {
+          "bulk_gpa": 2.841609585,
+          "shear_gpa": 1.186080913,
+          "young_gpa": 3.123642487
+        },
+        "stability": {
+          "min_eigen_0k": 0.504089588,
+          "min_eigen_298k": -0.030868129
+        },
+        "thermo": {
+          "density_thermo": 0.191767,
+          "f0_kjmol_atom": -7.185480989
+        }
+      }
+    }
   },
   {
     "id": "dnr",
@@ -1006,8 +2027,8 @@
       }
     },
     "conf": [
-      "dnr(1)",
-      "dnr(2)"
+      "dnr1",
+      "dnr2"
     ],
     "linkers": {
       "A": {
@@ -1022,7 +2043,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "dnr1": {
+        "porosity": {
+          "pld": 42.33993,
+          "lcd": 44.22513,
+          "gsa": 6161.14,
+          "vsa": 1127.09
+        },
+        "structure": {
+          "cell_volume": 102497.0,
+          "density_mech": 0.182935
+        },
+        "mechanical": {
+          "bulk_gpa": 4.743708451,
+          "shear_gpa": 1.533294422,
+          "young_gpa": 4.152484918
+        },
+        "stability": {
+          "min_eigen_0k": 1.363331595,
+          "min_eigen_298k": 0.197289301
+        },
+        "thermo": {
+          "density_thermo": 0.182935,
+          "f0_kjmol_atom": -7.842585216
+        }
+      },
+      "dnr2": {
+        "porosity": {
+          "pld": 36.41869,
+          "lcd": 38.48782,
+          "gsa": 6143.86,
+          "vsa": 1258.75
+        },
+        "structure": {
+          "cell_volume": 91519.1,
+          "density_mech": 0.204879
+        },
+        "mechanical": {
+          "bulk_gpa": 4.3591052,
+          "shear_gpa": 1.595256117,
+          "young_gpa": 4.265441963
+        },
+        "stability": {
+          "min_eigen_0k": 1.344960122,
+          "min_eigen_298k": 0.296876133
+        },
+        "thermo": {
+          "density_thermo": 0.204879,
+          "f0_kjmol_atom": -7.84044485
+        }
+      }
+    }
   },
   {
     "id": "dpc",
@@ -1064,7 +2137,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "dpc": {
+        "porosity": {
+          "pld": 16.25068,
+          "lcd": 20.39033,
+          "gsa": 6817.89,
+          "vsa": 1395.33
+        },
+        "structure": {
+          "cell_volume": 320502.0,
+          "density_mech": 0.204657
+        },
+        "mechanical": {
+          "bulk_gpa": 3.847622179,
+          "shear_gpa": 1.216682267,
+          "young_gpa": 3.301997877
+        },
+        "stability": {
+          "min_eigen_0k": 1.293528615,
+          "min_eigen_298k": 0.27740182
+        },
+        "thermo": {
+          "density_thermo": 0.204657,
+          "f0_kjmol_atom": -8.136125319
+        }
+      }
+    }
   },
   {
     "id": "eed",
@@ -1106,7 +2206,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "eed": {
+        "porosity": {
+          "pld": 18.13324,
+          "lcd": 20.81854,
+          "gsa": 5497.26,
+          "vsa": 1381.21
+        },
+        "structure": {
+          "cell_volume": 70490.9,
+          "density_mech": 0.251253
+        },
+        "mechanical": {
+          "bulk_gpa": 8.908684255,
+          "shear_gpa": 1.296723926,
+          "young_gpa": 3.710158252
+        },
+        "stability": {
+          "min_eigen_0k": 0.581794495,
+          "min_eigen_298k": 0.279762046
+        },
+        "thermo": {
+          "density_thermo": 0.251253,
+          "f0_kjmol_atom": -9.679217148
+        }
+      }
+    }
   },
   {
     "id": "eft",
@@ -1133,8 +2260,8 @@
       }
     },
     "conf": [
-      "eft(1)",
-      "eft(2)"
+      "eft1",
+      "eft2"
     ],
     "linkers": {
       "A": {
@@ -1149,7 +2276,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "eft1": {
+        "porosity": {
+          "pld": 11.50964,
+          "lcd": 13.43574,
+          "gsa": 4434.8,
+          "vsa": 1999.51
+        },
+        "structure": {
+          "cell_volume": 54746.6,
+          "density_mech": 0.450868
+        },
+        "mechanical": {
+          "bulk_gpa": 10.29797217,
+          "shear_gpa": 3.815712585,
+          "young_gpa": 10.18872651
+        },
+        "stability": {
+          "min_eigen_0k": 1.329874986,
+          "min_eigen_298k": 0.503522962
+        },
+        "thermo": {
+          "density_thermo": 0.450868,
+          "f0_kjmol_atom": -6.02859035
+        }
+      },
+      "eft2": {
+        "porosity": {
+          "pld": 10.75633,
+          "lcd": 13.12557,
+          "gsa": 4719.21,
+          "vsa": 1987.33
+        },
+        "structure": {
+          "cell_volume": 58614.6,
+          "density_mech": 0.421115
+        },
+        "mechanical": {
+          "bulk_gpa": 13.53277385,
+          "shear_gpa": 2.76085959,
+          "young_gpa": 7.755192496
+        },
+        "stability": {
+          "min_eigen_0k": 1.076507986,
+          "min_eigen_298k": 0.631141042
+        },
+        "thermo": {
+          "density_thermo": 0.421115,
+          "f0_kjmol_atom": -6.022711914
+        }
+      }
+    }
   },
   {
     "id": "epf",
@@ -1191,7 +2370,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "epf": {
+        "porosity": {
+          "pld": 12.60644,
+          "lcd": 14.18075,
+          "gsa": 6651.22,
+          "vsa": 2210.05
+        },
+        "structure": {
+          "cell_volume": 127284.0,
+          "density_mech": 0.332278
+        },
+        "mechanical": {
+          "bulk_gpa": 6.311203704,
+          "shear_gpa": 2.030790773,
+          "young_gpa": 5.502213173
+        },
+        "stability": {
+          "min_eigen_0k": 0.934320996,
+          "min_eigen_298k": 0.199428431
+        },
+        "thermo": {
+          "density_thermo": 0.332278,
+          "f0_kjmol_atom": -4.563098365
+        }
+      }
+    }
   },
   {
     "id": "epn",
@@ -1218,8 +2424,8 @@
       }
     },
     "conf": [
-      "epn(1)",
-      "epn(2)"
+      "epn1",
+      "epn2"
     ],
     "linkers": {
       "A": {
@@ -1234,7 +2440,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "epn1": {
+        "porosity": {
+          "pld": 17.52622,
+          "lcd": 30.38655,
+          "gsa": 5874.35,
+          "vsa": 1384.5
+        },
+        "structure": {
+          "cell_volume": 64161.4,
+          "density_mech": 0.235685
+        },
+        "mechanical": {
+          "bulk_gpa": 3.059517475,
+          "shear_gpa": 1.830657867,
+          "young_gpa": 4.578745094
+        },
+        "stability": {
+          "min_eigen_0k": 2.234743458,
+          "min_eigen_298k": -0.015144085
+        },
+        "thermo": {
+          "density_thermo": 0.235685,
+          "f0_kjmol_atom": -7.829185069
+        }
+      },
+      "epn2": {
+        "porosity": {
+          "pld": 16.84185,
+          "lcd": 31.81621,
+          "gsa": 6497.75,
+          "vsa": 1339.53
+        },
+        "structure": {
+          "cell_volume": 73353.0,
+          "density_mech": 0.206152
+        },
+        "mechanical": {
+          "bulk_gpa": 4.642370052,
+          "shear_gpa": 2.603123275,
+          "young_gpa": 6.579577612
+        },
+        "stability": {
+          "min_eigen_0k": 3.23300637,
+          "min_eigen_298k": 0.392699316
+        },
+        "thermo": {
+          "density_thermo": 0.206152,
+          "f0_kjmol_atom": -8.079171758
+        }
+      }
+    }
   },
   {
     "id": "epz",
@@ -1261,8 +2519,8 @@
       }
     },
     "conf": [
-      "epz(1)",
-      "epz(2)"
+      "epz1",
+      "epz2"
     ],
     "linkers": {
       "A": {
@@ -1277,7 +2535,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "epz1": {
+        "porosity": {
+          "pld": 18.78699,
+          "lcd": 22.22305,
+          "gsa": 6760.72,
+          "vsa": 1653.78
+        },
+        "structure": {
+          "cell_volume": 43224.4,
+          "density_mech": 0.244616
+        },
+        "mechanical": {
+          "bulk_gpa": 2.95127372,
+          "shear_gpa": 0.811660679,
+          "young_gpa": 2.230503956
+        },
+        "stability": {
+          "min_eigen_0k": 0.576238456,
+          "min_eigen_298k": 0.169055857
+        },
+        "thermo": {
+          "density_thermo": 0.244616,
+          "f0_kjmol_atom": -5.339659886
+        }
+      },
+      "epz2": {
+        "porosity": {
+          "pld": 17.48098,
+          "lcd": 23.80405,
+          "gsa": 6755.42,
+          "vsa": 1654.92
+        },
+        "structure": {
+          "cell_volume": 43324.8,
+          "density_mech": 0.244976
+        },
+        "mechanical": {
+          "bulk_gpa": 3.183026872,
+          "shear_gpa": 1.396791269,
+          "young_gpa": 3.655644585
+        },
+        "stability": {
+          "min_eigen_0k": 0.877224185,
+          "min_eigen_298k": 0.056911898
+        },
+        "thermo": {
+          "density_thermo": 0.244976,
+          "f0_kjmol_atom": -5.008989554
+        }
+      }
+    }
   },
   {
     "id": "eta",
@@ -1304,8 +2614,8 @@
       }
     },
     "conf": [
-      "eta(1)",
-      "eta(2)"
+      "eta1",
+      "eta2"
     ],
     "linkers": {
       "A": {
@@ -1320,7 +2630,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "eta1": {
+        "porosity": {
+          "pld": 27.70209,
+          "lcd": 28.77909,
+          "gsa": 7922.71,
+          "vsa": 591.427
+        },
+        "structure": {
+          "cell_volume": 44631.5,
+          "density_mech": 0.0746496
+        },
+        "mechanical": {
+          "bulk_gpa": 1.479444187,
+          "shear_gpa": 0.258802277,
+          "young_gpa": 0.733628442
+        },
+        "stability": {
+          "min_eigen_0k": 0.143250487,
+          "min_eigen_298k": 0.180704525
+        },
+        "thermo": {
+          "density_thermo": 0.07465,
+          "f0_kjmol_atom": -2.402161401
+        }
+      },
+      "eta2": {
+        "porosity": {
+          "pld": 23.58945,
+          "lcd": 26.13615,
+          "gsa": 7773.17,
+          "vsa": 710.9
+        },
+        "structure": {
+          "cell_volume": 36430.0,
+          "density_mech": 0.0914556
+        },
+        "mechanical": {
+          "bulk_gpa": 1.423344324,
+          "shear_gpa": 0.360191266,
+          "young_gpa": 0.996514534
+        },
+        "stability": {
+          "min_eigen_0k": 0.112558608,
+          "min_eigen_298k": 0.027036671
+        },
+        "thermo": {
+          "density_thermo": 0.091456,
+          "f0_kjmol_atom": -2.056093674
+        }
+      }
+    }
   },
   {
     "id": "etb",
@@ -1347,8 +2709,8 @@
       }
     },
     "conf": [
-      "etb(1)",
-      "etb(2)"
+      "etb1",
+      "etb2"
     ],
     "linkers": {
       "A": {
@@ -1363,7 +2725,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "etb1": {
+        "porosity": {
+          "pld": 23.25405,
+          "lcd": 34.20026,
+          "gsa": 7817.59,
+          "vsa": 724.114
+        },
+        "structure": {
+          "cell_volume": 107909.0,
+          "density_mech": 0.0926262
+        },
+        "mechanical": {
+          "bulk_gpa": 1.481428379,
+          "shear_gpa": 0.454871481,
+          "young_gpa": 1.237914229
+        },
+        "stability": {
+          "min_eigen_0k": 0.099017951,
+          "min_eigen_298k": -0.066860346
+        },
+        "thermo": {
+          "density_thermo": 0.092626,
+          "f0_kjmol_atom": -1.921539565
+        }
+      },
+      "etb2": {
+        "porosity": {
+          "pld": 25.99383,
+          "lcd": 36.49267,
+          "gsa": 7825.98,
+          "vsa": 642.598
+        },
+        "structure": {
+          "cell_volume": 121728.0,
+          "density_mech": 0.0821108
+        },
+        "mechanical": {
+          "bulk_gpa": 1.387679535,
+          "shear_gpa": 0.339836666,
+          "young_gpa": 0.942566522
+        },
+        "stability": {
+          "min_eigen_0k": 0.073658291,
+          "min_eigen_298k": -0.045883802
+        },
+        "thermo": {
+          "density_thermo": 0.082111,
+          "f0_kjmol_atom": -1.952255974
+        }
+      }
+    }
   },
   {
     "id": "etq",
@@ -1390,8 +2804,8 @@
       }
     },
     "conf": [
-      "etq(1)",
-      "etq(2)"
+      "etq1",
+      "etq2"
     ],
     "linkers": {
       "A": {
@@ -1406,7 +2820,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "etq1": {
+        "porosity": {
+          "pld": 17.55616,
+          "lcd": 22.29628,
+          "gsa": 7333.63,
+          "vsa": 1103.25
+        },
+        "structure": {
+          "cell_volume": 84343.2,
+          "density_mech": 0.150437
+        },
+        "mechanical": {
+          "bulk_gpa": 0.821206994,
+          "shear_gpa": 0.18005147,
+          "young_gpa": 0.503366345
+        },
+        "stability": {
+          "min_eigen_0k": 0.014891959,
+          "min_eigen_298k": 0.021452308
+        },
+        "thermo": {
+          "density_thermo": 0.150437,
+          "f0_kjmol_atom": -5.467125244
+        }
+      },
+      "etq2": {
+        "porosity": {
+          "pld": 18.02696,
+          "lcd": 28.12281,
+          "gsa": 7404.15,
+          "vsa": 1022.85
+        },
+        "structure": {
+          "cell_volume": 91847.4,
+          "density_mech": 0.138146
+        },
+        "mechanical": {
+          "bulk_gpa": 4.79165018,
+          "shear_gpa": 0.796845682,
+          "young_gpa": 2.264982426
+        },
+        "stability": {
+          "min_eigen_0k": 0.22740493,
+          "min_eigen_298k": 0.021100938
+        },
+        "thermo": {
+          "density_thermo": 0.138146,
+          "f0_kjmol_atom": -5.487381064
+        }
+      }
+    }
   },
   {
     "id": "ffc",
@@ -1433,8 +2899,8 @@
       }
     },
     "conf": [
-      "ffc(1)",
-      "ffc(2)"
+      "ffc1",
+      "ffc2"
     ],
     "linkers": {
       "A": {
@@ -1449,7 +2915,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ffc1": {
+        "porosity": {
+          "pld": 23.53256,
+          "lcd": 25.65548,
+          "gsa": 6251.18,
+          "vsa": 1298.55
+        },
+        "structure": {
+          "cell_volume": 30087.9,
+          "density_mech": 0.207729
+        },
+        "mechanical": {
+          "bulk_gpa": 5.35255199,
+          "shear_gpa": 1.443881786,
+          "young_gpa": 3.974283399
+        },
+        "stability": {
+          "min_eigen_0k": 0.341092,
+          "min_eigen_298k": 0.028941068
+        },
+        "thermo": {
+          "density_thermo": 0.207729,
+          "f0_kjmol_atom": -7.361951078
+        }
+      },
+      "ffc2": {
+        "porosity": {
+          "pld": 22.12074,
+          "lcd": 24.86386,
+          "gsa": 6158.5,
+          "vsa": 1393.22
+        },
+        "structure": {
+          "cell_volume": 27627.6,
+          "density_mech": 0.226227
+        },
+        "mechanical": {
+          "bulk_gpa": 5.030856933,
+          "shear_gpa": 1.528228066,
+          "young_gpa": 4.163137488
+        },
+        "stability": {
+          "min_eigen_0k": 0.320056317,
+          "min_eigen_298k": 0.027603909
+        },
+        "thermo": {
+          "density_thermo": 0.226227,
+          "f0_kjmol_atom": -7.360338221
+        }
+      }
+    }
   },
   {
     "id": "ffj",
@@ -1476,8 +2994,8 @@
       }
     },
     "conf": [
-      "ffj(1)",
-      "ffj(2)"
+      "ffj1",
+      "ffj2"
     ],
     "linkers": {
       "A": {
@@ -1492,7 +3010,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ffj1": {
+        "porosity": {
+          "pld": 22.09364,
+          "lcd": 28.33878,
+          "gsa": 5935.21,
+          "vsa": 1203.1
+        },
+        "structure": {
+          "cell_volume": 39585.8,
+          "density_mech": 0.202705
+        },
+        "mechanical": {
+          "bulk_gpa": 3.34877979,
+          "shear_gpa": 0.804863677,
+          "young_gpa": 2.235494151
+        },
+        "stability": {
+          "min_eigen_0k": 1.03087611,
+          "min_eigen_298k": 0.25596289
+        },
+        "thermo": {
+          "density_thermo": 0.202705,
+          "f0_kjmol_atom": -7.462922972
+        }
+      },
+      "ffj2": {
+        "porosity": {
+          "pld": 19.36987,
+          "lcd": 24.94903,
+          "gsa": 5871.64,
+          "vsa": 1303.63
+        },
+        "structure": {
+          "cell_volume": 36141.7,
+          "density_mech": 0.222022
+        },
+        "mechanical": {
+          "bulk_gpa": 2.11992674,
+          "shear_gpa": 0.803806943,
+          "young_gpa": 2.140841751
+        },
+        "stability": {
+          "min_eigen_0k": 0.876674002,
+          "min_eigen_298k": 0.245342373
+        },
+        "thermo": {
+          "density_thermo": 0.222022,
+          "f0_kjmol_atom": -7.209215303
+        }
+      }
+    }
   },
   {
     "id": "fjh",
@@ -1519,8 +3089,8 @@
       }
     },
     "conf": [
-      "fjh(1)",
-      "fjh(2)"
+      "fjh1",
+      "fjh2"
     ],
     "linkers": {
       "A": {
@@ -1535,7 +3105,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "fjh1": {
+        "porosity": {
+          "pld": 15.59816,
+          "lcd": 17.25907,
+          "gsa": 5708.14,
+          "vsa": 1594.75
+        },
+        "structure": {
+          "cell_volume": 52250.6,
+          "density_mech": 0.279382
+        },
+        "mechanical": {
+          "bulk_gpa": 4.093727032,
+          "shear_gpa": 1.605779078,
+          "young_gpa": 4.260298167
+        },
+        "stability": {
+          "min_eigen_0k": 0.653061776,
+          "min_eigen_298k": 0.281285436
+        },
+        "thermo": {
+          "density_thermo": 0.279382,
+          "f0_kjmol_atom": -7.124713175
+        }
+      },
+      "fjh2": {
+        "porosity": {
+          "pld": 12.57917,
+          "lcd": 16.08734,
+          "gsa": 5656.48,
+          "vsa": 1598.13
+        },
+        "structure": {
+          "cell_volume": 51857.7,
+          "density_mech": 0.282531
+        },
+        "mechanical": {
+          "bulk_gpa": 6.823901283,
+          "shear_gpa": 1.95074728,
+          "young_gpa": 5.343098357
+        },
+        "stability": {
+          "min_eigen_0k": 1.545604812,
+          "min_eigen_298k": 0.024703779
+        },
+        "thermo": {
+          "density_thermo": 0.282531,
+          "f0_kjmol_atom": -7.37695636
+        }
+      }
+    }
   },
   {
     "id": "flt",
@@ -1562,8 +3184,8 @@
       }
     },
     "conf": [
-      "flt(1)",
-      "flt(2)"
+      "flt1",
+      "flt2"
     ],
     "linkers": {
       "A": {
@@ -1578,7 +3200,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "flt1": {
+        "porosity": {
+          "pld": 6.99569,
+          "lcd": 16.38863,
+          "gsa": 4955.18,
+          "vsa": 2046.76
+        },
+        "structure": {
+          "cell_volume": 48437.2,
+          "density_mech": 0.413055
+        },
+        "mechanical": {
+          "bulk_gpa": 11.62012377,
+          "shear_gpa": 2.106382463,
+          "young_gpa": 5.959079494
+        },
+        "stability": {
+          "min_eigen_0k": 0.698952524,
+          "min_eigen_298k": 0.203698074
+        },
+        "thermo": {
+          "density_thermo": 0.413055,
+          "f0_kjmol_atom": -4.06967
+        }
+      },
+      "flt2": {
+        "porosity": {
+          "pld": 6.13204,
+          "lcd": 17.32827,
+          "gsa": 4962.28,
+          "vsa": 2119.03
+        },
+        "structure": {
+          "cell_volume": 93704.6,
+          "density_mech": 0.427028
+        },
+        "mechanical": {
+          "bulk_gpa": 8.376757053,
+          "shear_gpa": 2.069024445,
+          "young_gpa": 5.734907192
+        },
+        "stability": {
+          "min_eigen_0k": 0.721412452,
+          "min_eigen_298k": 0.171767151
+        },
+        "thermo": {
+          "density_thermo": 0.427028,
+          "f0_kjmol_atom": -4.03026
+        }
+      }
+    }
   },
   {
     "id": "flu",
@@ -1620,7 +3294,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "flu": {
+        "porosity": {
+          "pld": 7.77373,
+          "lcd": 16.1224,
+          "gsa": 4871.41,
+          "vsa": 1995.69
+        },
+        "structure": {
+          "cell_volume": 24418.4,
+          "density_mech": 0.409675
+        },
+        "mechanical": {
+          "bulk_gpa": 13.98184032,
+          "shear_gpa": 2.46322832,
+          "young_gpa": 6.979799937
+        },
+        "stability": {
+          "min_eigen_0k": 1.955651993,
+          "min_eigen_298k": 1.428652276
+        },
+        "thermo": {
+          "density_thermo": 0.409675,
+          "f0_kjmol_atom": -3.701160201
+        }
+      }
+    }
   },
   {
     "id": "fof",
@@ -1662,7 +3363,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "fof": {
+        "porosity": {
+          "pld": 19.3224,
+          "lcd": 24.81336,
+          "gsa": 6585.96,
+          "vsa": 1100.25
+        },
+        "structure": {
+          "cell_volume": 105664.0,
+          "density_mech": 0.16706
+        },
+        "mechanical": {
+          "bulk_gpa": 2.197114594,
+          "shear_gpa": 0.743954819,
+          "young_gpa": 2.005506075
+        },
+        "stability": {
+          "min_eigen_0k": 0.097072158,
+          "min_eigen_298k": 0.044374269
+        },
+        "thermo": {
+          "density_thermo": 0.16706,
+          "f0_kjmol_atom": -4.887735462
+        }
+      }
+    }
   },
   {
     "id": "fog",
@@ -1704,7 +3432,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "fog": {
+        "porosity": {
+          "pld": 23.44472,
+          "lcd": 28.83666,
+          "gsa": 6837.5,
+          "vsa": 948.302
+        },
+        "structure": {
+          "cell_volume": 110055.0,
+          "density_mech": 0.138691
+        },
+        "mechanical": {
+          "bulk_gpa": 2.421265356,
+          "shear_gpa": 0.501049233,
+          "young_gpa": 1.40615272
+        },
+        "stability": {
+          "min_eigen_0k": 0.129465414,
+          "min_eigen_298k": 0.015650661
+        },
+        "thermo": {
+          "density_thermo": 0.138691,
+          "f0_kjmol_atom": -4.077291972
+        }
+      }
+    }
   },
   {
     "id": "gee",
@@ -1746,7 +3501,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "gee": {
+        "porosity": {
+          "pld": 14.03093,
+          "lcd": 26.89261,
+          "gsa": 4251.97,
+          "vsa": 1261.43
+        },
+        "structure": {
+          "cell_volume": 37039.7,
+          "density_mech": 0.29667
+        },
+        "mechanical": {
+          "bulk_gpa": 5.450942959,
+          "shear_gpa": 2.279852088,
+          "young_gpa": 6.002683853
+        },
+        "stability": {
+          "min_eigen_0k": 0.735261215,
+          "min_eigen_298k": 0.041303949
+        },
+        "thermo": {
+          "density_thermo": 0.29667,
+          "f0_kjmol_atom": -8.439304466
+        }
+      }
+    }
   },
   {
     "id": "het",
@@ -1788,7 +3570,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "het": {
+        "porosity": {
+          "pld": 8.08318,
+          "lcd": 13.26624,
+          "gsa": 5619.0,
+          "vsa": 2272.51
+        },
+        "structure": {
+          "cell_volume": 37589.0,
+          "density_mech": 0.404433
+        },
+        "mechanical": {
+          "bulk_gpa": 8.241438789,
+          "shear_gpa": 4.59667583,
+          "young_gpa": 11.62815365
+        },
+        "stability": {
+          "min_eigen_0k": 4.034621506,
+          "min_eigen_298k": 0.242335871
+        },
+        "thermo": {
+          "density_thermo": 0.404433,
+          "f0_kjmol_atom": -6.121721124
+        }
+      }
+    }
   },
   {
     "id": "hey",
@@ -1830,7 +3639,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "hey": {
+        "porosity": {
+          "pld": 10.44218,
+          "lcd": 12.66179,
+          "gsa": 6037.85,
+          "vsa": 1655.52
+        },
+        "structure": {
+          "cell_volume": 70703.7,
+          "density_mech": 0.274191
+        },
+        "mechanical": {
+          "bulk_gpa": 8.990500599,
+          "shear_gpa": 2.42204575,
+          "young_gpa": 6.667403231
+        },
+        "stability": {
+          "min_eigen_0k": 2.645759365,
+          "min_eigen_298k": 0.472377253
+        },
+        "thermo": {
+          "density_thermo": 0.274191,
+          "f0_kjmol_atom": -7.42289516
+        }
+      }
+    }
   },
   {
     "id": "hof",
@@ -1857,8 +3693,8 @@
       }
     },
     "conf": [
-      "hof(1)",
-      "hof(2)"
+      "hof1",
+      "hof2"
     ],
     "linkers": {
       "A": {
@@ -1873,7 +3709,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "hof1": {
+        "porosity": {
+          "pld": 16.03891,
+          "lcd": 16.59683,
+          "gsa": 6258.3,
+          "vsa": 1452.79
+        },
+        "structure": {
+          "cell_volume": 33795.3,
+          "density_mech": 0.232138
+        },
+        "mechanical": {
+          "bulk_gpa": 5.156719213,
+          "shear_gpa": 1.095310865,
+          "young_gpa": 3.068666317
+        },
+        "stability": {
+          "min_eigen_0k": 0.657127945,
+          "min_eigen_298k": 0.280805416
+        },
+        "thermo": {
+          "density_thermo": 0.232138,
+          "f0_kjmol_atom": -5.439246455
+        }
+      },
+      "hof2": {
+        "porosity": {
+          "pld": 13.9369,
+          "lcd": 15.13651,
+          "gsa": 6244.3,
+          "vsa": 1573.65
+        },
+        "structure": {
+          "cell_volume": 31129.9,
+          "density_mech": 0.252014
+        },
+        "mechanical": {
+          "bulk_gpa": 4.494070397,
+          "shear_gpa": 1.102673083,
+          "young_gpa": 3.05792033
+        },
+        "stability": {
+          "min_eigen_0k": 0.314356608,
+          "min_eigen_298k": 0.275015439
+        },
+        "thermo": {
+          "density_thermo": 0.252014,
+          "f0_kjmol_atom": -5.575625685
+        }
+      }
+    }
   },
   {
     "id": "hxg",
@@ -1915,7 +3803,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "hxg": {
+        "porosity": {
+          "pld": 14.61966,
+          "lcd": 20.80306,
+          "gsa": 6884.52,
+          "vsa": 1506.83
+        },
+        "structure": {
+          "cell_volume": 27892.3,
+          "density_mech": 0.218872
+        },
+        "mechanical": {
+          "bulk_gpa": 5.458577278,
+          "shear_gpa": 3.062082576,
+          "young_gpa": 7.739117485
+        },
+        "stability": {
+          "min_eigen_0k": 3.901063335,
+          "min_eigen_298k": 1.204428901
+        },
+        "thermo": {
+          "density_thermo": 0.218872,
+          "f0_kjmol_atom": -5.520930088
+        }
+      }
+    }
   },
   {
     "id": "hxg-b",
@@ -1957,7 +3872,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "hxg-b": {
+        "porosity": {
+          "pld": 8.95735,
+          "lcd": 13.26587,
+          "gsa": 5778.91,
+          "vsa": 2425.9
+        },
+        "structure": {
+          "cell_volume": 77181.2,
+          "density_mech": 0.419784
+        },
+        "mechanical": {
+          "bulk_gpa": 12.80162536,
+          "shear_gpa": 7.185516625,
+          "young_gpa": 18.15901504
+        },
+        "stability": {
+          "min_eigen_0k": 9.319916697,
+          "min_eigen_298k": 4.743099584
+        },
+        "thermo": {
+          "density_thermo": 0.419784,
+          "f0_kjmol_atom": -6.854665718
+        }
+      }
+    }
   },
   {
     "id": "iab",
@@ -1999,7 +3941,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "iab": {
+        "porosity": {
+          "pld": 13.32223,
+          "lcd": 16.92546,
+          "gsa": 6153.61,
+          "vsa": 1733.87
+        },
+        "structure": {
+          "cell_volume": 44364.2,
+          "density_mech": 0.281764
+        },
+        "mechanical": {
+          "bulk_gpa": 6.626437176,
+          "shear_gpa": 1.596131587,
+          "young_gpa": 4.432504171
+        },
+        "stability": {
+          "min_eigen_0k": 1.667088406,
+          "min_eigen_298k": 0.273941873
+        },
+        "thermo": {
+          "density_thermo": 0.281764,
+          "f0_kjmol_atom": -7.863763801
+        }
+      }
+    }
   },
   {
     "id": "iac-d",
@@ -2041,7 +4010,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "iac-d": {
+        "porosity": {
+          "pld": 11.50323,
+          "lcd": 18.17901,
+          "gsa": 6807.27,
+          "vsa": 1596.66
+        },
+        "structure": {
+          "cell_volume": 125882.0,
+          "density_mech": 0.234552
+        },
+        "mechanical": {
+          "bulk_gpa": 6.609114563,
+          "shear_gpa": 1.443793754,
+          "young_gpa": 4.037385642
+        },
+        "stability": {
+          "min_eigen_0k": 1.757896632,
+          "min_eigen_298k": -0.104989379
+        },
+        "thermo": {
+          "density_thermo": 0.234552,
+          "f0_kjmol_atom": -6.911777455
+        }
+      }
+    }
   },
   {
     "id": "jaj",
@@ -2083,7 +4079,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "jaj": {
+        "porosity": {
+          "pld": 12.13288,
+          "lcd": 23.07255,
+          "gsa": 6263.17,
+          "vsa": 1326.61
+        },
+        "structure": {
+          "cell_volume": 119535.0,
+          "density_mech": 0.211811
+        },
+        "mechanical": {
+          "bulk_gpa": 6.457071605,
+          "shear_gpa": 0.952779804,
+          "young_gpa": 2.724341734
+        },
+        "stability": {
+          "min_eigen_0k": 1.161971929,
+          "min_eigen_298k": 0.038317407
+        },
+        "thermo": {
+          "density_thermo": 0.211811,
+          "f0_kjmol_atom": -8.685097356
+        }
+      }
+    }
   },
   {
     "id": "jhw",
@@ -2125,7 +4148,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "jhw": {
+        "porosity": {
+          "pld": 14.70198,
+          "lcd": 27.05799,
+          "gsa": 6039.1,
+          "vsa": 1213.52
+        },
+        "structure": {
+          "cell_volume": 37531.3,
+          "density_mech": 0.200943
+        },
+        "mechanical": {
+          "bulk_gpa": 5.810972248,
+          "shear_gpa": 1.073515671,
+          "young_gpa": 3.033730473
+        },
+        "stability": {
+          "min_eigen_0k": 0.3374163,
+          "min_eigen_298k": 0.057643746
+        },
+        "thermo": {
+          "density_thermo": 0.200943,
+          "f0_kjmol_atom": -6.376147873
+        }
+      }
+    }
   },
   {
     "id": "jjt",
@@ -2152,8 +4202,8 @@
       }
     },
     "conf": [
-      "jjt(1)",
-      "jjt(2)"
+      "jjt1",
+      "jjt2"
     ],
     "linkers": {
       "A": {
@@ -2168,7 +4218,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "jjt1": {
+        "porosity": {
+          "pld": 6.83593,
+          "lcd": 11.07897,
+          "gsa": 4792.18,
+          "vsa": 2370.78
+        },
+        "structure": {
+          "cell_volume": 49995.4,
+          "density_mech": 0.49472
+        },
+        "mechanical": {
+          "bulk_gpa": 3.965202404,
+          "shear_gpa": 2.581547713,
+          "young_gpa": 6.363628299
+        },
+        "stability": {
+          "min_eigen_0k": 1.895797676,
+          "min_eigen_298k": 0.353363914
+        },
+        "thermo": {
+          "density_thermo": 0.49472,
+          "f0_kjmol_atom": -6.630402742
+        }
+      },
+      "jjt2": {
+        "porosity": {
+          "pld": 6.9767,
+          "lcd": 12.04512,
+          "gsa": 4867.18,
+          "vsa": 2268.38
+        },
+        "structure": {
+          "cell_volume": 53070.2,
+          "density_mech": 0.466056
+        },
+        "mechanical": {
+          "bulk_gpa": 7.180507632,
+          "shear_gpa": 3.67952051,
+          "young_gpa": 9.428135947
+        },
+        "stability": {
+          "min_eigen_0k": 2.292957458,
+          "min_eigen_298k": 0.938917186
+        },
+        "thermo": {
+          "density_thermo": 0.466056,
+          "f0_kjmol_atom": -7.333590096
+        }
+      }
+    }
   },
   {
     "id": "jph",
@@ -2195,8 +4297,8 @@
       }
     },
     "conf": [
-      "jph(1)",
-      "jph(2)"
+      "jph1",
+      "jph2"
     ],
     "linkers": {
       "A": {
@@ -2211,7 +4313,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "jph1": {
+        "porosity": {
+          "pld": 20.15978,
+          "lcd": 26.01008,
+          "gsa": 6325.98,
+          "vsa": 1064.26
+        },
+        "structure": {
+          "cell_volume": 46472.8,
+          "density_mech": 0.168236
+        },
+        "mechanical": {
+          "bulk_gpa": 3.44228812,
+          "shear_gpa": 0.407909149,
+          "young_gpa": 1.177227199
+        },
+        "stability": {
+          "min_eigen_0k": 0.355813527,
+          "min_eigen_298k": 0.101381935
+        },
+        "thermo": {
+          "density_thermo": 0.168236,
+          "f0_kjmol_atom": -5.352537692
+        }
+      },
+      "jph2": {
+        "porosity": {
+          "pld": 18.05118,
+          "lcd": 23.61889,
+          "gsa": 6322.63,
+          "vsa": 1159.42
+        },
+        "structure": {
+          "cell_volume": 42781.8,
+          "density_mech": 0.183376
+        },
+        "mechanical": {
+          "bulk_gpa": 2.934072832,
+          "shear_gpa": 0.693658473,
+          "young_gpa": 1.928963526
+        },
+        "stability": {
+          "min_eigen_0k": 0.498384628,
+          "min_eigen_298k": 0.067988468
+        },
+        "thermo": {
+          "density_thermo": 0.183376,
+          "f0_kjmol_atom": -5.30894308
+        }
+      }
+    }
   },
   {
     "id": "lcs",
@@ -2238,8 +4392,8 @@
       }
     },
     "conf": [
-      "lcs(1)",
-      "lcs(2)"
+      "lcs1",
+      "lcs2"
     ],
     "linkers": {
       "A": {
@@ -2254,7 +4408,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "lcs1": {
+        "porosity": {
+          "pld": 16.10633,
+          "lcd": 22.53284,
+          "gsa": 6951.92,
+          "vsa": 1044.58
+        },
+        "structure": {
+          "cell_volume": 151367.0,
+          "density_mech": 0.150258
+        },
+        "mechanical": {
+          "bulk_gpa": 1.589343826,
+          "shear_gpa": 0.578936986,
+          "young_gpa": 1.548759708
+        },
+        "stability": {
+          "min_eigen_0k": 0.726270709,
+          "min_eigen_298k": 0.014113398
+        },
+        "thermo": {
+          "density_thermo": 0.150258,
+          "f0_kjmol_atom": -5.258070804
+        }
+      },
+      "lcs2": {
+        "porosity": {
+          "pld": 22.31474,
+          "lcd": 24.2012,
+          "gsa": 7073.43,
+          "vsa": 871.153
+        },
+        "structure": {
+          "cell_volume": 184673.0,
+          "density_mech": 0.123159
+        },
+        "mechanical": {
+          "bulk_gpa": 2.765210101,
+          "shear_gpa": 0.788700978,
+          "young_gpa": 2.160678051
+        },
+        "stability": {
+          "min_eigen_0k": 0.72220579,
+          "min_eigen_298k": 0.027113465
+        },
+        "thermo": {
+          "density_thermo": 0.123159,
+          "f0_kjmol_atom": -5.274172459
+        }
+      }
+    }
   },
   {
     "id": "lcs-b",
@@ -2296,7 +4502,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "lcs-b": {
+        "porosity": {
+          "pld": 10.88046,
+          "lcd": 13.65956,
+          "gsa": 6653.06,
+          "vsa": 1953.58
+        },
+        "structure": {
+          "cell_volume": 51228.5,
+          "density_mech": 0.293636
+        },
+        "mechanical": {
+          "bulk_gpa": 4.501859221,
+          "shear_gpa": 1.396120167,
+          "young_gpa": 3.795958599
+        },
+        "stability": {
+          "min_eigen_0k": 0.808749481,
+          "min_eigen_298k": 0.069691207
+        },
+        "thermo": {
+          "density_thermo": 0.293636,
+          "f0_kjmol_atom": -7.001572535
+        }
+      }
+    }
   },
   {
     "id": "lcs-f",
@@ -2323,8 +4556,8 @@
       }
     },
     "conf": [
-      "lcs-f(1)",
-      "lcs-f(2)"
+      "lcs-f1",
+      "lcs-f2"
     ],
     "linkers": {
       "A": {
@@ -2339,7 +4572,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "lcs-f1": {
+        "porosity": {
+          "pld": 36.48753,
+          "lcd": 45.47666,
+          "gsa": 7754.48,
+          "vsa": 440.252
+        },
+        "structure": {
+          "cell_volume": 907995.0,
+          "density_mech": 0.0567739
+        },
+        "mechanical": {
+          "bulk_gpa": 1.254866498,
+          "shear_gpa": 0.197061803,
+          "young_gpa": 0.561778538
+        },
+        "stability": {
+          "min_eigen_0k": 0.222180545,
+          "min_eigen_298k": -0.002860572
+        },
+        "thermo": {
+          "density_thermo": 0.056774,
+          "f0_kjmol_atom": -2.581871411
+        }
+      },
+      "lcs-f2": {
+        "porosity": {
+          "pld": 32.01553,
+          "lcd": 35.47365,
+          "gsa": 7746.85,
+          "vsa": 577.009
+        },
+        "structure": {
+          "cell_volume": 692109.0,
+          "density_mech": 0.0744831
+        },
+        "mechanical": {
+          "bulk_gpa": 0.474730551,
+          "shear_gpa": 0.179964056,
+          "young_gpa": 0.479323744
+        },
+        "stability": {
+          "min_eigen_0k": 0.189952092,
+          "min_eigen_298k": 0.010912483
+        },
+        "thermo": {
+          "density_thermo": 0.074483,
+          "f0_kjmol_atom": -2.64603381
+        }
+      }
+    }
   },
   {
     "id": "lig",
@@ -2366,8 +4651,8 @@
       }
     },
     "conf": [
-      "lig(1)",
-      "lig(2)"
+      "lig1",
+      "lig2"
     ],
     "linkers": {
       "A": {
@@ -2382,7 +4667,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "lig1": {
+        "porosity": {
+          "pld": 32.97936,
+          "lcd": 37.85843,
+          "gsa": 7791.71,
+          "vsa": 532.984
+        },
+        "structure": {
+          "cell_volume": 129884.0,
+          "density_mech": 0.068404
+        },
+        "mechanical": {
+          "bulk_gpa": 2.038281168,
+          "shear_gpa": 0.303132166,
+          "young_gpa": 0.866444118
+        },
+        "stability": {
+          "min_eigen_0k": 0.142087514,
+          "min_eigen_298k": 0.000600086
+        },
+        "thermo": {
+          "density_thermo": 0.068404,
+          "f0_kjmol_atom": -2.141179062
+        }
+      },
+      "lig2": {
+        "porosity": {
+          "pld": 21.05575,
+          "lcd": 21.35897,
+          "gsa": 4515.64,
+          "vsa": 1526.3
+        },
+        "structure": {
+          "cell_volume": 105143.0,
+          "density_mech": 0.338002
+        },
+        "mechanical": {
+          "bulk_gpa": 4.051588466,
+          "shear_gpa": 1.356934099,
+          "young_gpa": 3.661985447
+        },
+        "stability": {
+          "min_eigen_0k": 0.295802416,
+          "min_eigen_298k": 0.156779139
+        },
+        "thermo": {
+          "density_thermo": 0.338002,
+          "f0_kjmol_atom": -2.404093919
+        }
+      }
+    }
   },
   {
     "id": "lil",
@@ -2424,7 +4761,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "lil": {
+        "porosity": {
+          "pld": 24.7557,
+          "lcd": 27.69074,
+          "gsa": 6932.82,
+          "vsa": 989.123
+        },
+        "structure": {
+          "cell_volume": 95096.4,
+          "density_mech": 0.142673
+        },
+        "mechanical": {
+          "bulk_gpa": 2.017630794,
+          "shear_gpa": 0.73439569,
+          "young_gpa": 1.96479862
+        },
+        "stability": {
+          "min_eigen_0k": 0.189609565,
+          "min_eigen_298k": 0.108158486
+        },
+        "thermo": {
+          "density_thermo": 0.142673,
+          "f0_kjmol_atom": -3.089926574
+        }
+      }
+    }
   },
   {
     "id": "lim",
@@ -2466,7 +4830,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "lim": {
+        "porosity": {
+          "pld": 18.18394,
+          "lcd": 21.59686,
+          "gsa": 7125.95,
+          "vsa": 1040.28
+        },
+        "structure": {
+          "cell_volume": 92747.3,
+          "density_mech": 0.145985
+        },
+        "mechanical": {
+          "bulk_gpa": 2.0758784,
+          "shear_gpa": 0.652362873,
+          "young_gpa": 1.771517062
+        },
+        "stability": {
+          "min_eigen_0k": 0.117850674,
+          "min_eigen_298k": 0.324470601
+        },
+        "thermo": {
+          "density_thermo": 0.145985,
+          "f0_kjmol_atom": -4.558764084
+        }
+      }
+    }
   },
   {
     "id": "lnj",
@@ -2493,8 +4884,8 @@
       }
     },
     "conf": [
-      "lnj(1)",
-      "lnj(2)"
+      "lnj1",
+      "lnj2"
     ],
     "linkers": {
       "A": {
@@ -2509,7 +4900,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "lnj1": {
+        "porosity": {
+          "pld": 17.76065,
+          "lcd": 18.68345,
+          "gsa": 6743.73,
+          "vsa": 2088.33
+        },
+        "structure": {
+          "cell_volume": 31738.9,
+          "density_mech": 0.309669
+        },
+        "mechanical": {
+          "bulk_gpa": 6.822091076,
+          "shear_gpa": 1.574016118,
+          "young_gpa": 4.384821374
+        },
+        "stability": {
+          "min_eigen_0k": 0.338043418,
+          "min_eigen_298k": 0.22773946
+        },
+        "thermo": {
+          "density_thermo": 0.309669,
+          "f0_kjmol_atom": -5.243683636
+        }
+      },
+      "lnj2": {
+        "porosity": {
+          "pld": 18.68753,
+          "lcd": 19.78551,
+          "gsa": 5643.94,
+          "vsa": 2081.36
+        },
+        "structure": {
+          "cell_volume": 26651.7,
+          "density_mech": 0.368778
+        },
+        "mechanical": {
+          "bulk_gpa": 7.644945843,
+          "shear_gpa": 2.023944054,
+          "young_gpa": 5.579458422
+        },
+        "stability": {
+          "min_eigen_0k": 0.454263497,
+          "min_eigen_298k": 0.212648037
+        },
+        "thermo": {
+          "density_thermo": 0.368778,
+          "f0_kjmol_atom": -5.295655848
+        }
+      }
+    }
   },
   {
     "id": "lon-b",
@@ -2551,7 +4994,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "lon-b": {
+        "porosity": {
+          "pld": 5.19744,
+          "lcd": 7.74094,
+          "gsa": 4346.16,
+          "vsa": 2733.37
+        },
+        "structure": {
+          "cell_volume": 35408.1,
+          "density_mech": 0.628917
+        },
+        "mechanical": {
+          "bulk_gpa": 21.10940907,
+          "shear_gpa": 9.403692023,
+          "young_gpa": 24.56359538
+        },
+        "stability": {
+          "min_eigen_0k": 6.89977904,
+          "min_eigen_298k": 0.760155264
+        },
+        "thermo": {
+          "density_thermo": 0.628917,
+          "f0_kjmol_atom": -4.245475981
+        }
+      }
+    }
   },
   {
     "id": "lvt",
@@ -2578,8 +5048,8 @@
       }
     },
     "conf": [
-      "lvt(1)",
-      "lvt(2)"
+      "lvt1",
+      "lvt2"
     ],
     "linkers": {
       "A": {
@@ -2594,7 +5064,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "lvt1": {
+        "porosity": {
+          "pld": 45.13952,
+          "lcd": 56.56474,
+          "gsa": 6833.96,
+          "vsa": 327.736
+        },
+        "structure": {
+          "cell_volume": 305548.0,
+          "density_mech": 0.047957
+        },
+        "mechanical": {
+          "bulk_gpa": 0.794227673,
+          "shear_gpa": 0.386854877,
+          "young_gpa": 0.998454523
+        },
+        "stability": {
+          "min_eigen_0k": 0.065383044,
+          "min_eigen_298k": 0.061291422
+        },
+        "thermo": {
+          "density_thermo": 0.047957,
+          "f0_kjmol_atom": -5.634783955
+        }
+      },
+      "lvt2": {
+        "porosity": {
+          "pld": 36.19481,
+          "lcd": 45.08925,
+          "gsa": 6808.21,
+          "vsa": 406.575
+        },
+        "structure": {
+          "cell_volume": 245371.0,
+          "density_mech": 0.0597184
+        },
+        "mechanical": {
+          "bulk_gpa": 0.670902008,
+          "shear_gpa": 0.270705941,
+          "young_gpa": 0.715838605
+        },
+        "stability": {
+          "min_eigen_0k": 0.071534507,
+          "min_eigen_298k": 0.117624448
+        },
+        "thermo": {
+          "density_thermo": 0.059718,
+          "f0_kjmol_atom": -5.614434312
+        }
+      }
+    }
   },
   {
     "id": "lvt-b",
@@ -2636,7 +5158,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "lvt-b": {
+        "porosity": {
+          "pld": 25.74894,
+          "lcd": 29.51278,
+          "gsa": 6527.95,
+          "vsa": 770.356
+        },
+        "structure": {
+          "cell_volume": 71665.4,
+          "density_mech": 0.118009
+        },
+        "mechanical": {
+          "bulk_gpa": 2.167145112,
+          "shear_gpa": 0.776527181,
+          "young_gpa": 2.081025249
+        },
+        "stability": {
+          "min_eigen_0k": 0.092949809,
+          "min_eigen_298k": 0.198838208
+        },
+        "thermo": {
+          "density_thermo": 0.118009,
+          "f0_kjmol_atom": -6.08184429
+        }
+      }
+    }
   },
   {
     "id": "maw",
@@ -2663,8 +5212,8 @@
       }
     },
     "conf": [
-      "maw(1)",
-      "maw(2)"
+      "maw1",
+      "maw2"
     ],
     "linkers": {
       "A": {
@@ -2679,7 +5228,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "maw1": {
+        "porosity": {
+          "pld": 21.17735,
+          "lcd": 42.66009,
+          "gsa": 4136.94,
+          "vsa": 936.011
+        },
+        "structure": {
+          "cell_volume": 134698.0,
+          "density_mech": 0.226257
+        },
+        "mechanical": {
+          "bulk_gpa": 7.934311606,
+          "shear_gpa": 1.719605002,
+          "young_gpa": 4.811235018
+        },
+        "stability": {
+          "min_eigen_0k": 0.712198648,
+          "min_eigen_298k": -0.483394525
+        },
+        "thermo": {
+          "density_thermo": 0.226257,
+          "f0_kjmol_atom": -7.746574596
+        }
+      },
+      "maw2": {
+        "porosity": {
+          "pld": 23.96437,
+          "lcd": 35.93155,
+          "gsa": 3880.48,
+          "vsa": 990.381
+        },
+        "structure": {
+          "cell_volume": 119411.0,
+          "density_mech": 0.255221
+        },
+        "mechanical": {
+          "bulk_gpa": 2.473278367,
+          "shear_gpa": 1.053269767,
+          "young_gpa": 2.767021573
+        },
+        "stability": {
+          "min_eigen_0k": 0.337867043,
+          "min_eigen_298k": -0.300611211
+        },
+        "thermo": {
+          "density_thermo": 0.255221,
+          "f0_kjmol_atom": -6.728646859
+        }
+      }
+    }
   },
   {
     "id": "mmm",
@@ -2721,7 +5322,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "mmm": {
+        "porosity": {
+          "pld": 17.59128,
+          "lcd": 23.08186,
+          "gsa": 6822.91,
+          "vsa": 1515.99
+        },
+        "structure": {
+          "cell_volume": 47586.9,
+          "density_mech": 0.222191
+        },
+        "mechanical": {
+          "bulk_gpa": 4.634662325,
+          "shear_gpa": 1.250355866,
+          "young_gpa": 3.44157418
+        },
+        "stability": {
+          "min_eigen_0k": 1.228563744,
+          "min_eigen_298k": 0.142665116
+        },
+        "thermo": {
+          "density_thermo": 0.222191,
+          "f0_kjmol_atom": -4.916711595
+        }
+      }
+    }
   },
   {
     "id": "nba",
@@ -2748,8 +5376,8 @@
       }
     },
     "conf": [
-      "nba(1)",
-      "nba(2)"
+      "nba1",
+      "nba2"
     ],
     "linkers": {
       "A": {
@@ -2764,7 +5392,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "nba1": {
+        "porosity": {
+          "pld": 9.57185,
+          "lcd": 28.34308,
+          "gsa": 6129.13,
+          "vsa": 1455.75
+        },
+        "structure": {
+          "cell_volume": 23848.1,
+          "density_mech": 0.237513
+        },
+        "mechanical": {
+          "bulk_gpa": 4.694665585,
+          "shear_gpa": 1.394616757,
+          "young_gpa": 3.80688707
+        },
+        "stability": {
+          "min_eigen_0k": 0.970116351,
+          "min_eigen_298k": 0.174903673
+        },
+        "thermo": {
+          "density_thermo": 0.237513,
+          "f0_kjmol_atom": -7.318661583
+        }
+      },
+      "nba2": {
+        "porosity": {
+          "pld": 12.44678,
+          "lcd": 27.60903,
+          "gsa": 6230.36,
+          "vsa": 1286.51
+        },
+        "structure": {
+          "cell_volume": 27430.9,
+          "density_mech": 0.206491
+        },
+        "mechanical": {
+          "bulk_gpa": 6.169451736,
+          "shear_gpa": 1.261262268,
+          "young_gpa": 3.542388733
+        },
+        "stability": {
+          "min_eigen_0k": 0.721681938,
+          "min_eigen_298k": 0.167772389
+        },
+        "thermo": {
+          "density_thermo": 0.206491,
+          "f0_kjmol_atom": -7.253934994
+        }
+      }
+    }
   },
   {
     "id": "nbo",
@@ -2806,7 +5486,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "nbo": {
+        "porosity": {
+          "pld": 31.76663,
+          "lcd": 44.74837,
+          "gsa": 6798.97,
+          "vsa": 477.918
+        },
+        "structure": {
+          "cell_volume": 131087.0,
+          "density_mech": 0.0702927
+        },
+        "mechanical": {
+          "bulk_gpa": 1.376322509,
+          "shear_gpa": 0.49152062,
+          "young_gpa": 1.317700173
+        },
+        "stability": {
+          "min_eigen_0k": 0.049474195,
+          "min_eigen_298k": -0.210631706
+        },
+        "thermo": {
+          "density_thermo": 0.070293,
+          "f0_kjmol_atom": -4.976597915
+        }
+      }
+    }
   },
   {
     "id": "nbo-b",
@@ -2848,7 +5555,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "nbo-b": {
+        "porosity": {
+          "pld": 23.53818,
+          "lcd": 30.33845,
+          "gsa": 6125.7,
+          "vsa": 865.051
+        },
+        "structure": {
+          "cell_volume": 50699.3,
+          "density_mech": 0.141217
+        },
+        "mechanical": {
+          "bulk_gpa": 1.915012452,
+          "shear_gpa": 1.039050781,
+          "young_gpa": 2.639729364
+        },
+        "stability": {
+          "min_eigen_0k": 0.058408415,
+          "min_eigen_298k": 0.001790337
+        },
+        "thermo": {
+          "density_thermo": 0.141217,
+          "f0_kjmol_atom": -6.631625685
+        }
+      }
+    }
   },
   {
     "id": "noh",
@@ -2875,8 +5609,8 @@
       }
     },
     "conf": [
-      "noh(1)",
-      "noh(2)"
+      "noh1",
+      "noh2"
     ],
     "linkers": {
       "A": {
@@ -2891,7 +5625,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "noh1": {
+        "porosity": {
+          "pld": 12.6745,
+          "lcd": 19.12152,
+          "gsa": 7200.96,
+          "vsa": 1428.26
+        },
+        "structure": {
+          "cell_volume": 46268.2,
+          "density_mech": 0.198342
+        },
+        "mechanical": {
+          "bulk_gpa": 3.822512165,
+          "shear_gpa": 0.813356196,
+          "young_gpa": 2.2784643
+        },
+        "stability": {
+          "min_eigen_0k": 0.534872689,
+          "min_eigen_298k": 0.06445953
+        },
+        "thermo": {
+          "density_thermo": 0.198342,
+          "f0_kjmol_atom": -5.132944185
+        }
+      },
+      "noh2": {
+        "porosity": {
+          "pld": 11.90006,
+          "lcd": 19.28791,
+          "gsa": 7265.67,
+          "vsa": 1399.04
+        },
+        "structure": {
+          "cell_volume": 47658.7,
+          "density_mech": 0.192555
+        },
+        "mechanical": {
+          "bulk_gpa": 3.458310803,
+          "shear_gpa": 0.78015339,
+          "young_gpa": 2.176775374
+        },
+        "stability": {
+          "min_eigen_0k": 0.352382076,
+          "min_eigen_298k": 0.055340166
+        },
+        "thermo": {
+          "density_thermo": 0.192555,
+          "f0_kjmol_atom": -5.159166786
+        }
+      }
+    }
   },
   {
     "id": "ntt",
@@ -2918,8 +5704,8 @@
       }
     },
     "conf": [
-      "ntt(1)",
-      "ntt(2)"
+      "ntt1",
+      "ntt2"
     ],
     "linkers": {
       "A": {
@@ -2934,7 +5720,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ntt1": {
+        "porosity": {
+          "pld": 25.11629,
+          "lcd": 39.56131,
+          "gsa": 5544.38,
+          "vsa": 1012.39
+        },
+        "structure": {
+          "cell_volume": 354912.0,
+          "density_mech": 0.182598
+        },
+        "mechanical": {
+          "bulk_gpa": 4.721598909,
+          "shear_gpa": 1.20173411,
+          "young_gpa": 3.323258757
+        },
+        "stability": {
+          "min_eigen_0k": 1.429429924,
+          "min_eigen_298k": 0.116071578
+        },
+        "thermo": {
+          "density_thermo": 0.182598,
+          "f0_kjmol_atom": -5.240421424
+        }
+      },
+      "ntt2": {
+        "porosity": {
+          "pld": 25.15713,
+          "lcd": 39.77872,
+          "gsa": 5438.99,
+          "vsa": 988.216
+        },
+        "structure": {
+          "cell_volume": 356683.0,
+          "density_mech": 0.181691
+        },
+        "mechanical": {
+          "bulk_gpa": 4.849850589,
+          "shear_gpa": 1.239131039,
+          "young_gpa": 3.425643815
+        },
+        "stability": {
+          "min_eigen_0k": 1.541539124,
+          "min_eigen_298k": 0.132274583
+        },
+        "thermo": {
+          "density_thermo": 0.181691,
+          "f0_kjmol_atom": -5.259405438
+        }
+      }
+    }
   },
   {
     "id": "ofp",
@@ -2976,7 +5814,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ofp": {
+        "porosity": {
+          "pld": 11.6065,
+          "lcd": 22.61006,
+          "gsa": 6811.75,
+          "vsa": 1419.76
+        },
+        "structure": {
+          "cell_volume": 108091.0,
+          "density_mech": 0.208428
+        },
+        "mechanical": {
+          "bulk_gpa": 4.813787539,
+          "shear_gpa": 0.842115992,
+          "young_gpa": 2.387146811
+        },
+        "stability": {
+          "min_eigen_0k": 0.544716368,
+          "min_eigen_298k": 0.054117497
+        },
+        "thermo": {
+          "density_thermo": 0.208428,
+          "f0_kjmol_atom": -8.28916169
+        }
+      }
+    }
   },
   {
     "id": "oku",
@@ -3003,8 +5868,8 @@
       }
     },
     "conf": [
-      "oku(1)",
-      "oku(2)"
+      "oku1",
+      "oku2"
     ],
     "linkers": {
       "A": {
@@ -3019,7 +5884,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "oku1": {
+        "porosity": {
+          "pld": 14.24753,
+          "lcd": 17.48902,
+          "gsa": 3516.37,
+          "vsa": 1558.58
+        },
+        "structure": {
+          "cell_volume": 37987.6,
+          "density_mech": 0.443237
+        },
+        "mechanical": {
+          "bulk_gpa": 7.289577881,
+          "shear_gpa": 1.64249025,
+          "young_gpa": 4.583238451
+        },
+        "stability": {
+          "min_eigen_0k": 0.895888752,
+          "min_eigen_298k": 0.040936942
+        },
+        "thermo": {
+          "density_thermo": 0.443237,
+          "f0_kjmol_atom": -3.536371783
+        }
+      },
+      "oku2": {
+        "porosity": {
+          "pld": 15.1163,
+          "lcd": 18.1756,
+          "gsa": 4227.67,
+          "vsa": 1731.24
+        },
+        "structure": {
+          "cell_volume": 41215.1,
+          "density_mech": 0.409502
+        },
+        "mechanical": {
+          "bulk_gpa": 7.454613271,
+          "shear_gpa": 1.495423742,
+          "young_gpa": 4.205085829
+        },
+        "stability": {
+          "min_eigen_0k": 0.707169188,
+          "min_eigen_298k": 0.018309376
+        },
+        "thermo": {
+          "density_thermo": 0.409502,
+          "f0_kjmol_atom": -3.567901392
+        }
+      }
+    }
   },
   {
     "id": "okv",
@@ -3046,8 +5963,8 @@
       }
     },
     "conf": [
-      "okv(1)",
-      "okv(2)"
+      "okv1",
+      "okv2"
     ],
     "linkers": {
       "A": {
@@ -3062,7 +5979,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "okv1": {
+        "porosity": {
+          "pld": 22.76075,
+          "lcd": 23.84609,
+          "gsa": 4606.1,
+          "vsa": 1154.29
+        },
+        "structure": {
+          "cell_volume": 53179.7,
+          "density_mech": 0.250601
+        },
+        "mechanical": {
+          "bulk_gpa": 6.700907365,
+          "shear_gpa": 0.880608577,
+          "young_gpa": 2.530956088
+        },
+        "stability": {
+          "min_eigen_0k": 0.564608199,
+          "min_eigen_298k": 0.058515273
+        },
+        "thermo": {
+          "density_thermo": 0.250601,
+          "f0_kjmol_atom": -2.256748418
+        }
+      },
+      "okv2": {
+        "porosity": {
+          "pld": 22.94409,
+          "lcd": 23.9855,
+          "gsa": 4434.28,
+          "vsa": 1118.81
+        },
+        "structure": {
+          "cell_volume": 52819.8,
+          "density_mech": 0.252309
+        },
+        "mechanical": {
+          "bulk_gpa": 7.167200161,
+          "shear_gpa": 1.004241327,
+          "young_gpa": 2.878292131
+        },
+        "stability": {
+          "min_eigen_0k": 0.650720792,
+          "min_eigen_298k": 0.096844252
+        },
+        "thermo": {
+          "density_thermo": 0.252309,
+          "f0_kjmol_atom": -2.353252062
+        }
+      }
+    }
   },
   {
     "id": "ood",
@@ -3089,7 +6058,7 @@
       }
     },
     "conf": [
-      "ood(1)"
+      "ood1"
     ],
     "linkers": {
       "A": {
@@ -3104,7 +6073,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ood1": {
+        "porosity": {
+          "pld": 29.18549,
+          "lcd": 30.52891,
+          "gsa": 6479.61,
+          "vsa": 1852.53
+        },
+        "structure": {
+          "cell_volume": 56008.5,
+          "density_mech": 0.285902
+        },
+        "mechanical": {
+          "bulk_gpa": 5.247289167,
+          "shear_gpa": 1.790037649,
+          "young_gpa": 4.821815185
+        },
+        "stability": {
+          "min_eigen_0k": 1.073405127,
+          "min_eigen_298k": 0.338691897
+        },
+        "thermo": {
+          "density_thermo": 0.285902,
+          "f0_kjmol_atom": -5.394409326
+        }
+      }
+    }
   },
   {
     "id": "pbg",
@@ -3131,8 +6127,8 @@
       }
     },
     "conf": [
-      "pbg(1)",
-      "pbg(1)"
+      "pbg1",
+      "pbg2"
     ],
     "linkers": {
       "A": {
@@ -3147,7 +6143,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "pbg1": {
+        "porosity": {
+          "pld": 35.49199,
+          "lcd": 45.09681,
+          "gsa": 7814.23,
+          "vsa": 481.149
+        },
+        "structure": {
+          "cell_volume": 865758.0,
+          "density_mech": 0.0615734
+        },
+        "mechanical": {
+          "bulk_gpa": 1.871594393,
+          "shear_gpa": 0.286153396,
+          "young_gpa": 0.816830984
+        },
+        "stability": {
+          "min_eigen_0k": 0.297684469,
+          "min_eigen_298k": 0.009227059
+        },
+        "thermo": {
+          "density_thermo": 0.061573,
+          "f0_kjmol_atom": -3.052558282
+        }
+      },
+      "pbg2": {
+        "porosity": {
+          "pld": 34.92014,
+          "lcd": 45.02626,
+          "gsa": 7807.22,
+          "vsa": 482.974
+        },
+        "structure": {
+          "cell_volume": 861711.0,
+          "density_mech": 0.0618625
+        },
+        "mechanical": {
+          "bulk_gpa": 1.883305067,
+          "shear_gpa": 0.295904599,
+          "young_gpa": 0.843535096
+        },
+        "stability": {
+          "min_eigen_0k": 0.316957475,
+          "min_eigen_298k": 0.010409709
+        },
+        "thermo": {
+          "density_thermo": 0.061863,
+          "f0_kjmol_atom": -3.047257809
+        }
+      }
+    }
   },
   {
     "id": "pbp",
@@ -3174,8 +6222,8 @@
       }
     },
     "conf": [
-      "pbp(1)",
-      "pbp(2)"
+      "pbp1",
+      "pbp2"
     ],
     "linkers": {
       "A": {
@@ -3190,7 +6238,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "pbp1": {
+        "porosity": {
+          "pld": 31.96965,
+          "lcd": 63.77356,
+          "gsa": 7779.93,
+          "vsa": 466.328
+        },
+        "structure": {
+          "cell_volume": 444675.0,
+          "density_mech": 0.0599399
+        },
+        "mechanical": {
+          "bulk_gpa": 1.801128968,
+          "shear_gpa": 0.282009959,
+          "young_gpa": 0.804064672
+        },
+        "stability": {
+          "min_eigen_0k": 0.163446518,
+          "min_eigen_298k": 0.00273383
+        },
+        "thermo": {
+          "density_thermo": 0.05994,
+          "f0_kjmol_atom": -2.36296298
+        }
+      },
+      "pbp2": {
+        "porosity": {
+          "pld": 31.39581,
+          "lcd": 63.129,
+          "gsa": 7772.38,
+          "vsa": 479.247
+        },
+        "structure": {
+          "cell_volume": 432269.0,
+          "density_mech": 0.0616603
+        },
+        "mechanical": {
+          "bulk_gpa": 1.73561514,
+          "shear_gpa": 0.220833296,
+          "young_gpa": 0.635545081
+        },
+        "stability": {
+          "min_eigen_0k": 0.078625302,
+          "min_eigen_298k": -0.00041701
+        },
+        "thermo": {
+          "density_thermo": 0.06166,
+          "f0_kjmol_atom": -2.76929011
+        }
+      }
+    }
   },
   {
     "id": "pcu-g",
@@ -3217,8 +6317,8 @@
       }
     },
     "conf": [
-      "pcu-g(1)",
-      "pcu-g(2)"
+      "pcu-g1",
+      "pcu-g2"
     ],
     "linkers": {
       "A": {
@@ -3233,7 +6333,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "pcu-g1": {
+        "porosity": {
+          "pld": 32.81276,
+          "lcd": 40.87498,
+          "gsa": 7606.47,
+          "vsa": 465.773
+        },
+        "structure": {
+          "cell_volume": 551253.0,
+          "density_mech": 0.0612339
+        },
+        "mechanical": {
+          "bulk_gpa": 0.809934163,
+          "shear_gpa": 0.179710576,
+          "young_gpa": 0.502003087
+        },
+        "stability": {
+          "min_eigen_0k": 0.221542424,
+          "min_eigen_298k": 0.000866222
+        },
+        "thermo": {
+          "density_thermo": 0.061234,
+          "f0_kjmol_atom": -3.532330657
+        }
+      },
+      "pcu-g2": {
+        "porosity": {
+          "pld": 34.91454,
+          "lcd": 41.91939,
+          "gsa": 7652.51,
+          "vsa": 415.102
+        },
+        "structure": {
+          "cell_volume": 622289.0,
+          "density_mech": 0.0542439
+        },
+        "mechanical": {
+          "bulk_gpa": 1.472062767,
+          "shear_gpa": 0.188863112,
+          "young_gpa": 0.543352282
+        },
+        "stability": {
+          "min_eigen_0k": 0.237149588,
+          "min_eigen_298k": 0.000480719
+        },
+        "thermo": {
+          "density_thermo": 0.054244,
+          "f0_kjmol_atom": -3.481793283
+        }
+      }
+    }
   },
   {
     "id": "pcu-h",
@@ -3260,8 +6412,8 @@
       }
     },
     "conf": [
-      "pcu-h(1)",
-      "pcu-h(2)"
+      "pcu-h1",
+      "pcu-h2"
     ],
     "linkers": {
       "A": {
@@ -3276,7 +6428,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "pcu-h1": {
+        "porosity": {
+          "pld": 30.18878,
+          "lcd": 45.64735,
+          "gsa": 7658.77,
+          "vsa": 446.101
+        },
+        "structure": {
+          "cell_volume": 217320.0,
+          "density_mech": 0.058247
+        },
+        "mechanical": {
+          "bulk_gpa": 0.89361138,
+          "shear_gpa": 0.181760098,
+          "young_gpa": 0.510657784
+        },
+        "stability": {
+          "min_eigen_0k": 0.028982904,
+          "min_eigen_298k": -0.206569962
+        },
+        "thermo": {
+          "density_thermo": 0.058247,
+          "f0_kjmol_atom": -3.405983688
+        }
+      },
+      "pcu-h2": {
+        "porosity": {
+          "pld": 30.06105,
+          "lcd": 40.90043,
+          "gsa": 7627.51,
+          "vsa": 511.685
+        },
+        "structure": {
+          "cell_volume": 188692.0,
+          "density_mech": 0.0670842
+        },
+        "mechanical": {
+          "bulk_gpa": 0.869202159,
+          "shear_gpa": 0.149039918,
+          "young_gpa": 0.422945927
+        },
+        "stability": {
+          "min_eigen_0k": 0.034133928,
+          "min_eigen_298k": -0.03944543
+        },
+        "thermo": {
+          "density_thermo": 0.067084,
+          "f0_kjmol_atom": -3.484351613
+        }
+      }
+    }
   },
   {
     "id": "ptd",
@@ -3303,8 +6507,8 @@
       }
     },
     "conf": [
-      "ptd(1)",
-      "ptd(2)"
+      "ptd1",
+      "ptd2"
     ],
     "linkers": {
       "A": {
@@ -3319,7 +6523,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ptd1": {
+        "porosity": {
+          "pld": 16.3717,
+          "lcd": 28.6412,
+          "gsa": 7135.75,
+          "vsa": 953.941
+        },
+        "structure": {
+          "cell_volume": 65855.1,
+          "density_mech": 0.133685
+        },
+        "mechanical": {
+          "bulk_gpa": 3.065364812,
+          "shear_gpa": 0.491742179,
+          "young_gpa": 1.400345927
+        },
+        "stability": {
+          "min_eigen_0k": 0.597095594,
+          "min_eigen_298k": 0.034715305
+        },
+        "thermo": {
+          "density_thermo": 0.133685,
+          "f0_kjmol_atom": -3.744097494
+        }
+      },
+      "ptd2": {
+        "porosity": {
+          "pld": 15.22121,
+          "lcd": 30.86198,
+          "gsa": 7067.74,
+          "vsa": 1047.23
+        },
+        "structure": {
+          "cell_volume": 59417.0,
+          "density_mech": 0.14817
+        },
+        "mechanical": {
+          "bulk_gpa": 1.810441365,
+          "shear_gpa": 0.383306027,
+          "young_gpa": 1.074114373
+        },
+        "stability": {
+          "min_eigen_0k": 0.44541803,
+          "min_eigen_298k": 0.022747993
+        },
+        "thermo": {
+          "density_thermo": 0.14817,
+          "f0_kjmol_atom": -4.037163701
+        }
+      }
+    }
   },
   {
     "id": "pto",
@@ -3361,7 +6617,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "pto": {
+        "porosity": {
+          "pld": 13.66433,
+          "lcd": 16.72148,
+          "gsa": 6212.54,
+          "vsa": 1143.46
+        },
+        "structure": {
+          "cell_volume": 47244.2,
+          "density_mech": 0.184057
+        },
+        "mechanical": {
+          "bulk_gpa": 5.321384379,
+          "shear_gpa": 0.943438217,
+          "young_gpa": 2.672383993
+        },
+        "stability": {
+          "min_eigen_0k": 0.913348264,
+          "min_eigen_298k": 0.052305255
+        },
+        "thermo": {
+          "density_thermo": 0.184057,
+          "f0_kjmol_atom": -6.170360515
+        }
+      }
+    }
   },
   {
     "id": "pts",
@@ -3403,7 +6686,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "pts": {
+        "porosity": {
+          "pld": 16.96617,
+          "lcd": 19.25131,
+          "gsa": 5982.02,
+          "vsa": 1247.08
+        },
+        "structure": {
+          "cell_volume": 47475.2,
+          "density_mech": 0.208472
+        },
+        "mechanical": {
+          "bulk_gpa": 5.162848024,
+          "shear_gpa": 0.804057818,
+          "young_gpa": 2.293130042
+        },
+        "stability": {
+          "min_eigen_0k": 0.214179032,
+          "min_eigen_298k": -0.03683029
+        },
+        "thermo": {
+          "density_thermo": 0.208472,
+          "f0_kjmol_atom": -4.4278
+        }
+      }
+    }
   },
   {
     "id": "pyd",
@@ -3430,8 +6740,8 @@
       }
     },
     "conf": [
-      "pyd(1)",
-      "pyd(2)"
+      "pyd1",
+      "pyd2"
     ],
     "linkers": {
       "A": {
@@ -3446,7 +6756,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "pyd1": {
+        "porosity": {
+          "pld": 9.40658,
+          "lcd": 16.8062,
+          "gsa": 6838.19,
+          "vsa": 1949.33
+        },
+        "structure": {
+          "cell_volume": 122042.0,
+          "density_mech": 0.285065
+        },
+        "mechanical": {
+          "bulk_gpa": 2.909421053,
+          "shear_gpa": 1.83689455,
+          "young_gpa": 4.552577293
+        },
+        "stability": {
+          "min_eigen_0k": 2.233855839,
+          "min_eigen_298k": 0.051917644
+        },
+        "thermo": {
+          "density_thermo": 0.285065,
+          "f0_kjmol_atom": -5.032710111
+        }
+      },
+      "pyd2": {
+        "porosity": {
+          "pld": 12.55462,
+          "lcd": 17.49025,
+          "gsa": 7027.76,
+          "vsa": 1687.65
+        },
+        "structure": {
+          "cell_volume": 145542.0,
+          "density_mech": 0.24014
+        },
+        "mechanical": {
+          "bulk_gpa": 4.134686833,
+          "shear_gpa": 2.179505733,
+          "young_gpa": 5.561339499
+        },
+        "stability": {
+          "min_eigen_0k": 2.381686396,
+          "min_eigen_298k": -0.349782398
+        },
+        "thermo": {
+          "density_thermo": 0.24014,
+          "f0_kjmol_atom": -5.04891307
+        }
+      }
+    }
   },
   {
     "id": "pyo",
@@ -3473,8 +6835,8 @@
       }
     },
     "conf": [
-      "pyo(1)",
-      "pyo(2)"
+      "pyo1",
+      "pyo2"
     ],
     "linkers": {
       "A": {
@@ -3489,7 +6851,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "pyo1": {
+        "porosity": {
+          "pld": 13.96981,
+          "lcd": 14.22621,
+          "gsa": 6156.7,
+          "vsa": 1783.34
+        },
+        "structure": {
+          "cell_volume": 112398.0,
+          "density_mech": 0.289658
+        },
+        "mechanical": {
+          "bulk_gpa": 12.78524031,
+          "shear_gpa": 1.561502866,
+          "young_gpa": 4.501257538
+        },
+        "stability": {
+          "min_eigen_0k": 1.65124339,
+          "min_eigen_298k": 0.661503679
+        },
+        "thermo": {
+          "density_thermo": 0.289658,
+          "f0_kjmol_atom": -5.727968693
+        }
+      },
+      "pyo2": {
+        "porosity": {
+          "pld": 13.02078,
+          "lcd": 13.42113,
+          "gsa": 6100.73,
+          "vsa": 1822.04
+        },
+        "structure": {
+          "cell_volume": 109011.0,
+          "density_mech": 0.298659
+        },
+        "mechanical": {
+          "bulk_gpa": 12.77415975,
+          "shear_gpa": 1.670621149,
+          "young_gpa": 4.802504208
+        },
+        "stability": {
+          "min_eigen_0k": 1.863275897,
+          "min_eigen_298k": 0.701704097
+        },
+        "thermo": {
+          "density_thermo": 0.298659,
+          "f0_kjmol_atom": -5.364373511
+        }
+      }
+    }
   },
   {
     "id": "reo",
@@ -3516,8 +6930,8 @@
       }
     },
     "conf": [
-      "reo(1)",
-      "reo(2)"
+      "reo1",
+      "reo2"
     ],
     "linkers": {
       "A": {
@@ -3532,7 +6946,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "reo1": {
+        "porosity": {
+          "pld": 17.02751,
+          "lcd": 41.73368,
+          "gsa": 6092.16,
+          "vsa": 911.776
+        },
+        "structure": {
+          "cell_volume": 63323.7,
+          "density_mech": 0.149664
+        },
+        "mechanical": {
+          "bulk_gpa": 3.641000408,
+          "shear_gpa": 1.895027305,
+          "young_gpa": 4.844594985
+        },
+        "stability": {
+          "min_eigen_0k": 2.36513398,
+          "min_eigen_298k": 0.175947917
+        },
+        "thermo": {
+          "density_thermo": 0.149664,
+          "f0_kjmol_atom": -4.800804331
+        }
+      },
+      "reo2": {
+        "porosity": {
+          "pld": 20.7559,
+          "lcd": 44.3835,
+          "gsa": 6193.67,
+          "vsa": 865.883
+        },
+        "structure": {
+          "cell_volume": 67791.0,
+          "density_mech": 0.139801
+        },
+        "mechanical": {
+          "bulk_gpa": 4.697950242,
+          "shear_gpa": 2.31619414,
+          "young_gpa": 5.96782545
+        },
+        "stability": {
+          "min_eigen_0k": 2.870879713,
+          "min_eigen_298k": 0.070889026
+        },
+        "thermo": {
+          "density_thermo": 0.139801,
+          "f0_kjmol_atom": -4.744697287
+        }
+      }
+    }
   },
   {
     "id": "rhr",
@@ -3559,8 +7025,8 @@
       }
     },
     "conf": [
-      "rhr(1)",
-      "rhr(2)"
+      "rhr1",
+      "rhr2"
     ],
     "linkers": {
       "A": {
@@ -3575,7 +7041,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "rhr1": {
+        "porosity": {
+          "pld": 42.78744,
+          "lcd": 84.98782,
+          "gsa": 6820.97,
+          "vsa": 313.181
+        },
+        "structure": {
+          "cell_volume": 957422.0,
+          "density_mech": 0.0459144
+        },
+        "mechanical": {
+          "bulk_gpa": 0.747391105,
+          "shear_gpa": 0.265273869,
+          "young_gpa": 0.711628139
+        },
+        "stability": {
+          "min_eigen_0k": 0.096612547,
+          "min_eigen_298k": -0.303361386
+        },
+        "thermo": {
+          "density_thermo": 0.045914,
+          "f0_kjmol_atom": -5.635216585
+        }
+      },
+      "rhr2": {
+        "porosity": {
+          "pld": 44.23862,
+          "lcd": 88.68255,
+          "gsa": 6819.06,
+          "vsa": 281.254
+        },
+        "structure": {
+          "cell_volume": 1070000.0,
+          "density_mech": 0.0412453
+        },
+        "mechanical": {
+          "bulk_gpa": 1.052701879,
+          "shear_gpa": 0.316093854,
+          "young_gpa": 0.862003853
+        },
+        "stability": {
+          "min_eigen_0k": 0.034647203,
+          "min_eigen_298k": 0.053706602
+        },
+        "thermo": {
+          "density_thermo": 0.041245,
+          "f0_kjmol_atom": -5.704718086
+        }
+      }
+    }
   },
   {
     "id": "rhr-b",
@@ -3602,8 +7120,8 @@
       }
     },
     "conf": [
-      "rhr-b(1)",
-      "rhr-b(2)"
+      "rhr-b1",
+      "rhr-b2"
     ],
     "linkers": {
       "A": {
@@ -3618,7 +7136,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "rhr-b1": {
+        "porosity": {
+          "pld": 25.09727,
+          "lcd": 53.40574,
+          "gsa": 6505.91,
+          "vsa": 662.105
+        },
+        "structure": {
+          "cell_volume": 249697.0,
+          "density_mech": 0.10177
+        },
+        "mechanical": {
+          "bulk_gpa": 2.964119984,
+          "shear_gpa": 0.711775161,
+          "young_gpa": 1.977073687
+        },
+        "stability": {
+          "min_eigen_0k": 0.180165146,
+          "min_eigen_298k": 0.007427563
+        },
+        "thermo": {
+          "density_thermo": 0.10177,
+          "f0_kjmol_atom": -6.678814627
+        }
+      },
+      "rhr-b2": {
+        "porosity": {
+          "pld": 26.40903,
+          "lcd": 51.76152,
+          "gsa": 6495.07,
+          "vsa": 664.278
+        },
+        "structure": {
+          "cell_volume": 248466.0,
+          "density_mech": 0.102274
+        },
+        "mechanical": {
+          "bulk_gpa": 3.046391822,
+          "shear_gpa": 0.760740829,
+          "young_gpa": 2.106849305
+        },
+        "stability": {
+          "min_eigen_0k": 0.19036364,
+          "min_eigen_298k": 0.014477624
+        },
+        "thermo": {
+          "density_thermo": 0.102274,
+          "f0_kjmol_atom": -6.712665982
+        }
+      }
+    }
   },
   {
     "id": "scu",
@@ -3660,7 +7230,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "scu": {
+        "porosity": {
+          "pld": 25.31361,
+          "lcd": 30.24682,
+          "gsa": 5804.98,
+          "vsa": 1170.16
+        },
+        "structure": {
+          "cell_volume": 37087.7,
+          "density_mech": 0.201579
+        },
+        "mechanical": {
+          "bulk_gpa": 4.976794636,
+          "shear_gpa": 1.254143,
+          "young_gpa": 3.470877444
+        },
+        "stability": {
+          "min_eigen_0k": 0.033164539,
+          "min_eigen_298k": 0.005987743
+        },
+        "thermo": {
+          "density_thermo": 0.201579,
+          "f0_kjmol_atom": -4.17952
+        }
+      }
+    }
   },
   {
     "id": "she",
@@ -3702,7 +7299,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "she": {
+        "porosity": {
+          "pld": 18.81285,
+          "lcd": 35.89485,
+          "gsa": 6006.51,
+          "vsa": 1195.51
+        },
+        "structure": {
+          "cell_volume": 112638.0,
+          "density_mech": 0.199036
+        },
+        "mechanical": {
+          "bulk_gpa": 6.408022248,
+          "shear_gpa": 3.231864032,
+          "young_gpa": 8.300199685
+        },
+        "stability": {
+          "min_eigen_0k": 3.96819603,
+          "min_eigen_298k": 1.212745326
+        },
+        "thermo": {
+          "density_thermo": 0.199036,
+          "f0_kjmol_atom": -6.672949765
+        }
+      }
+    }
   },
   {
     "id": "sod",
@@ -3729,8 +7353,8 @@
       }
     },
     "conf": [
-      "sod(1)",
-      "sod(2)"
+      "sod1",
+      "sod2"
     ],
     "linkers": {
       "A": {
@@ -3745,7 +7369,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "sod1": {
+        "porosity": {
+          "pld": 21.84047,
+          "lcd": 39.2847,
+          "gsa": 6939.17,
+          "vsa": 736.936
+        },
+        "structure": {
+          "cell_volume": 107082.0,
+          "density_mech": 0.106199
+        },
+        "mechanical": {
+          "bulk_gpa": 2.114574454,
+          "shear_gpa": 0.340927532,
+          "young_gpa": 0.970619102
+        },
+        "stability": {
+          "min_eigen_0k": 0.326807474,
+          "min_eigen_298k": 0.013741734
+        },
+        "thermo": {
+          "density_thermo": 0.106199,
+          "f0_kjmol_atom": -5.290032841
+        }
+      },
+      "sod2": {
+        "porosity": {
+          "pld": 25.07692,
+          "lcd": 44.87961,
+          "gsa": 7057.73,
+          "vsa": 647.323
+        },
+        "structure": {
+          "cell_volume": 123989.0,
+          "density_mech": 0.0917183
+        },
+        "mechanical": {
+          "bulk_gpa": 3.360288079,
+          "shear_gpa": 0.436191511,
+          "young_gpa": 1.254301825
+        },
+        "stability": {
+          "min_eigen_0k": 0.520104321,
+          "min_eigen_298k": 0.02189662
+        },
+        "thermo": {
+          "density_thermo": 0.091718,
+          "f0_kjmol_atom": -5.340530929
+        }
+      }
+    }
   },
   {
     "id": "sod-b",
@@ -3772,8 +7448,8 @@
       }
     },
     "conf": [
-      "sod-b(1)",
-      "sod-b(2)"
+      "sod-b1",
+      "sod-b2"
     ],
     "linkers": {
       "A": {
@@ -3788,7 +7464,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "sod-b1": {
+        "porosity": {
+          "pld": 15.69335,
+          "lcd": 27.57525,
+          "gsa": 6639.63,
+          "vsa": 1229.1
+        },
+        "structure": {
+          "cell_volume": 36213.2,
+          "density_mech": 0.185116
+        },
+        "mechanical": {
+          "bulk_gpa": 4.768223251,
+          "shear_gpa": 0.776539244,
+          "young_gpa": 2.209664512
+        },
+        "stability": {
+          "min_eigen_0k": 0.554290807,
+          "min_eigen_298k": -0.695198091
+        },
+        "thermo": {
+          "density_thermo": 0.185116,
+          "f0_kjmol_atom": -5.916106508
+        }
+      },
+      "sod-b2": {
+        "porosity": {
+          "pld": 15.18936,
+          "lcd": 28.73739,
+          "gsa": 7149.45,
+          "vsa": 1272.6
+        },
+        "structure": {
+          "cell_volume": 37660.7,
+          "density_mech": 0.178
+        },
+        "mechanical": {
+          "bulk_gpa": 4.709321591,
+          "shear_gpa": 1.782048751,
+          "young_gpa": 4.747335119
+        },
+        "stability": {
+          "min_eigen_0k": 1.691144788,
+          "min_eigen_298k": -0.167298794
+        },
+        "thermo": {
+          "density_thermo": 0.178,
+          "f0_kjmol_atom": -5.898405058
+        }
+      }
+    }
   },
   {
     "id": "sod-f",
@@ -3815,8 +7543,8 @@
       }
     },
     "conf": [
-      "sod-f(1)",
-      "sod-f(2)"
+      "sod-f1",
+      "sod-f2"
     ],
     "linkers": {
       "A": {
@@ -3831,7 +7559,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "sod-f1": {
+        "porosity": {
+          "pld": 26.8752,
+          "lcd": 60.8638,
+          "gsa": 7707.74,
+          "vsa": 557.888
+        },
+        "structure": {
+          "cell_volume": 356108.0,
+          "density_mech": 0.0723802
+        },
+        "mechanical": {
+          "bulk_gpa": 0.466667177,
+          "shear_gpa": 0.161923815,
+          "young_gpa": 0.435411825
+        },
+        "stability": {
+          "min_eigen_0k": 0.123160617,
+          "min_eigen_298k": -0.022919575
+        },
+        "thermo": {
+          "density_thermo": 0.07238,
+          "f0_kjmol_atom": -2.475308585
+        }
+      },
+      "sod-f2": {
+        "porosity": {
+          "pld": 31.46161,
+          "lcd": 65.72626,
+          "gsa": 7696.05,
+          "vsa": 438.169
+        },
+        "structure": {
+          "cell_volume": 452718.0,
+          "density_mech": 0.0569343
+        },
+        "mechanical": {
+          "bulk_gpa": 1.310031981,
+          "shear_gpa": 0.245622134,
+          "young_gpa": 0.693522792
+        },
+        "stability": {
+          "min_eigen_0k": 0.09563303,
+          "min_eigen_298k": -0.026788257
+        },
+        "thermo": {
+          "density_thermo": 0.056934,
+          "f0_kjmol_atom": -2.458065008
+        }
+      }
+    }
   },
   {
     "id": "srs",
@@ -3873,7 +7653,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "srs": {
+        "porosity": {
+          "pld": 26.12705,
+          "lcd": 27.68619,
+          "gsa": 8104.51,
+          "vsa": 613.894
+        },
+        "structure": {
+          "cell_volume": 47407.0,
+          "density_mech": 0.0757472
+        },
+        "mechanical": {
+          "bulk_gpa": 1.524210262,
+          "shear_gpa": 0.205853333,
+          "young_gpa": 0.590956
+        },
+        "stability": {
+          "min_eigen_0k": 0.18235625,
+          "min_eigen_298k": 0.00232837
+        },
+        "thermo": {
+          "density_thermo": 0.075747,
+          "f0_kjmol_atom": -2.172039802
+        }
+      }
+    }
   },
   {
     "id": "srs-b",
@@ -3915,7 +7722,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "srs-b": {
+        "porosity": {
+          "pld": 11.82996,
+          "lcd": 13.07105,
+          "gsa": 6687.3,
+          "vsa": 1726.39
+        },
+        "structure": {
+          "cell_volume": 47600.1,
+          "density_mech": 0.258159
+        },
+        "mechanical": {
+          "bulk_gpa": 4.901571664,
+          "shear_gpa": 0.925377816,
+          "young_gpa": 2.611772792
+        },
+        "stability": {
+          "min_eigen_0k": 1.098099804,
+          "min_eigen_298k": 0.086812119
+        },
+        "thermo": {
+          "density_thermo": 0.258159,
+          "f0_kjmol_atom": -5.20811433
+        }
+      }
+    }
   },
   {
     "id": "srs-b*",
@@ -3958,7 +7792,81 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {}
+  },
+  {
+    "id": "srs-bb",
+    "topology": "srs-bb",
+    "sg": "",
+    "nodes": {
+      "o1": {},
+      "o2": {}
+    },
+    "linkers": {
+      "A": {
+        "name": ""
+      },
+      "B": {
+        "name": ""
+      }
+    },
+    "conf": [
+      "srs-bb1",
+      "srs-bb2"
+    ],
+    "per_config": {
+      "srs-bb1": {
+        "porosity": {
+          "pld": 14.13595,
+          "lcd": 18.35304,
+          "gsa": 7332.53,
+          "vsa": 1295.73
+        },
+        "structure": {
+          "cell_volume": 77898.1,
+          "density_mech": 0.17671
+        },
+        "mechanical": {
+          "bulk_gpa": 4.677359821,
+          "shear_gpa": 0.638338122,
+          "young_gpa": 1.831688403
+        },
+        "stability": {
+          "min_eigen_0k": 0.193941276,
+          "min_eigen_298k": 0.043233314
+        },
+        "thermo": {
+          "density_thermo": 0.17671,
+          "f0_kjmol_atom": -5.124078243
+        }
+      },
+      "srs-bb2": {
+        "porosity": {
+          "pld": 13.2406,
+          "lcd": 18.06731,
+          "gsa": 7325.35,
+          "vsa": 1424.42
+        },
+        "structure": {
+          "cell_volume": 70791.3,
+          "density_mech": 0.194451
+        },
+        "mechanical": {
+          "bulk_gpa": 4.112752958,
+          "shear_gpa": 0.673655549,
+          "young_gpa": 1.916336741
+        },
+        "stability": {
+          "min_eigen_0k": 0.154211883,
+          "min_eigen_298k": 0.03107041
+        },
+        "thermo": {
+          "density_thermo": 0.194451,
+          "f0_kjmol_atom": -5.125821118
+        }
+      }
+    }
   },
   {
     "id": "ssa",
@@ -4000,7 +7908,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ssa": {
+        "porosity": {
+          "pld": 35.73481,
+          "lcd": 38.85774,
+          "gsa": 6633.46,
+          "vsa": 754.075
+        },
+        "structure": {
+          "cell_volume": 108260.0,
+          "density_mech": 0.113677
+        },
+        "mechanical": {
+          "bulk_gpa": 1.450018997,
+          "shear_gpa": 0.881187461,
+          "young_gpa": 2.198262216
+        },
+        "stability": {
+          "min_eigen_0k": 0.376296391,
+          "min_eigen_298k": 0.098344808
+        },
+        "thermo": {
+          "density_thermo": 0.113677,
+          "f0_kjmol_atom": -5.033699308
+        }
+      }
+    }
   },
   {
     "id": "ssb",
@@ -4042,7 +7977,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ssb": {
+        "porosity": {
+          "pld": 24.87317,
+          "lcd": 40.65762,
+          "gsa": 6517.58,
+          "vsa": 762.515
+        },
+        "structure": {
+          "cell_volume": 144803.0,
+          "density_mech": 0.116994
+        },
+        "mechanical": {
+          "bulk_gpa": 2.195588865,
+          "shear_gpa": 0.858681552,
+          "young_gpa": 2.278950111
+        },
+        "stability": {
+          "min_eigen_0k": 0.103115485,
+          "min_eigen_298k": -0.345453913
+        },
+        "thermo": {
+          "density_thermo": 0.116994,
+          "f0_kjmol_atom": -6.559756364
+        }
+      }
+    }
   },
   {
     "id": "stj",
@@ -4084,7 +8046,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "stj": {
+        "porosity": {
+          "pld": 23.05432,
+          "lcd": 36.58405,
+          "gsa": 7117.74,
+          "vsa": 871.118
+        },
+        "structure": {
+          "cell_volume": 110630.0,
+          "density_mech": 0.122387
+        },
+        "mechanical": {
+          "bulk_gpa": 1.861452136,
+          "shear_gpa": 0.586896327,
+          "young_gpa": 1.593244551
+        },
+        "stability": {
+          "min_eigen_0k": 0.15804938,
+          "min_eigen_298k": -0.328448287
+        },
+        "thermo": {
+          "density_thermo": 0.122387,
+          "f0_kjmol_atom": -4.87362458
+        }
+      }
+    }
   },
   {
     "id": "stp",
@@ -4111,8 +8100,8 @@
       }
     },
     "conf": [
-      "stp(1)",
-      "stp(2)"
+      "stp1",
+      "stp2"
     ],
     "linkers": {
       "A": {
@@ -4127,7 +8116,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "stp1": {
+        "porosity": {
+          "pld": 25.86598,
+          "lcd": 28.34845,
+          "gsa": 5816.6,
+          "vsa": 1159.57
+        },
+        "structure": {
+          "cell_volume": 46129.0,
+          "density_mech": 0.199355
+        },
+        "mechanical": {
+          "bulk_gpa": 2.526236616,
+          "shear_gpa": 1.276550177,
+          "young_gpa": 3.277578536
+        },
+        "stability": {
+          "min_eigen_0k": 0.265020492,
+          "min_eigen_298k": 0.055028946
+        },
+        "thermo": {
+          "density_thermo": 0.199355,
+          "f0_kjmol_atom": -6.06702
+        }
+      },
+      "stp2": {
+        "porosity": {
+          "pld": 33.30046,
+          "lcd": 34.56214,
+          "gsa": 5958.62,
+          "vsa": 1021.56
+        },
+        "structure": {
+          "cell_volume": 53639.1,
+          "density_mech": 0.171443
+        },
+        "mechanical": {
+          "bulk_gpa": 2.174415907,
+          "shear_gpa": 1.216413665,
+          "young_gpa": 3.075703421
+        },
+        "stability": {
+          "min_eigen_0k": 0.569728364,
+          "min_eigen_298k": -0.008882752
+        },
+        "thermo": {
+          "density_thermo": 0.171443,
+          "f0_kjmol_atom": -6.16759
+        }
+      }
+    }
   },
   {
     "id": "stu",
@@ -4154,8 +8195,8 @@
       }
     },
     "conf": [
-      "stu(1)",
-      "stu(2)"
+      "stu1",
+      "stu2"
     ],
     "linkers": {
       "A": {
@@ -4170,7 +8211,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "stu1": {
+        "porosity": {
+          "pld": 25.12328,
+          "lcd": 37.81088,
+          "gsa": 6600.83,
+          "vsa": 826.049
+        },
+        "structure": {
+          "cell_volume": 125383.0,
+          "density_mech": 0.125143
+        },
+        "mechanical": {
+          "bulk_gpa": 2.941751892,
+          "shear_gpa": 0.716774172,
+          "young_gpa": 1.988795496
+        },
+        "stability": {
+          "min_eigen_0k": 0.147978932,
+          "min_eigen_298k": 0.002223667
+        },
+        "thermo": {
+          "density_thermo": 0.125143,
+          "f0_kjmol_atom": -4.984139594
+        }
+      },
+      "stu2": {
+        "porosity": {
+          "pld": 26.19542,
+          "lcd": 37.9062,
+          "gsa": 6614.44,
+          "vsa": 822.439
+        },
+        "structure": {
+          "cell_volume": 126193.0,
+          "density_mech": 0.12434
+        },
+        "mechanical": {
+          "bulk_gpa": 3.010411906,
+          "shear_gpa": 0.795000278,
+          "young_gpa": 2.19204024
+        },
+        "stability": {
+          "min_eigen_0k": 0.254387313,
+          "min_eigen_298k": 0.001726536
+        },
+        "thermo": {
+          "density_thermo": 0.12434,
+          "f0_kjmol_atom": -4.992159719
+        }
+      }
+    }
   },
   {
     "id": "stw",
@@ -4197,8 +8290,8 @@
       }
     },
     "conf": [
-      "stw(1)",
-      "stw(2)"
+      "stw1",
+      "stw2"
     ],
     "linkers": {
       "A": {
@@ -4213,7 +8306,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "stw1": {
+        "porosity": {
+          "pld": 22.08088,
+          "lcd": 33.15987,
+          "gsa": 7179.68,
+          "vsa": 925.144
+        },
+        "structure": {
+          "cell_volume": 95577.5,
+          "density_mech": 0.128856
+        },
+        "mechanical": {
+          "bulk_gpa": 2.085992526,
+          "shear_gpa": 0.589637439,
+          "young_gpa": 1.616594038
+        },
+        "stability": {
+          "min_eigen_0k": 0.201688641,
+          "min_eigen_298k": 0.125985311
+        },
+        "thermo": {
+          "density_thermo": 0.128856,
+          "f0_kjmol_atom": -3.8421818
+        }
+      },
+      "stw2": {
+        "porosity": {
+          "pld": 19.50857,
+          "lcd": 28.99133,
+          "gsa": 7085.26,
+          "vsa": 1151.35
+        },
+        "structure": {
+          "cell_volume": 75789.2,
+          "density_mech": 0.1625
+        },
+        "mechanical": {
+          "bulk_gpa": 1.176357053,
+          "shear_gpa": 0.577323887,
+          "young_gpa": 1.488471315
+        },
+        "stability": {
+          "min_eigen_0k": 0.178962047,
+          "min_eigen_298k": -0.522263069
+        },
+        "thermo": {
+          "density_thermo": 0.1625,
+          "f0_kjmol_atom": -3.634169832
+        }
+      }
+    }
   },
   {
     "id": "stx",
@@ -4255,7 +8400,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "stx": {
+        "porosity": {
+          "pld": 24.63997,
+          "lcd": 26.85304,
+          "gsa": 6824.44,
+          "vsa": 864.232
+        },
+        "structure": {
+          "cell_volume": 107137.0,
+          "density_mech": 0.126638
+        },
+        "mechanical": {
+          "bulk_gpa": 2.161676782,
+          "shear_gpa": 0.572043323,
+          "young_gpa": 1.57702122
+        },
+        "stability": {
+          "min_eigen_0k": 0.232666424,
+          "min_eigen_298k": -0.002146065
+        },
+        "thermo": {
+          "density_thermo": 0.126638,
+          "f0_kjmol_atom": -3.947940898
+        }
+      }
+    }
   },
   {
     "id": "sty",
@@ -4297,7 +8469,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "sty": {
+        "porosity": {
+          "pld": 35.01264,
+          "lcd": 36.30192,
+          "gsa": 7159.88,
+          "vsa": 833.362
+        },
+        "structure": {
+          "cell_volume": 87245.2,
+          "density_mech": 0.116393
+        },
+        "mechanical": {
+          "bulk_gpa": 2.809089644,
+          "shear_gpa": 0.680205312,
+          "young_gpa": 1.888209489
+        },
+        "stability": {
+          "min_eigen_0k": 0.332270398,
+          "min_eigen_298k": 0.02633583
+        },
+        "thermo": {
+          "density_thermo": 0.116393,
+          "f0_kjmol_atom": -5.421218815
+        }
+      }
+    }
   },
   {
     "id": "sur",
@@ -4339,7 +8538,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "sur": {
+        "porosity": {
+          "pld": 24.08082,
+          "lcd": 26.06685,
+          "gsa": 6845.8,
+          "vsa": 839.293
+        },
+        "structure": {
+          "cell_volume": 55333.2,
+          "density_mech": 0.1226
+        },
+        "mechanical": {
+          "bulk_gpa": 2.307691211,
+          "shear_gpa": 0.379828247,
+          "young_gpa": 1.080219465
+        },
+        "stability": {
+          "min_eigen_0k": 0.195965657,
+          "min_eigen_298k": -0.211437326
+        },
+        "thermo": {
+          "density_thermo": 0.1226,
+          "f0_kjmol_atom": -6.065411809
+        }
+      }
+    }
   },
   {
     "id": "tbd",
@@ -4366,8 +8592,8 @@
       }
     },
     "conf": [
-      "tbd(1)",
-      "tbd(2)"
+      "tbd1",
+      "tbd2"
     ],
     "linkers": {
       "A": {
@@ -4382,7 +8608,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tbd1": {
+        "porosity": {
+          "pld": 21.65785,
+          "lcd": 41.24524,
+          "gsa": 7107.23,
+          "vsa": 804.331
+        },
+        "structure": {
+          "cell_volume": 311169.0,
+          "density_mech": 0.113171
+        },
+        "mechanical": {
+          "bulk_gpa": 1.18520789,
+          "shear_gpa": 0.257877741,
+          "young_gpa": 0.721318364
+        },
+        "stability": {
+          "min_eigen_0k": 0.175823381,
+          "min_eigen_298k": 0.023497009
+        },
+        "thermo": {
+          "density_thermo": 0.113171,
+          "f0_kjmol_atom": -4.324955649
+        }
+      },
+      "tbd2": {
+        "porosity": {
+          "pld": 26.52017,
+          "lcd": 35.82854,
+          "gsa": 7187.7,
+          "vsa": 710.936
+        },
+        "structure": {
+          "cell_volume": 356033.0,
+          "density_mech": 0.0989101
+        },
+        "mechanical": {
+          "bulk_gpa": 1.842816261,
+          "shear_gpa": 0.33048311,
+          "young_gpa": 0.935524929
+        },
+        "stability": {
+          "min_eigen_0k": 0.365683234,
+          "min_eigen_298k": 0.026933249
+        },
+        "thermo": {
+          "density_thermo": 0.09891,
+          "f0_kjmol_atom": -4.211085842
+        }
+      }
+    }
   },
   {
     "id": "tbo",
@@ -4424,7 +8702,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tbo": {
+        "porosity": {
+          "pld": 20.92925,
+          "lcd": 37.88277,
+          "gsa": 6208.86,
+          "vsa": 904.152
+        },
+        "structure": {
+          "cell_volume": 238854.0,
+          "density_mech": 0.145623
+        },
+        "mechanical": {
+          "bulk_gpa": 3.511654729,
+          "shear_gpa": 0.572523796,
+          "young_gpa": 1.629040976
+        },
+        "stability": {
+          "min_eigen_0k": 0.360223393,
+          "min_eigen_298k": 0.088597787
+        },
+        "thermo": {
+          "density_thermo": 0.224852,
+          "f0_kjmol_atom": -6.235896235
+        }
+      }
+    }
   },
   {
     "id": "tbo-b",
@@ -4466,7 +8771,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tbo-b": {
+        "porosity": {
+          "pld": 16.48364,
+          "lcd": 27.20865,
+          "gsa": 6169.79,
+          "vsa": 1387.29
+        },
+        "structure": {
+          "cell_volume": 55712.2,
+          "density_mech": 0.224852
+        },
+        "mechanical": {
+          "bulk_gpa": 5.081288852,
+          "shear_gpa": 1.203765033,
+          "young_gpa": 3.34699256
+        },
+        "stability": {
+          "min_eigen_0k": 0.986012921,
+          "min_eigen_298k": 0.454541413
+        },
+        "thermo": {
+          "density_thermo": 0.145623,
+          "f0_kjmol_atom": -7.815294176
+        }
+      }
+    }
   },
   {
     "id": "tfa",
@@ -4493,8 +8825,8 @@
       }
     },
     "conf": [
-      "tfa(1)",
-      "tfa(2)"
+      "tfa1",
+      "tfa2"
     ],
     "linkers": {
       "A": {
@@ -4509,7 +8841,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tfa1": {
+        "porosity": {
+          "pld": 5.10122,
+          "lcd": 7.43699,
+          "gsa": 4559.28,
+          "vsa": 2877.09
+        },
+        "structure": {
+          "cell_volume": 35289.0,
+          "density_mech": 0.631041
+        },
+        "mechanical": {
+          "bulk_gpa": 27.52010378,
+          "shear_gpa": 9.174878136,
+          "young_gpa": 24.77176315
+        },
+        "stability": {
+          "min_eigen_0k": 2.751669999,
+          "min_eigen_298k": 6.926880997
+        },
+        "thermo": {
+          "density_thermo": 0.631041,
+          "f0_kjmol_atom": -4.353863175
+        }
+      },
+      "tfa2": {
+        "porosity": {
+          "pld": 4.45246,
+          "lcd": 5.45676,
+          "gsa": 4338.39,
+          "vsa": 2919.0
+        },
+        "structure": {
+          "cell_volume": 49645.7,
+          "density_mech": 0.672831
+        },
+        "mechanical": {
+          "bulk_gpa": 22.56856133,
+          "shear_gpa": 13.51733158,
+          "young_gpa": 33.80323326
+        },
+        "stability": {
+          "min_eigen_0k": 10.20209963,
+          "min_eigen_298k": -1.573303182
+        },
+        "thermo": {
+          "density_thermo": 0.672831,
+          "f0_kjmol_atom": -4.27260738
+        }
+      }
+    }
   },
   {
     "id": "tfb",
@@ -4551,7 +8935,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tfb": {
+        "porosity": {
+          "pld": 18.85622,
+          "lcd": 29.70861,
+          "gsa": 6535.89,
+          "vsa": 931.473
+        },
+        "structure": {
+          "cell_volume": 330295.0,
+          "density_mech": 0.142517
+        },
+        "mechanical": {
+          "bulk_gpa": 3.336873,
+          "shear_gpa": 0.627753055,
+          "young_gpa": 1.7721311
+        },
+        "stability": {
+          "min_eigen_0k": 0.19640257,
+          "min_eigen_298k": 0.004350659
+        },
+        "thermo": {
+          "density_thermo": 0.142517,
+          "f0_kjmol_atom": -4.979012785
+        }
+      }
+    }
   },
   {
     "id": "tfe",
@@ -4593,7 +9004,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tfe": {
+        "porosity": {
+          "pld": 9.91703,
+          "lcd": 14.23315,
+          "gsa": 5467.2,
+          "vsa": 1980.15
+        },
+        "structure": {
+          "cell_volume": 59251.3,
+          "density_mech": 0.362188
+        },
+        "mechanical": {
+          "bulk_gpa": 11.11257564,
+          "shear_gpa": 1.305627146,
+          "young_gpa": 3.769263321
+        },
+        "stability": {
+          "min_eigen_0k": 1.108033129,
+          "min_eigen_298k": 0.625861975
+        },
+        "thermo": {
+          "density_thermo": 0.362188,
+          "f0_kjmol_atom": -7.854528757
+        }
+      }
+    }
   },
   {
     "id": "tfi",
@@ -4620,8 +9058,8 @@
       }
     },
     "conf": [
-      "tfi(1)",
-      "tfi(2)"
+      "tfi1",
+      "tfi2"
     ],
     "linkers": {
       "A": {
@@ -4636,7 +9074,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tfi1": {
+        "porosity": {
+          "pld": 12.63135,
+          "lcd": 15.12342,
+          "gsa": 6396.57,
+          "vsa": 1468.63
+        },
+        "structure": {
+          "cell_volume": 42985.2,
+          "density_mech": 0.229596
+        },
+        "mechanical": {
+          "bulk_gpa": 6.70884331,
+          "shear_gpa": 1.025451905,
+          "young_gpa": 2.927213433
+        },
+        "stability": {
+          "min_eigen_0k": 0.157183961,
+          "min_eigen_298k": -0.021564474
+        },
+        "thermo": {
+          "density_thermo": 0.229596,
+          "f0_kjmol_atom": -6.225473727
+        }
+      },
+      "tfi2": {
+        "porosity": {
+          "pld": 13.54693,
+          "lcd": 16.04747,
+          "gsa": 6435.39,
+          "vsa": 1463.29
+        },
+        "structure": {
+          "cell_volume": 43404.0,
+          "density_mech": 0.227381
+        },
+        "mechanical": {
+          "bulk_gpa": 6.347424367,
+          "shear_gpa": 1.23562815,
+          "young_gpa": 3.4810065
+        },
+        "stability": {
+          "min_eigen_0k": 0.313740842,
+          "min_eigen_298k": -0.011930068
+        },
+        "thermo": {
+          "density_thermo": 0.227381,
+          "f0_kjmol_atom": -6.256543894
+        }
+      }
+    }
   },
   {
     "id": "tfj",
@@ -4663,8 +9153,8 @@
       }
     },
     "conf": [
-      "tfj(1)",
-      "tfj(2)"
+      "tfj1",
+      "tfj2"
     ],
     "linkers": {
       "A": {
@@ -4679,7 +9169,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tfj1": {
+        "porosity": {
+          "pld": 10.28777,
+          "lcd": 16.58766,
+          "gsa": 5484.43,
+          "vsa": 1563.5
+        },
+        "structure": {
+          "cell_volume": 62126.7,
+          "density_mech": 0.28508
+        },
+        "mechanical": {
+          "bulk_gpa": 8.659452752,
+          "shear_gpa": 2.128702294,
+          "young_gpa": 5.902451881
+        },
+        "stability": {
+          "min_eigen_0k": 0.503739788,
+          "min_eigen_298k": -0.008811952
+        },
+        "thermo": {
+          "density_thermo": 0.28508,
+          "f0_kjmol_atom": -9.153250914
+        }
+      },
+      "tfj2": {
+        "porosity": {
+          "pld": 8.36984,
+          "lcd": 14.20412,
+          "gsa": 5294.93,
+          "vsa": 1858.88
+        },
+        "structure": {
+          "cell_volume": 50449.2,
+          "density_mech": 0.351068
+        },
+        "mechanical": {
+          "bulk_gpa": 6.342610994,
+          "shear_gpa": 2.470789713,
+          "young_gpa": 6.560481756
+        },
+        "stability": {
+          "min_eigen_0k": 0.204870777,
+          "min_eigen_298k": 0.085610713
+        },
+        "thermo": {
+          "density_thermo": 0.351068,
+          "f0_kjmol_atom": -9.159104287
+        }
+      }
+    }
   },
   {
     "id": "tfk",
@@ -4706,8 +9248,8 @@
       }
     },
     "conf": [
-      "tfk(1)",
-      "tfk(2)"
+      "tfk1",
+      "tfk2"
     ],
     "linkers": {
       "A": {
@@ -4722,7 +9264,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tfk1": {
+        "porosity": {
+          "pld": 18.2721,
+          "lcd": 20.70015,
+          "gsa": 7159.59,
+          "vsa": 939.101
+        },
+        "structure": {
+          "cell_volume": 103225.0,
+          "density_mech": 0.131167
+        },
+        "mechanical": {
+          "bulk_gpa": 2.683794908,
+          "shear_gpa": 0.413893477,
+          "young_gpa": 1.180970856
+        },
+        "stability": {
+          "min_eigen_0k": 0.067361287,
+          "min_eigen_298k": 0.063663981
+        },
+        "thermo": {
+          "density_thermo": 0.131167,
+          "f0_kjmol_atom": -4.536813488
+        }
+      },
+      "tfk2": {
+        "porosity": {
+          "pld": 19.34806,
+          "lcd": 22.51217,
+          "gsa": 7159.51,
+          "vsa": 921.53
+        },
+        "structure": {
+          "cell_volume": 105192.0,
+          "density_mech": 0.128714
+        },
+        "mechanical": {
+          "bulk_gpa": 3.423956837,
+          "shear_gpa": 0.497048175,
+          "young_gpa": 1.422319541
+        },
+        "stability": {
+          "min_eigen_0k": 0.095269253,
+          "min_eigen_298k": 0.033586816
+        },
+        "thermo": {
+          "density_thermo": 0.128714,
+          "f0_kjmol_atom": -4.867193264
+        }
+      }
+    }
   },
   {
     "id": "tfp",
@@ -4749,8 +9343,8 @@
       }
     },
     "conf": [
-      "tfp(1)",
-      "tfp(2)"
+      "tfp1",
+      "tfp2"
     ],
     "linkers": {
       "A": {
@@ -4765,7 +9359,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tfp1": {
+        "porosity": {
+          "pld": 32.83375,
+          "lcd": 33.99911,
+          "gsa": 6733.11,
+          "vsa": 972.707
+        },
+        "structure": {
+          "cell_volume": 55928.6,
+          "density_mech": 0.144466
+        },
+        "mechanical": {
+          "bulk_gpa": 3.566012566,
+          "shear_gpa": 0.903145229,
+          "young_gpa": 2.49850772
+        },
+        "stability": {
+          "min_eigen_0k": 0.667340948,
+          "min_eigen_298k": 0.029793381
+        },
+        "thermo": {
+          "density_thermo": 0.144466,
+          "f0_kjmol_atom": -7.286232559
+        }
+      },
+      "tfp2": {
+        "porosity": {
+          "pld": 34.1288,
+          "lcd": 36.0509,
+          "gsa": 6811.38,
+          "vsa": 992.555
+        },
+        "structure": {
+          "cell_volume": 55447.3,
+          "density_mech": 0.14572
+        },
+        "mechanical": {
+          "bulk_gpa": 2.453890517,
+          "shear_gpa": 0.888890168,
+          "young_gpa": 2.379371618
+        },
+        "stability": {
+          "min_eigen_0k": 0.605342747,
+          "min_eigen_298k": 0.102340891
+        },
+        "thermo": {
+          "density_thermo": 0.14572,
+          "f0_kjmol_atom": -6.113346265
+        }
+      }
+    }
   },
   {
     "id": "tfv",
@@ -4807,7 +9453,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tfv": {
+        "porosity": {
+          "pld": 13.94128,
+          "lcd": 17.47145,
+          "gsa": 6509.26,
+          "vsa": 1394.68
+        },
+        "structure": {
+          "cell_volume": 93609.0,
+          "density_mech": 0.21426
+        },
+        "mechanical": {
+          "bulk_gpa": 5.307360243,
+          "shear_gpa": 0.800614275,
+          "young_gpa": 2.286852409
+        },
+        "stability": {
+          "min_eigen_0k": 0.414663549,
+          "min_eigen_298k": 0.158377426
+        },
+        "thermo": {
+          "density_thermo": 0.21426,
+          "f0_kjmol_atom": -7.206280951
+        }
+      }
+    }
   },
   {
     "id": "the",
@@ -4834,8 +9507,8 @@
       }
     },
     "conf": [
-      "the(1)",
-      "the(2)"
+      "the1",
+      "the2"
     ],
     "linkers": {
       "A": {
@@ -4850,7 +9523,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "the1": {
+        "porosity": {
+          "pld": 21.93394,
+          "lcd": 27.79145,
+          "gsa": 5697.12,
+          "vsa": 1173.38
+        },
+        "structure": {
+          "cell_volume": 47787.1,
+          "density_mech": 0.20596
+        },
+        "mechanical": {
+          "bulk_gpa": 3.466161716,
+          "shear_gpa": 0.776036859,
+          "young_gpa": 2.166430318
+        },
+        "stability": {
+          "min_eigen_0k": 0.428671762,
+          "min_eigen_298k": 0.11166639
+        },
+        "thermo": {
+          "density_thermo": 0.20596,
+          "f0_kjmol_atom": -4.454335603
+        }
+      },
+      "the2": {
+        "porosity": {
+          "pld": 25.84111,
+          "lcd": 28.02916,
+          "gsa": 5786.25,
+          "vsa": 1082.39
+        },
+        "structure": {
+          "cell_volume": 52614.7,
+          "density_mech": 0.187063
+        },
+        "mechanical": {
+          "bulk_gpa": 5.157345961,
+          "shear_gpa": 1.081304075,
+          "young_gpa": 3.032012084
+        },
+        "stability": {
+          "min_eigen_0k": 0.861863932,
+          "min_eigen_298k": 0.121059296
+        },
+        "thermo": {
+          "density_thermo": 0.187063,
+          "f0_kjmol_atom": -4.626643615
+        }
+      }
+    }
   },
   {
     "id": "ths",
@@ -4877,8 +9602,8 @@
       }
     },
     "conf": [
-      "ths(1)",
-      "ths(2)"
+      "ths1",
+      "ths2"
     ],
     "linkers": {
       "A": {
@@ -4893,7 +9618,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ths1": {
+        "porosity": {
+          "pld": 26.60583,
+          "lcd": 32.31494,
+          "gsa": 7819.95,
+          "vsa": 552.99
+        },
+        "structure": {
+          "cell_volume": 62819.5,
+          "density_mech": 0.0707153
+        },
+        "mechanical": {
+          "bulk_gpa": 1.852200217,
+          "shear_gpa": 0.127580466,
+          "young_gpa": 0.374150835
+        },
+        "stability": {
+          "min_eigen_0k": 0.023873405,
+          "min_eigen_298k": -0.027589098
+        },
+        "thermo": {
+          "density_thermo": 0.070715,
+          "f0_kjmol_atom": -2.501255787
+        }
+      },
+      "ths2": {
+        "porosity": {
+          "pld": 27.00699,
+          "lcd": 32.9983,
+          "gsa": 7810.44,
+          "vsa": 550.52
+        },
+        "structure": {
+          "cell_volume": 63024.6,
+          "density_mech": 0.0704851
+        },
+        "mechanical": {
+          "bulk_gpa": 1.833909183,
+          "shear_gpa": 0.161376016,
+          "young_gpa": 0.470332316
+        },
+        "stability": {
+          "min_eigen_0k": 0.035115212,
+          "min_eigen_298k": -0.619946871
+        },
+        "thermo": {
+          "density_thermo": 0.070485,
+          "f0_kjmol_atom": -2.277558023
+        }
+      }
+    }
   },
   {
     "id": "tot",
@@ -4935,7 +9712,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tot": {
+        "porosity": {
+          "pld": 10.83075,
+          "lcd": 16.25894,
+          "gsa": 5552.56,
+          "vsa": 1841.32
+        },
+        "structure": {
+          "cell_volume": 16000.7,
+          "density_mech": 0.331616
+        },
+        "mechanical": {
+          "bulk_gpa": 8.611302867,
+          "shear_gpa": 5.582405698,
+          "young_gpa": 13.77138233
+        },
+        "stability": {
+          "min_eigen_0k": 6.519474651,
+          "min_eigen_298k": -0.028599022
+        },
+        "thermo": {
+          "density_thermo": 0.331616,
+          "f0_kjmol_atom": -9.238900677
+        }
+      }
+    }
   },
   {
     "id": "tsg",
@@ -4962,8 +9766,8 @@
       }
     },
     "conf": [
-      "tsg(1)",
-      "tsg(2)"
+      "tsg1",
+      "tsg2"
     ],
     "linkers": {
       "A": {
@@ -4978,7 +9782,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tsg1": {
+        "porosity": {
+          "pld": 11.40198,
+          "lcd": 12.25964,
+          "gsa": 4672.38,
+          "vsa": 2150.07
+        },
+        "structure": {
+          "cell_volume": 40312.1,
+          "density_mech": 0.460166
+        },
+        "mechanical": {
+          "bulk_gpa": 5.964520843,
+          "shear_gpa": 3.551319878,
+          "young_gpa": 8.889640394
+        },
+        "stability": {
+          "min_eigen_0k": 0.810620155,
+          "min_eigen_298k": 0.525605834
+        },
+        "thermo": {
+          "density_thermo": 0.460166,
+          "f0_kjmol_atom": -9.118327703
+        }
+      },
+      "tsg2": {
+        "porosity": {
+          "pld": 16.67109,
+          "lcd": 17.19,
+          "gsa": 4675.98,
+          "vsa": 1780.4
+        },
+        "structure": {
+          "cell_volume": 48719.8,
+          "density_mech": 0.380754
+        },
+        "mechanical": {
+          "bulk_gpa": 8.385489153,
+          "shear_gpa": 2.786646359,
+          "young_gpa": 7.526238369
+        },
+        "stability": {
+          "min_eigen_0k": 1.251963093,
+          "min_eigen_298k": -0.149655161
+        },
+        "thermo": {
+          "density_thermo": 0.380754,
+          "f0_kjmol_atom": -7.873310384
+        }
+      }
+    }
   },
   {
     "id": "ttp",
@@ -5005,8 +9861,8 @@
       }
     },
     "conf": [
-      "ttp(1)",
-      "ttp(2)"
+      "ttp1",
+      "ttp2"
     ],
     "linkers": {
       "A": {
@@ -5021,7 +9877,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ttp1": {
+        "porosity": {
+          "pld": 34.21978,
+          "lcd": 35.22002,
+          "gsa": 5980.65,
+          "vsa": 1010.44
+        },
+        "structure": {
+          "cell_volume": 54430.1,
+          "density_mech": 0.168952
+        },
+        "mechanical": {
+          "bulk_gpa": 2.216866711,
+          "shear_gpa": 1.200782108,
+          "young_gpa": 3.051407283
+        },
+        "stability": {
+          "min_eigen_0k": 0.725202359,
+          "min_eigen_298k": 0.291062622
+        },
+        "thermo": {
+          "density_thermo": 0.168952,
+          "f0_kjmol_atom": -6.378344647
+        }
+      },
+      "ttp2": {
+        "porosity": {
+          "pld": 32.44985,
+          "lcd": 34.18405,
+          "gsa": 5848.16,
+          "vsa": 1082.77
+        },
+        "structure": {
+          "cell_volume": 49669.1,
+          "density_mech": 0.185147
+        },
+        "mechanical": {
+          "bulk_gpa": 2.448759071,
+          "shear_gpa": 1.403915212,
+          "young_gpa": 3.535996637
+        },
+        "stability": {
+          "min_eigen_0k": 0.615521796,
+          "min_eigen_298k": 0.002325076
+        },
+        "thermo": {
+          "density_thermo": 0.185147,
+          "f0_kjmol_atom": -6.164962389
+        }
+      }
+    }
   },
   {
     "id": "ttx",
@@ -5048,8 +9956,8 @@
       }
     },
     "conf": [
-      "ttx(1)",
-      "ttx(2)"
+      "ttx1",
+      "ttx2"
     ],
     "linkers": {
       "A": {
@@ -5064,7 +9972,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ttx1": {
+        "porosity": {
+          "pld": 25.14228,
+          "lcd": 27.07703,
+          "gsa": 5769.63,
+          "vsa": 1288.06
+        },
+        "structure": {
+          "cell_volume": 37885.8,
+          "density_mech": 0.223249
+        },
+        "mechanical": {
+          "bulk_gpa": 2.881454219,
+          "shear_gpa": 1.590578357,
+          "young_gpa": 4.030175493
+        },
+        "stability": {
+          "min_eigen_0k": 0.740686604,
+          "min_eigen_298k": 0.433193191
+        },
+        "thermo": {
+          "density_thermo": 0.223249,
+          "f0_kjmol_atom": -5.751648326
+        }
+      },
+      "ttx2": {
+        "porosity": {
+          "pld": 25.14328,
+          "lcd": 27.07831,
+          "gsa": 5769.88,
+          "vsa": 1288.04
+        },
+        "structure": {
+          "cell_volume": 37888.1,
+          "density_mech": 0.223236
+        },
+        "mechanical": {
+          "bulk_gpa": 2.851897371,
+          "shear_gpa": 1.561411619,
+          "young_gpa": 3.961298835
+        },
+        "stability": {
+          "min_eigen_0k": 0.745418177,
+          "min_eigen_298k": 0.34229725
+        },
+        "thermo": {
+          "density_thermo": 0.223236,
+          "f0_kjmol_atom": -5.781775763
+        }
+      }
+    }
   },
   {
     "id": "tty",
@@ -5091,8 +10051,8 @@
       }
     },
     "conf": [
-      "tty(1)",
-      "tty(2)"
+      "tty1",
+      "tty2"
     ],
     "linkers": {
       "A": {
@@ -5107,7 +10067,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "tty1": {
+        "porosity": {
+          "pld": 17.81593,
+          "lcd": 19.68323,
+          "gsa": 6078.26,
+          "vsa": 1444.63
+        },
+        "structure": {
+          "cell_volume": 96907.9,
+          "density_mech": 0.237671
+        },
+        "mechanical": {
+          "bulk_gpa": 5.259181997,
+          "shear_gpa": 1.308814425,
+          "young_gpa": 3.625677899
+        },
+        "stability": {
+          "min_eigen_0k": 0.392346296,
+          "min_eigen_298k": -0.002981875
+        },
+        "thermo": {
+          "density_thermo": 0.237671,
+          "f0_kjmol_atom": -7.303080294
+        }
+      },
+      "tty2": {
+        "porosity": {
+          "pld": 16.41219,
+          "lcd": 18.70963,
+          "gsa": 6080.63,
+          "vsa": 1612.86
+        },
+        "structure": {
+          "cell_volume": 86833.6,
+          "density_mech": 0.265246
+        },
+        "mechanical": {
+          "bulk_gpa": 5.429414355,
+          "shear_gpa": 1.73839867,
+          "young_gpa": 4.712268736
+        },
+        "stability": {
+          "min_eigen_0k": 0.318081189,
+          "min_eigen_298k": -0.064980517
+        },
+        "thermo": {
+          "density_thermo": 0.265246,
+          "f0_kjmol_atom": -7.299320535
+        }
+      }
+    }
   },
   {
     "id": "twt",
@@ -5134,8 +10146,8 @@
       }
     },
     "conf": [
-      "twt(1)",
-      "twt(2)"
+      "twt1",
+      "twt2"
     ],
     "linkers": {
       "A": {
@@ -5150,7 +10162,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "twt1": {
+        "porosity": {
+          "pld": 25.58273,
+          "lcd": 29.20618,
+          "gsa": 7695.69,
+          "vsa": 618.914
+        },
+        "structure": {
+          "cell_volume": 52465.0,
+          "density_mech": 0.0804235
+        },
+        "mechanical": {
+          "bulk_gpa": 0.95764876,
+          "shear_gpa": 0.156002859,
+          "young_gpa": 0.443904285
+        },
+        "stability": {
+          "min_eigen_0k": 0.077088328,
+          "min_eigen_298k": -1.374107562
+        },
+        "thermo": {
+          "density_thermo": 0.080424,
+          "f0_kjmol_atom": -5.42625136
+        }
+      },
+      "twt2": {
+        "porosity": {
+          "pld": 25.83809,
+          "lcd": 31.54851,
+          "gsa": 7726.09,
+          "vsa": 516.15
+        },
+        "structure": {
+          "cell_volume": 63159.2,
+          "density_mech": 0.0668061
+        },
+        "mechanical": {
+          "bulk_gpa": 1.638074889,
+          "shear_gpa": 0.227706683,
+          "young_gpa": 0.652868576
+        },
+        "stability": {
+          "min_eigen_0k": 0.101785084,
+          "min_eigen_298k": -0.138578636
+        },
+        "thermo": {
+          "density_thermo": 0.066806,
+          "f0_kjmol_atom": -4.239142296
+        }
+      }
+    }
   },
   {
     "id": "ucp",
@@ -5177,8 +10241,8 @@
       }
     },
     "conf": [
-      "ucp(1)",
-      "ucp(2)"
+      "ucp1",
+      "ucp2"
     ],
     "linkers": {
       "A": {
@@ -5193,7 +10257,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "ucp1": {
+        "porosity": {
+          "pld": 28.14574,
+          "lcd": 52.51847,
+          "gsa": 6854.92,
+          "vsa": 713.552
+        },
+        "structure": {
+          "cell_volume": 195512.0,
+          "density_mech": 0.104093
+        },
+        "mechanical": {
+          "bulk_gpa": 2.583945709,
+          "shear_gpa": 0.477902068,
+          "young_gpa": 1.35045069
+        },
+        "stability": {
+          "min_eigen_0k": 0.215258465,
+          "min_eigen_298k": 0.012241006
+        },
+        "thermo": {
+          "density_thermo": 0.104093,
+          "f0_kjmol_atom": -3.96791637
+        }
+      },
+      "ucp2": {
+        "porosity": {
+          "pld": 29.60602,
+          "lcd": 52.97403,
+          "gsa": 6838.17,
+          "vsa": 699.991
+        },
+        "structure": {
+          "cell_volume": 198813.0,
+          "density_mech": 0.102365
+        },
+        "mechanical": {
+          "bulk_gpa": 2.697068049,
+          "shear_gpa": 0.517049333,
+          "young_gpa": 1.45797927
+        },
+        "stability": {
+          "min_eigen_0k": 0.28511694,
+          "min_eigen_298k": -0.006091073
+        },
+        "thermo": {
+          "density_thermo": 0.102365,
+          "f0_kjmol_atom": -3.933445506
+        }
+      }
+    }
   },
   {
     "id": "urt",
@@ -5235,7 +10351,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "urt": {
+        "porosity": {
+          "pld": 16.92272,
+          "lcd": 18.8417,
+          "gsa": 6384.16,
+          "vsa": 1353.62
+        },
+        "structure": {
+          "cell_volume": 58019.1,
+          "density_mech": 0.212028
+        },
+        "mechanical": {
+          "bulk_gpa": 4.459217938,
+          "shear_gpa": 1.216377696,
+          "young_gpa": 3.344986554
+        },
+        "stability": {
+          "min_eigen_0k": 0.638300825,
+          "min_eigen_298k": 0.076618362
+        },
+        "thermo": {
+          "density_thermo": 0.212028,
+          "f0_kjmol_atom": -7.550829569
+        }
+      }
+    }
   },
   {
     "id": "uta",
@@ -5262,8 +10405,8 @@
       }
     },
     "conf": [
-      "uta(1)",
-      "uta(2)"
+      "uta1",
+      "uta2"
     ],
     "linkers": {
       "A": {
@@ -5278,7 +10421,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "uta1": {
+        "porosity": {
+          "pld": 34.63409,
+          "lcd": 50.3138,
+          "gsa": 7634.92,
+          "vsa": 423.748
+        },
+        "structure": {
+          "cell_volume": 1220000.0,
+          "density_mech": 0.0555013
+        },
+        "mechanical": {
+          "bulk_gpa": 1.498224261,
+          "shear_gpa": 0.224159912,
+          "young_gpa": 0.640534759
+        },
+        "stability": {
+          "min_eigen_0k": 0.05760584,
+          "min_eigen_298k": -0.363984658
+        },
+        "thermo": {
+          "density_thermo": 0.055501,
+          "f0_kjmol_atom": -3.734700827
+        }
+      },
+      "uta2": {
+        "porosity": {
+          "pld": 30.05027,
+          "lcd": 44.71793,
+          "gsa": 7610.96,
+          "vsa": 509.607
+        },
+        "structure": {
+          "cell_volume": 1010000.0,
+          "density_mech": 0.0669569
+        },
+        "mechanical": {
+          "bulk_gpa": 0.850997425,
+          "shear_gpa": 0.182841033,
+          "young_gpa": 0.51186424
+        },
+        "stability": {
+          "min_eigen_0k": 0.09840057,
+          "min_eigen_298k": -0.302895189
+        },
+        "thermo": {
+          "density_thermo": 0.066957,
+          "f0_kjmol_atom": -3.704277183
+        }
+      }
+    }
   },
   {
     "id": "xaa",
@@ -5320,7 +10515,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "xaa": {
+        "porosity": {
+          "pld": 15.25642,
+          "lcd": 31.20949,
+          "gsa": 7128.38,
+          "vsa": 1138.57
+        },
+        "structure": {
+          "cell_volume": 153881.0,
+          "density_mech": 0.159723
+        },
+        "mechanical": {
+          "bulk_gpa": 4.370854043,
+          "shear_gpa": 0.497254345,
+          "young_gpa": 1.437259313
+        },
+        "stability": {
+          "min_eigen_0k": 0.552469278,
+          "min_eigen_298k": 0.086032533
+        },
+        "thermo": {
+          "density_thermo": 0.159723,
+          "f0_kjmol_atom": -3.754164128
+        }
+      }
+    }
   },
   {
     "id": "xbl",
@@ -5362,7 +10584,34 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "xbl": {
+        "porosity": {
+          "pld": 15.39348,
+          "lcd": 27.13849,
+          "gsa": 6589.46,
+          "vsa": 1227.23
+        },
+        "structure": {
+          "cell_volume": 35994.4,
+          "density_mech": 0.186241
+        },
+        "mechanical": {
+          "bulk_gpa": 4.648509528,
+          "shear_gpa": 0.85405774,
+          "young_gpa": 2.414314773
+        },
+        "stability": {
+          "min_eigen_0k": 0.594198415,
+          "min_eigen_298k": -0.216421442
+        },
+        "thermo": {
+          "density_thermo": 0.186241,
+          "f0_kjmol_atom": -5.849754761
+        }
+      }
+    }
   },
   {
     "id": "xly",
@@ -5389,8 +10638,8 @@
       }
     },
     "conf": [
-      "xly(1)",
-      "xly(2)"
+      "xly1",
+      "xly2"
     ],
     "linkers": {
       "A": {
@@ -5405,7 +10654,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "xly1": {
+        "porosity": {
+          "pld": 38.93241,
+          "lcd": 41.86558,
+          "gsa": 5860.71,
+          "vsa": 1119.64
+        },
+        "structure": {
+          "cell_volume": 117181.0,
+          "density_mech": 0.191042
+        },
+        "mechanical": {
+          "bulk_gpa": 5.33028523,
+          "shear_gpa": 1.778862145,
+          "young_gpa": 4.80236008
+        },
+        "stability": {
+          "min_eigen_0k": 0.508555185,
+          "min_eigen_298k": 0.167420664
+        },
+        "thermo": {
+          "density_thermo": 0.191042,
+          "f0_kjmol_atom": -5.528988204
+        }
+      },
+      "xly2": {
+        "porosity": {
+          "pld": 41.69292,
+          "lcd": 44.53232,
+          "gsa": 5881.31,
+          "vsa": 1096.58
+        },
+        "structure": {
+          "cell_volume": 120065.0,
+          "density_mech": 0.186452
+        },
+        "mechanical": {
+          "bulk_gpa": 5.734707392,
+          "shear_gpa": 1.877067263,
+          "young_gpa": 5.077245519
+        },
+        "stability": {
+          "min_eigen_0k": 0.608950936,
+          "min_eigen_298k": 0.171373633
+        },
+        "thermo": {
+          "density_thermo": 0.186452,
+          "f0_kjmol_atom": -5.532103659
+        }
+      }
+    }
   },
   {
     "id": "xlz",
@@ -5432,8 +10733,8 @@
       }
     },
     "conf": [
-      "xlz(1)",
-      "xlz(2)"
+      "xlz1",
+      "xlz2"
     ],
     "linkers": {
       "A": {
@@ -5448,7 +10749,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "xlz1": {
+        "porosity": {
+          "pld": 48.79209,
+          "lcd": 50.99262,
+          "gsa": 5644.55,
+          "vsa": 1022.58
+        },
+        "structure": {
+          "cell_volume": 123803.0,
+          "density_mech": 0.181161
+        },
+        "mechanical": {
+          "bulk_gpa": 3.376989258,
+          "shear_gpa": 1.518964281,
+          "young_gpa": 3.962747106
+        },
+        "stability": {
+          "min_eigen_0k": 0.239187445,
+          "min_eigen_298k": 0.131440033
+        },
+        "thermo": {
+          "density_thermo": 0.181161,
+          "f0_kjmol_atom": -4.090623563
+        }
+      },
+      "xlz2": {
+        "porosity": {
+          "pld": 45.98241,
+          "lcd": 48.19959,
+          "gsa": 5640.48,
+          "vsa": 1029.39
+        },
+        "structure": {
+          "cell_volume": 122895.0,
+          "density_mech": 0.1825
+        },
+        "mechanical": {
+          "bulk_gpa": 3.653004107,
+          "shear_gpa": 1.515917296,
+          "young_gpa": 3.995122259
+        },
+        "stability": {
+          "min_eigen_0k": 0.288132138,
+          "min_eigen_298k": 0.141980544
+        },
+        "thermo": {
+          "density_thermo": 0.1825,
+          "f0_kjmol_atom": -4.090500105
+        }
+      }
+    }
   },
   {
     "id": "xux",
@@ -5475,8 +10828,8 @@
       }
     },
     "conf": [
-      "xux(1)",
-      "xux(2)"
+      "xux1",
+      "xux2"
     ],
     "linkers": {
       "A": {
@@ -5491,7 +10844,59 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "xux1": {
+        "porosity": {
+          "pld": 11.0603,
+          "lcd": 15.9079,
+          "gsa": 7197.0,
+          "vsa": 1662.9
+        },
+        "structure": {
+          "cell_volume": 106600.0,
+          "density_mech": 0.231054
+        },
+        "mechanical": {
+          "bulk_gpa": 4.144875617,
+          "shear_gpa": 0.997550192,
+          "young_gpa": 2.77039925
+        },
+        "stability": {
+          "min_eigen_0k": 0.617514666,
+          "min_eigen_298k": -0.130650868
+        },
+        "thermo": {
+          "density_thermo": 0.231054,
+          "f0_kjmol_atom": -5.470215169
+        }
+      },
+      "xux2": {
+        "porosity": {
+          "pld": 11.86959,
+          "lcd": 14.12913,
+          "gsa": 7153.71,
+          "vsa": 1833.88
+        },
+        "structure": {
+          "cell_volume": 48039.8,
+          "density_mech": 0.256354
+        },
+        "mechanical": {
+          "bulk_gpa": 4.203589095,
+          "shear_gpa": 1.326597153,
+          "young_gpa": 3.600983827
+        },
+        "stability": {
+          "min_eigen_0k": 1.271831833,
+          "min_eigen_298k": -0.035748688
+        },
+        "thermo": {
+          "density_thermo": 0.256354,
+          "f0_kjmol_atom": -6.055072944
+        }
+      }
+    }
   },
   {
     "id": "zyg",
@@ -5518,8 +10923,8 @@
       }
     },
     "conf": [
-      "zyg(1)",
-      "zyg(2)"
+      "zyg1",
+      "zyg2"
     ],
     "linkers": {
       "A": {
@@ -5534,6 +10939,58 @@
     "thumb": "",
     "priority": "",
     "status": "",
-    "notes": ""
+    "notes": "",
+    "per_config": {
+      "zyg1": {
+        "porosity": {
+          "pld": 34.45974,
+          "lcd": 35.33342,
+          "gsa": 6334.66,
+          "vsa": 1273.28
+        },
+        "structure": {
+          "cell_volume": 80604.0,
+          "density_mech": 0.201002
+        },
+        "mechanical": {
+          "bulk_gpa": 3.470985838,
+          "shear_gpa": 1.31361795,
+          "young_gpa": 3.499397061
+        },
+        "stability": {
+          "min_eigen_0k": 0.388374314,
+          "min_eigen_298k": 0.032179146
+        },
+        "thermo": {
+          "density_thermo": 0.201002,
+          "f0_kjmol_atom": -5.549059837
+        }
+      },
+      "zyg2": {
+        "porosity": {
+          "pld": 31.8794,
+          "lcd": 32.65374,
+          "gsa": 6295.31,
+          "vsa": 1241.08
+        },
+        "structure": {
+          "cell_volume": 82181.6,
+          "density_mech": 0.197143
+        },
+        "mechanical": {
+          "bulk_gpa": 3.984878245,
+          "shear_gpa": 1.168678741,
+          "young_gpa": 3.193810961
+        },
+        "stability": {
+          "min_eigen_0k": 0.475272037,
+          "min_eigen_298k": 0.031996199
+        },
+        "thermo": {
+          "density_thermo": 0.197143,
+          "f0_kjmol_atom": -5.542940349
+        }
+      }
+    }
   }
 ]

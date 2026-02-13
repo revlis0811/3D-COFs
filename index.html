@@ -4,46 +4,94 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>COF Candidate Explorer</title>
+  <title>COF Topology Explorer</title>
   <style>
     .modal{display:none;position:fixed;inset:0;z-index:100;background:rgba(15,23,42,.9);backdrop-filter:blur(8px)}
-    .modal-content{background:white;margin:2% auto;width:95%;max-width:980px;border-radius:1rem;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,.5)}
-    .chip{border:1px solid #e2e8f0;background:#f1f5f9;color:#475569;padding:2px 8px;border-radius:999px;font-weight:700;font-size:.72rem}
+    .modal-content{background:white;margin:2% auto;width:95%;max-width:1080px;border-radius:1rem;overflow:hidden;box-shadow:0 25px 50px -12px rgba(0,0,0,.5)}
+    .chip{border:1px solid #e2e8f0;background:#f1f5f9;color:#475569;padding:2px 10px;border-radius:999px;font-weight:700;font-size:.72rem}
     .card:hover{border-color:#3b82f6;transform:translateY(-2px);box-shadow:0 10px 15px -3px rgba(0,0,0,.1)}
+    .pair-card:hover{border-color:#8b5cf6;transform:translateY(-2px);box-shadow:0 10px 15px -3px rgba(0,0,0,.1)}
+    ::-webkit-scrollbar{width:8px}
+    ::-webkit-scrollbar-track{background:#f1f5f9}
+    ::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:10px}
   </style>
 </head>
 <body class="bg-slate-50 min-h-screen text-slate-900">
   <nav class="bg-slate-900 text-white sticky top-0 z-40 px-6 py-4 shadow-xl">
     <div class="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center gap-4">
-      <div class="flex items-center gap-3">
-        <div class="bg-blue-600 p-2 rounded-lg font-black text-xl leading-none">3D</div>
-        <div>
-          <h1 class="text-xl font-bold tracking-tight leading-tight">COF Candidate Explorer</h1>
-          <p id="datasetCount" class="text-[10px] text-blue-300 font-bold uppercase tracking-[0.2em]">Loading...</p>
-        </div>
-      </div>
-      <div class="w-full lg:w-[720px] grid grid-cols-1 md:grid-cols-3 gap-2">
-        <input id="searchInput" type="text" placeholder="Search (topology, linker, SG, CN like 6-2...)"
-          class="w-full px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-white focus:ring-2 focus:ring-blue-500 outline-none transition-all placeholder-slate-500">
+      <button id="homeBtn" class="flex items-center gap-3 text-left hover:opacity-90 transition-opacity" type="button" title="Go to home (reset filters)"><div class="bg-blue-600 p-2 rounded-lg font-black text-xl leading-none">3D</div><div><h1 class="text-xl font-bold tracking-tight leading-tight">COF Topology Explorer</h1><p id="orgTag" class="text-[10px] text-blue-300 font-bold uppercase tracking-[0.2em]">Choe group</p></div></button>
+
+      <div class="w-full lg:w-[980px] grid grid-cols-1 md:grid-cols-6 gap-2">
+        <input id="searchInput" type="text" placeholder="Search (topology, SG, geometry, CN like 6-2, config like dia1...)"
+          class="md:col-span-2 w-full px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 text-white focus:ring-2 focus:ring-blue-500 outline-none transition-all placeholder-slate-500">
+
         <select id="topologyFilter" class="w-full px-3 py-2 rounded-lg bg-slate-800 border border-slate-700 text-white">
           <option value="">All topologies</option>
         </select>
-        <div class="grid grid-cols-2 gap-2">
-          <select id="priorityFilter" class="w-full px-3 py-2 rounded-lg bg-slate-800 border border-slate-700 text-white">
-            <option value="">All priority</option>
-            <option>High</option><option>Med</option><option>Low</option>
-          </select>
-          <select id="statusFilter" class="w-full px-3 py-2 rounded-lg bg-slate-800 border border-slate-700 text-white">
-            <option value="">All status</option>
-            <option>Proposed</option><option>Discussing</option><option>In synthesis</option>
-            <option>Success</option><option>Failed</option><option>Dropped</option>
-          </select>
+
+        <select id="cnFilter" class="w-full px-3 py-2 rounded-lg bg-slate-800 border border-slate-700 text-white">
+          <option value="">All CN</option>
+        </select>
+
+        <select id="obb1Filter" class="w-full px-3 py-2 rounded-lg bg-slate-800 border border-slate-700 text-white">
+          <option value="">All OBB1</option>
+        </select>
+
+        <select id="obb2Filter" class="w-full px-3 py-2 rounded-lg bg-slate-800 border border-slate-700 text-white">
+          <option value="">All OBB2</option>
+        </select>
+
+        <div class="md:col-span-6 flex flex-wrap items-center justify-between gap-2 mt-1">
+          <div class="flex flex-wrap items-center gap-2">
+            <select id="hasDataFilter" class="px-3 py-2 rounded-lg bg-slate-800 border border-slate-700 text-white">
+              <option value="">All</option>
+              <option value="with">With calc data</option>
+              <option value="without">Without calc data</option>
+            </select>
+
+            <label class="flex items-center gap-2 px-3 py-2 rounded-lg bg-slate-800 border border-slate-700 text-white cursor-pointer select-none">
+              <input id="groupToggle" type="checkbox" class="accent-blue-500">
+              <span class="text-[11px] font-bold uppercase tracking-wider text-slate-200">Group by OBB pair (ordered)</span>
+            </label>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <button id="exportBtn" class="px-3 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 transition-colors text-white text-[11px] font-black uppercase tracking-wider">
+              Export CSV
+            </button>
+            <div class="text-[10px] text-slate-300 font-mono" id="countInfo"></div>
+          </div>
         </div>
       </div>
     </div>
   </nav>
 
-  <main class="max-w-7xl mx-auto p-6 md:p-8">
+  <main class="max-w-7xl mx-auto p-6 md:p-8 space-y-4">
+    <div id="summaryPanel" class="hidden border border-slate-200 rounded-xl bg-white p-4">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+        <div class="min-w-0">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="bg-violet-100 text-violet-800 text-[10px] font-black px-2 py-0.5 rounded uppercase">OBB Pair</span>
+            <span id="summaryPair" class="font-black text-slate-900"></span>
+          </div>
+          <p id="summaryCounts" class="text-[11px] text-slate-500 font-mono mt-1"></p>
+        </div>
+        <div class="text-[11px] text-slate-400 font-mono">
+          Summary uses all configs in current result set (order preserved: OBB1 → OBB2).
+        </div>
+      </div>
+
+      <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-3" id="summaryStats"></div>
+      <div class="mt-4 space-y-2" id="chartsWrap" style="display:none;">
+        <div class="flex items-center justify-between gap-2">
+          <span class="bg-slate-100 text-slate-700 text-[10px] font-black px-2 py-0.5 rounded uppercase">Stability charts (per configuration)</span>
+          <span class="text-[10px] text-slate-400 font-mono">only shown when OBB1 and OBB2 are both selected</span>
+        </div>
+        <div id="chartsGrid" class="grid grid-cols-1 md:grid-cols-2 gap-3"></div>
+      </div>
+      <div class="mt-3 text-[11px] text-slate-400 font-mono" id="summaryNote"></div>
+    </div>
+
     <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4"></div>
     <div id="noResult" class="hidden text-center py-20 text-slate-400 font-medium">검색 결과가 없습니다.</div>
     <div id="loadError" class="hidden text-center py-20 text-red-500 font-medium">
@@ -63,18 +111,17 @@
       </div>
 
       <div class="p-8 bg-white space-y-8">
-        <p id="mNotes" class="text-sm text-slate-600 leading-relaxed"></p>
-
         <div class="grid md:grid-cols-2 gap-8">
           <div class="space-y-3">
             <div class="border-b border-slate-100 pb-2">
-              <span class="bg-blue-100 text-blue-700 text-[10px] font-black px-2 py-0.5 rounded uppercase">Node 1</span>
+              <span class="bg-blue-100 text-blue-700 text-[10px] font-black px-2 py-0.5 rounded uppercase">OBB 1</span>
             </div>
             <div id="mNode1" class="divide-y divide-slate-50"></div>
           </div>
+
           <div class="space-y-3">
             <div class="border-b border-slate-100 pb-2">
-              <span class="bg-emerald-100 text-emerald-700 text-[10px] font-black px-2 py-0.5 rounded uppercase">Node 2</span>
+              <span class="bg-emerald-100 text-emerald-700 text-[10px] font-black px-2 py-0.5 rounded uppercase">OBB 2</span>
             </div>
             <div id="mNode2" class="divide-y divide-slate-50"></div>
           </div>
@@ -84,23 +131,27 @@
           <div class="border-b border-slate-100 pb-2">
             <span class="bg-violet-100 text-violet-700 text-[10px] font-black px-2 py-0.5 rounded uppercase">Linker Pair</span>
           </div>
+
           <div class="grid md:grid-cols-2 gap-6">
             <div class="border border-slate-200 rounded-xl p-4 bg-slate-50">
               <p class="text-xs text-slate-400 font-bold uppercase">Linker A</p>
               <p id="mLA" class="font-black text-slate-900 mt-1"></p>
+              <p class="text-[11px] text-slate-500 font-mono mt-2">Linker: <span id="mLinkerA"></span></p>
             </div>
             <div class="border border-slate-200 rounded-xl p-4 bg-slate-50">
               <p class="text-xs text-slate-400 font-bold uppercase">Linker B</p>
               <p id="mLB" class="font-black text-slate-900 mt-1"></p>
+              <p class="text-[11px] text-slate-500 font-mono mt-2">Linker: <span id="mLinkerB"></span></p>
             </div>
           </div>
         </div>
 
         <div class="space-y-3">
-          <div class="border-b border-slate-100 pb-2">
-            <span class="bg-amber-100 text-amber-700 text-[10px] font-black px-2 py-0.5 rounded uppercase">Metrics</span>
+          <div class="border-b border-slate-100 pb-2 flex items-center justify-between gap-4">
+            <span class="bg-amber-100 text-amber-700 text-[10px] font-black px-2 py-0.5 rounded uppercase">Per-configuration data</span>
+            <span class="text-[11px] text-slate-400 font-mono">density: g/cm³, modulus: GPa</span>
           </div>
-          <div id="mMetrics" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>
+          <div id="mConfigTableWrap"></div>
         </div>
       </div>
     </div>
@@ -110,65 +161,150 @@
     const grid = document.getElementById('grid');
     const noResult = document.getElementById('noResult');
     const loadError = document.getElementById('loadError');
+
     const searchInput = document.getElementById('searchInput');
     const topologyFilter = document.getElementById('topologyFilter');
-    const priorityFilter = document.getElementById('priorityFilter');
-    const statusFilter = document.getElementById('statusFilter');
+    const cnFilter = document.getElementById('cnFilter');
+    const obb1Filter = document.getElementById('obb1Filter');
+    const obb2Filter = document.getElementById('obb2Filter');
+    const hasDataFilter = document.getElementById('hasDataFilter');
+    const groupToggle = document.getElementById('groupToggle');
+    const exportBtn = document.getElementById('exportBtn');
+    const homeBtn = document.getElementById('homeBtn');
+    const chartsWrap = document.getElementById('chartsWrap');
+    const chartsGrid = document.getElementById('chartsGrid');
+
+    const summaryPanel = document.getElementById('summaryPanel');
+    const summaryPair = document.getElementById('summaryPair');
+    const summaryCounts = document.getElementById('summaryCounts');
+    const summaryStats = document.getElementById('summaryStats');
+    const summaryNote = document.getElementById('summaryNote');
+    const countInfo = document.getElementById('countInfo');
 
     let data = [];
-    let byId = new Map();
+    let byTopo = new Map();
+    let lastFilteredTopos = [];
+    let lastGroupedPairs = []; // [{pairKey, o1, o2, topologies:[...]}]
 
     function safeText(v){ return (v===null||v===undefined) ? '' : String(v); }
-    function fmtNum(v){
-      if(v===null||v===undefined||v==='') return '';
+    function fmtNum(v, ndp=3){
+      if(v===null||v===undefined||v==='') return '—';
       const n = Number(v);
       if(Number.isNaN(n)) return safeText(v);
-      return Number.isInteger(n) ? String(n) : String(Math.round(n*1000)/1000);
-    }
-    function buildSearchText(item){
-      const o1=item.nodes?.o1||{}, o2=item.nodes?.o2||{};
-      const cnKey = `${fmtNum(o1.cn)}-${fmtNum(o2.cn)}`;
-      return [
-        item.id,item.topology,item.sg,
-        o1.geo,o2.geo,o1.type,o2.type,o1.z,o2.z,cnKey,
-        item.linkers?.A?.name,item.linkers?.B?.name,
-        ...(item.conf||[])
-      ].filter(Boolean).join(' ').toLowerCase();
+      const p = Math.pow(10, ndp);
+      const r = Math.round(n*p)/p;
+      return String(r);
     }
     function uniqSorted(arr){ return Array.from(new Set(arr.filter(Boolean))).sort((a,b)=>a.localeCompare(b)); }
 
-    function cardHTML(item){
+    function topoCN(item){
       const o1=item.nodes?.o1||{}, o2=item.nodes?.o2||{};
+      const a = safeText(o1.cn), b = safeText(o2.cn);
+      if(!a || !b) return '';
+      return `${a}-${b}`;
+    }
+
+    function obb1Type(item){ return safeText(item.nodes?.o1?.type).trim(); }
+    function obb2Type(item){ return safeText(item.nodes?.o2?.type).trim(); }
+    function pairKey(item){ return `${obb1Type(item)}__${obb2Type(item)}`; } // ordered key
+
+    function hasCalcData(item){
+      const pc = item.per_config || {};
+      return Object.keys(pc).length > 0;
+    }
+
+    function buildSearchText(item){
+      const o1=item.nodes?.o1||{}, o2=item.nodes?.o2||{};
+      const cnKey = topoCN(item);
+      const conf = Array.isArray(item.conf) ? item.conf : [];
+      const cfgKeys = Object.keys(item.per_config || {});
+      return [
+        item.topology,item.sg,
+        o1.geo,o2.geo,o1.type,o2.type,o1.z,o2.z,cnKey,
+        item.linkers?.A?.name,item.linkers?.B?.name,
+        ...conf, ...cfgKeys
+      ].filter(Boolean).join(' ').toLowerCase();
+    }
+
+    function cardHTML(item){
+      const cn = topoCN(item);
+      const nconf = Array.isArray(item.conf) ? item.conf.length : 0;
+      const has = hasCalcData(item);
+      const o1t = obb1Type(item), o2t = obb2Type(item);
       return `
-        <div class="card bg-white rounded-xl border border-slate-200 cursor-pointer transition-all overflow-hidden" data-id="${item.id}">
+        <div class="card bg-white rounded-xl border border-slate-200 cursor-pointer transition-all overflow-hidden" data-topo="${item.topology}">
           <div class="p-4 flex flex-col gap-2">
             <div class="flex items-start justify-between gap-2">
               <div class="min-w-0">
-                <div class="text-[11px] text-slate-400 font-mono truncate">${safeText(item.id)}</div>
                 <h3 class="text-lg font-black text-slate-800 leading-none truncate">${safeText(item.topology).toUpperCase()}</h3>
                 <p class="text-[10px] text-slate-400 font-mono mt-1 truncate">${safeText(item.sg)}</p>
               </div>
               <div class="flex flex-col items-end gap-1">
-                ${item.priority ? `<span class="text-[10px] font-black px-2 py-0.5 rounded bg-slate-100 text-slate-700 uppercase">${safeText(item.priority)}</span>` : ``}
-                ${item.status ? `<span class="text-[10px] font-black px-2 py-0.5 rounded bg-slate-100 text-slate-700 uppercase">${safeText(item.status)}</span>` : ``}
+                ${cn ? `<span class="text-[10px] font-black px-2 py-0.5 rounded bg-slate-100 text-slate-700 uppercase">CN ${cn}</span>` : ``}
+                <span class="text-[10px] font-black px-2 py-0.5 rounded ${has ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-100 text-slate-700'} uppercase">
+                  ${has ? 'DATA' : 'NO DATA'}
+                </span>
               </div>
             </div>
+
             <div class="flex flex-wrap gap-2 mt-1">
-              <span class="chip">CN ${fmtNum(o1.cn)}</span>
-              <span class="chip">CN ${fmtNum(o2.cn)}</span>
-              ${item.linkers?.A?.name ? `<span class="chip truncate max-w-[240px]">A: ${safeText(item.linkers.A.name)}</span>` : ``}
-              ${item.linkers?.B?.name ? `<span class="chip truncate max-w-[240px]">B: ${safeText(item.linkers.B.name)}</span>` : ``}
+              ${o1t ? `<span class="chip">OBB1 ${o1t}</span>` : ``}
+              ${o2t ? `<span class="chip">OBB2 ${o2t}</span>` : ``}
+              <span class="chip">${nconf} config</span>
             </div>
           </div>
         </div>`;
     }
 
-    function render(list){
-      if(!list.length){ grid.innerHTML=''; noResult.classList.remove('hidden'); return; }
+    function pairCardHTML(group){
+      const topoCount = group.topologies.length;
+      const cfgCount = group.configCount;
+      const hasAnyData = group.hasData;
+      return `
+        <div class="pair-card bg-white rounded-xl border border-slate-200 cursor-pointer transition-all overflow-hidden" data-pair="${group.pairKey}">
+          <div class="p-4 flex flex-col gap-2">
+            <div class="flex items-start justify-between gap-2">
+              <div class="min-w-0">
+                <h3 class="text-lg font-black text-slate-800 leading-none truncate">${group.o1} → ${group.o2}</h3>
+                <p class="text-[10px] text-slate-400 font-mono mt-1 truncate">${topoCount} topologies | ${cfgCount} configs</p>
+              </div>
+              <span class="text-[10px] font-black px-2 py-0.5 rounded ${hasAnyData ? 'bg-violet-100 text-violet-800' : 'bg-slate-100 text-slate-700'} uppercase">
+                ${hasAnyData ? 'GROUP DATA' : 'NO DATA'}
+              </span>
+            </div>
+
+            <div class="flex flex-wrap gap-2 mt-1">
+              <span class="chip">ordered pair</span>
+              <span class="chip">${group.pairKey.replace('__',' → ')}</span>
+            </div>
+          </div>
+        </div>`;
+    }
+
+    function renderTopologies(list){
+      if(!list.length){
+        grid.innerHTML='';
+        noResult.classList.remove('hidden');
+        return;
+      }
       noResult.classList.add('hidden');
       grid.innerHTML = list.map(cardHTML).join('');
-      grid.querySelectorAll('[data-id]').forEach(el=>{
-        el.addEventListener('click', ()=>openModalById(el.getAttribute('data-id')));
+      grid.querySelectorAll('[data-topo]').forEach(el=>{
+        el.addEventListener('click', ()=>openModal(el.getAttribute('data-topo')));
+      });
+    }
+
+    function renderPairs(groups){
+      if(!groups.length){
+        grid.innerHTML='';
+        noResult.classList.remove('hidden');
+        return;
+      }
+      noResult.classList.add('hidden');
+      grid.innerHTML = groups.map(pairCardHTML).join('');
+      grid.querySelectorAll('[data-pair]').forEach(el=>{
+        const key = el.getAttribute('data-pair');
+        el.addEventListener('click', ()=>selectPair(key));
       });
     }
 
@@ -178,96 +314,650 @@
         <span class="text-slate-800 font-bold text-right">${val}</span>
       </div>`;
     }
+
     function renderNode(node){
       return [
-        row("Geometry", safeText(node.geo)),
-        row("CN / Type", `${fmtNum(node.cn)} / ${safeText(node.type)}`),
-        row("δ (Delta)", `${fmtNum(node.d)}°`),
-        row("η (Eta)", `${fmtNum(node.e)}°`),
-        row("θ (Theta)", `${fmtNum(node.t)}°`),
-        row("Zigzag", safeText(node.z))
+        row("CN", fmtNum(node.cn, 3)),
+        row("Geometry", safeText(node.geo) || "—"),
+        row("δ (Delta)", `${fmtNum(node.d, 3)}°`),
+        row("η (Eta)", `${fmtNum(node.e, 3)}°`),
+        row("θ (Theta)", `${fmtNum(node.t, 3)}°`),
+        row("Zigzag", safeText(node.z) || "—")
       ].join('');
     }
-    function metricCard(k,v){
-      const label = safeText(k).replaceAll('_',' ').toUpperCase();
-      return `<div class="border border-slate-200 rounded-xl p-4 bg-slate-50">
-        <div class="text-[10px] font-black text-slate-400 uppercase">${label}</div>
-        <div class="text-xl font-black text-slate-900 mt-1">${fmtNum(v)}</div>
-      </div>`;
+
+    function renderConfigTable(item){
+      const per = item.per_config || {};
+      const confs = Array.isArray(item.conf) ? item.conf.slice() : [];
+      const keys = confs.length ? confs : Object.keys(per);
+
+      const rows = keys
+        .filter(k=>k in per)
+        .sort((a,b)=>a.localeCompare(b))
+        .map(conf=>{
+          const x = per[conf] || {};
+          const p = x.porosity || {};
+          const m = x.mechanical || {};
+          const s = x.stability || {};
+          const t = x.thermo || {};
+          const st = x.structure || {};
+          return `<tr class="border-t border-slate-200">
+            <td class="py-2 px-3 font-mono text-sm text-slate-700">${conf}</td>
+            <td class="py-2 px-3 text-sm text-slate-900 font-bold">${fmtNum(p.pld, 3)}</td>
+            <td class="py-2 px-3 text-sm text-slate-900 font-bold">${fmtNum(p.lcd, 3)}</td>
+            <td class="py-2 px-3 text-sm text-slate-900 font-bold">${fmtNum(p.gsa, 1)}</td>
+            <td class="py-2 px-3 text-sm text-slate-900 font-bold">${fmtNum(p.vsa, 1)}</td>
+            <td class="py-2 px-3 text-sm text-slate-900 font-bold">${fmtNum(m.bulk_gpa, 3)}</td>
+            <td class="py-2 px-3 text-sm text-slate-900 font-bold">${fmtNum(m.shear_gpa, 3)}</td>
+            <td class="py-2 px-3 text-sm text-slate-900 font-bold">${fmtNum(m.young_gpa, 3)}</td>
+            <td class="py-2 px-3 text-sm text-slate-900 font-bold">${fmtNum(s.min_eigen_0k, 6)}</td>
+            <td class="py-2 px-3 text-sm text-slate-900 font-bold">${fmtNum(s.min_eigen_298k, 6)}</td>
+            <td class="py-2 px-3 text-sm text-slate-900 font-bold">${fmtNum(t.f0_kjmol_atom, 6)}</td>
+            <td class="py-2 px-3 text-sm text-slate-900 font-bold">${fmtNum(st.density_mech, 4)}</td>
+            <td class="py-2 px-3 text-sm text-slate-900 font-bold">${fmtNum(t.density_thermo, 4)}</td>
+          </tr>`;
+        }).join('');
+
+      if(!rows){
+        return `<div class="text-slate-400 text-sm">No per-configuration calculation data available for this topology.</div>`;
+      }
+
+      return `
+        <div class="overflow-x-auto border border-slate-200 rounded-xl">
+          <table class="min-w-[1100px] w-full bg-white">
+            <thead class="bg-slate-50">
+              <tr>
+                <th class="text-left text-[11px] uppercase tracking-wider text-slate-400 font-black py-2 px-3">Config</th>
+                <th class="text-left text-[11px] uppercase tracking-wider text-slate-400 font-black py-2 px-3">PLD</th>
+                <th class="text-left text-[11px] uppercase tracking-wider text-slate-400 font-black py-2 px-3">LCD</th>
+                <th class="text-left text-[11px] uppercase tracking-wider text-slate-400 font-black py-2 px-3">GSA</th>
+                <th class="text-left text-[11px] uppercase tracking-wider text-slate-400 font-black py-2 px-3">VSA</th>
+                <th class="text-left text-[11px] uppercase tracking-wider text-slate-400 font-black py-2 px-3">K (bulk)</th>
+                <th class="text-left text-[11px] uppercase tracking-wider text-slate-400 font-black py-2 px-3">G (shear)</th>
+                <th class="text-left text-[11px] uppercase tracking-wider text-slate-400 font-black py-2 px-3">E (young)</th>
+                <th class="text-left text-[11px] uppercase tracking-wider text-slate-400 font-black py-2 px-3">min eigen 0K</th>
+                <th class="text-left text-[11px] uppercase tracking-wider text-slate-400 font-black py-2 px-3">min eigen 298K</th>
+                <th class="text-left text-[11px] uppercase tracking-wider text-slate-400 font-black py-2 px-3">F0</th>
+                <th class="text-left text-[11px] uppercase tracking-wider text-slate-400 font-black py-2 px-3">ρ mech</th>
+                <th class="text-left text-[11px] uppercase tracking-wider text-slate-400 font-black py-2 px-3">ρ thermo</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${rows}
+            </tbody>
+          </table>
+        </div>`;
     }
 
-    function applyFilters(){
-      const q = searchInput.value.toLowerCase().trim();
-      const topo = topologyFilter.value;
-      const pri = priorityFilter.value;
-      const sta = statusFilter.value;
-
-      const filtered = data.filter(item=>{
-        if(topo && item.topology!==topo) return false;
-        if(pri && item.priority!==pri) return false;
-        if(sta && item.status!==sta) return false;
-        if(q && !item._search.includes(q)) return false;
-        return true;
-      });
-      render(filtered);
-      document.getElementById('datasetCount').innerText = `${filtered.length} / ${data.length} Candidates`;
-    }
-
-    function openModalById(id){
-      const item = byId.get(id);
+    function openModal(topo){
+      const item = byTopo.get(topo);
       if(!item) return;
-      document.getElementById('mTitle').innerText = safeText(item.topology).toUpperCase();
-      document.getElementById('mSub').innerText = `ID: ${safeText(item.id)} | Space Group: ${safeText(item.sg)}`;
-      document.getElementById('mNotes').innerText = safeText(item.notes) || "—";
 
-      document.getElementById('mLA').innerText = safeText(item.linkers?.A?.name) || "—";
-      document.getElementById('mLB').innerText = safeText(item.linkers?.B?.name) || "—";
+      document.getElementById('mTitle').innerText = safeText(item.topology).toUpperCase();
+      document.getElementById('mSub').innerText = `Space Group: ${safeText(item.sg)} | CN: ${topoCN(item) || '—'} | OBB pair: ${obb1Type(item)} → ${obb2Type(item)}`;
 
       const o1=item.nodes?.o1||{}, o2=item.nodes?.o2||{};
       document.getElementById('mNode1').innerHTML = renderNode(o1);
       document.getElementById('mNode2').innerHTML = renderNode(o2);
 
-      const metrics=item.metrics||{};
-      const keys=Object.keys(metrics);
-      document.getElementById('mMetrics').innerHTML = keys.length ? keys.map(k=>metricCard(k,metrics[k])).join('')
-        : `<div class="text-slate-400 text-sm">No metrics provided.</div>`;
+      document.getElementById('mLA').innerText = safeText(o1.type) || "—";
+      document.getElementById('mLB').innerText = safeText(o2.type) || "—";
+      document.getElementById('mLinkerA').innerText = safeText(item.linkers?.A?.name) || "—";
+      document.getElementById('mLinkerB').innerText = safeText(item.linkers?.B?.name) || "—";
+
+      const chips = (Array.isArray(item.conf) ? item.conf : [])
+        .slice()
+        .sort((a,b)=>String(a).localeCompare(String(b)))
+        .map(c=>`<span class="chip">${safeText(c)}</span>`)
+        .join('');
+      document.getElementById('mChips').innerHTML = chips || `<span class="chip">no config</span>`;
+
+      document.getElementById('mConfigTableWrap').innerHTML = renderConfigTable(item);
 
       document.getElementById('modal').style.display='block';
       document.body.style.overflow='hidden';
       setTimeout(()=>document.getElementById('mClose').focus(),0);
     }
+
     function closeModal(){
       document.getElementById('modal').style.display='none';
       document.body.style.overflow='auto';
     }
     window.addEventListener('keydown',(e)=>{ if(e.key==='Escape') closeModal(); });
+    function resetHome(){
+      // reset filters to initial
+      searchInput.value = '';
+      topologyFilter.value = '';
+      cnFilter.value = '';
+      obb1Filter.value = '';
+      obb2Filter.value = '';
+      hasDataFilter.value = '';
+      groupToggle.checked = false;
+      closeModal();
+      applyFilters();
+      window.scrollTo({top:0, behavior:'smooth'});
+    }
+    homeBtn.addEventListener('click', resetHome);
 
-    [searchInput, topologyFilter, priorityFilter, statusFilter].forEach(el=>{
+
+    function applyFilters(){
+      const q = searchInput.value.toLowerCase().trim();
+      const topo = topologyFilter.value;
+      const cn = cnFilter.value;
+      const o1 = obb1Filter.value;
+      const o2 = obb2Filter.value;
+      const has = hasDataFilter.value;
+
+      const filtered = data.filter(item=>{
+        if(topo && item.topology!==topo) return false;
+        if(cn && topoCN(item)!==cn) return false;
+        if(o1 && obb1Type(item)!==o1) return false;
+        if(o2 && obb2Type(item)!==o2) return false;
+        if(has==="with" && !hasCalcData(item)) return false;
+        if(has==="without" && hasCalcData(item)) return false;
+        if(q && !item._search.includes(q)) return false;
+        return true;
+      });
+
+      lastFilteredTopos = filtered;
+
+      if(groupToggle.checked){
+        const groups = buildPairGroups(filtered);
+        lastGroupedPairs = groups;
+        renderPairs(groups);
+        countInfo.innerText = `${groups.length} pairs | ${filtered.length} topologies`;
+        updateSummaryForCurrentSelection(filtered, groups, null);
+      }else{
+        lastGroupedPairs = [];
+        renderTopologies(filtered);
+        countInfo.innerText = `${filtered.length} / ${data.length} Topologies`;
+        updateSummaryForCurrentSelection(filtered, null, null);
+      }
+    }
+
+    function buildPairGroups(list){
+      const map = new Map();
+      list.forEach(item=>{
+        const o1 = obb1Type(item) || '—';
+        const o2 = obb2Type(item) || '—';
+        const key = `${o1}__${o2}`; // ordered
+        if(!map.has(key)){
+          map.set(key, {pairKey:key, o1, o2, topologies:[]});
+        }
+        map.get(key).topologies.push(item);
+      });
+
+      const groups = Array.from(map.values()).map(g=>{
+        let cfgCount = 0;
+        let hasAnyData = false;
+        g.topologies.forEach(t=>{
+          cfgCount += (Array.isArray(t.conf) ? t.conf.length : 0);
+          if(hasCalcData(t)) hasAnyData = true;
+        });
+        g.configCount = cfgCount;
+        g.hasData = hasAnyData;
+        return g;
+      });
+
+      groups.sort((a,b)=>{
+        const k1 = `${a.o1}__${a.o2}`;
+        const k2 = `${b.o1}__${b.o2}`;
+        return k1.localeCompare(k2);
+      });
+      return groups;
+    }
+
+    function selectPair(pairKey){
+      const group = lastGroupedPairs.find(g=>g.pairKey===pairKey);
+      if(!group) return;
+      // When a pair is selected, switch to topology view constrained to that pair (still ordered).
+      groupToggle.checked = false;
+      obb1Filter.value = group.o1 === '—' ? '' : group.o1;
+      obb2Filter.value = group.o2 === '—' ? '' : group.o2;
+      applyFilters(); // now topology view is updated
+
+      updateSummaryForCurrentSelection(lastFilteredTopos, null, `${group.o1} → ${group.o2}`);
+      // scroll to summary
+      summaryPanel.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+
+    function collectConfigRows(list){
+      // returns array of {topology, config, o1, o2, ...metrics}
+      const rows = [];
+      list.forEach(item=>{
+        const topo = item.topology;
+        const o1 = obb1Type(item);
+        const o2 = obb2Type(item);
+        const per = item.per_config || {};
+        const confs = Array.isArray(item.conf) ? item.conf : Object.keys(per);
+
+        confs.forEach(conf=>{
+          if(!(conf in per)) return;
+          const x = per[conf] || {};
+          const p = x.porosity || {};
+          const m = x.mechanical || {};
+          const s = x.stability || {};
+          const t = x.thermo || {};
+          const st = x.structure || {};
+          rows.push({
+            topology: topo,
+            config: conf,
+            obb1: o1,
+            obb2: o2,
+            pld: p.pld,
+            lcd: p.lcd,
+            gsa: p.gsa,
+            vsa: p.vsa,
+            bulk_gpa: m.bulk_gpa,
+            shear_gpa: m.shear_gpa,
+            young_gpa: m.young_gpa,
+            min_eigen_0k: s.min_eigen_0k,
+            min_eigen_298k: s.min_eigen_298k,
+            f0_kjmol_atom: t.f0_kjmol_atom,
+            density_mech: st.density_mech,
+            density_thermo: t.density_thermo
+          });
+        });
+      });
+      return rows;
+    }
+
+    function statRange(values){
+      const nums = values.map(v=>Number(v)).filter(v=>Number.isFinite(v));
+      if(!nums.length) return null;
+      let min = nums[0], max = nums[0];
+      for(let i=1;i<nums.length;i++){
+        if(nums[i] < min) min = nums[i];
+        if(nums[i] > max) max = nums[i];
+      }
+      return {min, max, n: nums.length};
+    }
+
+    function statMeanStd(values){
+      const nums = values.map(v=>Number(v)).filter(v=>Number.isFinite(v));
+      if(!nums.length) return null;
+      const n = nums.length;
+      const mean = nums.reduce((a,b)=>a+b,0)/n;
+      const varr = nums.reduce((a,b)=>a+(b-mean)*(b-mean),0)/n;
+      const std = Math.sqrt(varr);
+      return {mean, std, n};
+    }
+
+    function statBox(label, value){
+      return `<div class="border border-slate-200 rounded-xl p-3 bg-slate-50">
+        <p class="text-[10px] text-slate-400 font-black uppercase tracking-wider">${label}</p>
+        <p class="mt-1 text-slate-900 font-black">${value}</p>
+      </div>`;
+    }
+    function clamp(v, lo, hi){ return Math.max(lo, Math.min(hi, v)); }
+
+    function num(v){
+      const n = Number(v);
+      return Number.isFinite(n) ? n : null;
+    }
+
+    function niceExtent(minV, maxV){
+      if(minV === maxV){ return {min:minV-1, max:maxV+1}; }
+      const span = maxV - minV;
+      return {min:minV - 0.05*span, max:maxV + 0.05*span};
+    }
+
+    function svgAxisAndGrid({w,h,padL,padR,padT,padB, yMin, yMax, yTicks=4, xLabel='', yLabel='' }){
+      let out = '';
+      for(let t=0;t<=yTicks;t++){
+        const y = padT + (t/yTicks)*(h-padT-padB);
+        const val = yMax - (t/yTicks)*(yMax-yMin);
+        out += `<line x1="${padL}" y1="${y}" x2="${w-padR}" y2="${y}" stroke="#e2e8f0" stroke-width="1"/>`;
+        out += `<text x="${padL-8}" y="${y+4}" text-anchor="end" font-size="10" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">${val.toFixed(3)}</text>`;
+      }
+      // axes
+      out += `<line x1="${padL}" y1="${h-padB}" x2="${w-padR}" y2="${h-padB}" stroke="#cbd5e1" stroke-width="1"/>`;
+      out += `<line x1="${padL}" y1="${padT}" x2="${padL}" y2="${h-padB}" stroke="#cbd5e1" stroke-width="1"/>`;
+      if(xLabel){
+        out += `<text x="${(padL + (w-padR))/2}" y="${h-8}" text-anchor="middle" font-size="10" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">${xLabel}</text>`;
+      }
+      if(yLabel){
+        out += `<text x="12" y="${(padT + (h-padB))/2}" text-anchor="middle" font-size="10" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" transform="rotate(-90 12 ${(padT + (h-padB))/2})">${yLabel}</text>`;
+      }
+      return out;
+    }
+
+    function renderScatterDensityEnergy(cfgRows){
+      // x: density (use thermo density if present else mech density), y: energy (F0)
+      const pts = cfgRows.map(r=>{
+        const x = num(r.density_thermo) ?? num(r.density_mech);
+        const y = num(r.f0_kjmol_atom);
+        if(x===null || y===null) return null;
+        return {x,y,label:r.config, topo:r.topology};
+      }).filter(Boolean);
+
+      const w = 760, h = 340, padL = 56, padR = 14, padT = 28, padB = 40;
+      if(!pts.length){
+        return `<div class="border border-slate-200 rounded-xl bg-white p-3">
+          <div class="flex items-center justify-between gap-2">
+            <div class="text-[11px] font-black text-slate-800">Thermodynamic stability</div>
+            <div class="text-[10px] text-slate-400 font-mono">density vs F0</div>
+          </div>
+          <div class="text-slate-400 text-sm mt-3">No numeric density/energy data.</div>
+        </div>`;
+      }
+
+      let minX=pts[0].x, maxX=pts[0].x, minY=pts[0].y, maxY=pts[0].y;
+      for(let i=1;i<pts.length;i++){
+        const p=pts[i];
+        if(p.x<minX) minX=p.x; if(p.x>maxX) maxX=p.x;
+        if(p.y<minY) minY=p.y; if(p.y>maxY) maxY=p.y;
+      }
+      const ex = niceExtent(minX,maxX);
+      const ey = niceExtent(minY,maxY);
+
+      const xScale = (x)=> padL + ((x-ex.min)/(ex.max-ex.min))*(w-padL-padR);
+      const yScale = (y)=> padT + (1-((y-ey.min)/(ey.max-ey.min)))*(h-padT-padB);
+
+      // x ticks
+      let xTicks = 4;
+      let xTickText = '';
+      for(let t=0;t<=xTicks;t++){
+        const x = padL + (t/xTicks)*(w-padL-padR);
+        const val = ex.min + (t/xTicks)*(ex.max-ex.min);
+        xTickText += `<text x="${x}" y="${h-padB+16}" text-anchor="middle" font-size="10" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">${val.toFixed(3)}</text>`;
+      }
+
+      const axes = svgAxisAndGrid({w,h,padL,padR,padT,padB,yMin:ey.min,yMax:ey.max,yTicks:4,xLabel:'Density (g/cm³)',yLabel:'F0 (kJ/mol/atom)'});
+
+      const circles = pts.map(p=>{
+        const cx=xScale(p.x), cy=yScale(p.y);
+        const tip = `${p.topo} | ${p.label}
+ρ=${p.x.toFixed(4)}, F0=${p.y.toFixed(6)}`;
+        return `<circle cx="${cx}" cy="${cy}" r="4" fill="#0f172a" opacity="0.85"><title>${tip}</title></circle>`;
+      }).join('');
+
+      return `<div class="border border-slate-200 rounded-xl bg-white p-3 overflow-hidden md:col-span-2">
+        <div class="flex items-center justify-between gap-2">
+          <div class="text-[11px] font-black text-slate-800">Thermodynamic stability</div>
+          <div class="text-[10px] text-slate-400 font-mono">x: density | y: energy</div>
+        </div>
+        <div class="mt-2 overflow-x-auto">
+          <svg viewBox="0 0 ${w} ${h}" class="min-w-[760px] w-full">
+            ${axes}
+            ${xTickText}
+            ${circles}
+          </svg>
+        </div>
+      </div>`;
+    }
+
+    function renderGroupedBars(cfgRows, keys, title, yLabel, ndp=3, zeroBaseline=false){
+      // keys: [{key,label}] draw grouped bars per config
+      const n = cfgRows.length;
+      const wPer = 56;
+      const w = Math.max(720, 80 + n*wPer);
+      const h = 320, padL=58, padR=16, padT=28, padB=46;
+
+      // collect values
+      const series = keys.map(k=>({
+        key:k.key,
+        label:k.label,
+        vals: cfgRows.map(r=>num(r[k.key]))
+      }));
+
+      // find y min/max
+      let minV = Infinity, maxV = -Infinity;
+      series.forEach(s=>{
+        s.vals.forEach(v=>{
+          if(v===null) return;
+          if(v<minV) minV=v;
+          if(v>maxV) maxV=v;
+        });
+      });
+      if(!Number.isFinite(minV) || !Number.isFinite(maxV)){
+        return `<div class="border border-slate-200 rounded-xl bg-white p-3">
+          <div class="flex items-center justify-between gap-2">
+            <div class="text-[11px] font-black text-slate-800">${title}</div>
+            <div class="text-[10px] text-slate-400 font-mono">No numeric data</div>
+          </div>
+          <div class="text-slate-400 text-sm mt-3">No numeric values for this chart.</div>
+        </div>`;
+      }
+
+      if(zeroBaseline){
+        minV = Math.min(minV, 0);
+        maxV = Math.max(maxV, 0);
+      }
+
+      const ey = niceExtent(minV, maxV);
+      const yScale = (v)=> padT + (1-((v-ey.min)/(ey.max-ey.min)))*(h-padT-padB);
+
+      const axes = svgAxisAndGrid({w,h,padL,padR,padT,padB,yMin:ey.min,yMax:ey.max,yTicks:4,xLabel:'COF models (config)',yLabel:yLabel});
+
+      const groupW = wPer;
+      const barW = 10;
+      const gap = 4;
+      const totalBarsW = keys.length*barW + (keys.length-1)*gap;
+
+      const bars = [];
+      for(let i=0;i<n;i++){
+        const gx = padL + i*groupW + (groupW-totalBarsW)/2;
+        keys.forEach((k, j)=>{
+          const v = series[j].vals[i];
+          if(v===null) return;
+          const x = gx + j*(barW+gap);
+          const y0 = yScale(zeroBaseline ? 0 : ey.min);
+          const y = yScale(v);
+          const yTop = Math.min(y, y0);
+          const hh = Math.abs(y0 - y);
+          const tip = `${cfgRows[i].topology} | ${cfgRows[i].config}
+${k.label}: ${v.toFixed(ndp)}`;
+          bars.push(`<rect x="${x}" y="${yTop}" width="${barW}" height="${hh}" fill="#0f172a" opacity="${0.25 + 0.25*j}"><title>${tip}</title></rect>`);
+        });
+
+        // x label (config)
+        const lx = padL + i*groupW + groupW/2;
+        bars.push(`<text x="${lx}" y="${h-26}" text-anchor="middle" font-size="10" fill="#64748b" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">${cfgRows[i].config}</text>`);
+      }
+
+      // baseline if zeroBaseline
+      let base = '';
+      if(zeroBaseline){
+        const y0 = yScale(0);
+        base = `<line x1="${padL}" y1="${y0}" x2="${w-padR}" y2="${y0}" stroke="#94a3b8" stroke-width="1.2"/>`;
+      }
+
+      // legend
+      const legend = keys.map((k, idx)=>{
+        const x = padL + idx*160;
+        return `<g>
+          <rect x="${x}" y="${padT-18}" width="12" height="12" fill="#0f172a" opacity="${0.25 + 0.25*idx}"/>
+          <text x="${x+18}" y="${padT-8}" font-size="10" fill="#334155" font-family="ui-monospace, SFMono-Regular, Menlo, monospace">${k.label}</text>
+        </g>`;
+      }).join('');
+
+      return `<div class="border border-slate-200 rounded-xl bg-white p-3 overflow-hidden">
+        <div class="flex items-center justify-between gap-2">
+          <div class="text-[11px] font-black text-slate-800">${title}</div>
+          <div class="text-[10px] text-slate-400 font-mono">n=${n}</div>
+        </div>
+        <div class="mt-2 overflow-x-auto">
+          <svg viewBox="0 0 ${w} ${h}" class="min-w-[720px] w-full">
+            ${axes}
+            ${base}
+            ${legend}
+            ${bars.join('')}
+          </svg>
+        </div>
+      </div>`;
+    }
+
+
+
+function updateSummaryForCurrentSelection(filteredTopos, groups, forcePairLabel){
+      const o1 = obb1Filter.value;
+      const o2 = obb2Filter.value;
+      const pairLabel = forcePairLabel ? forcePairLabel : ((o1 || o2) ? `${o1 || '—'} → ${o2 || '—'}` : 'All (no pair selected)');
+
+      const cfgRows = collectConfigRows(filteredTopos);
+      const topoCount = filteredTopos.length;
+      const cfgCount = cfgRows.length;
+
+      summaryPanel.classList.remove('hidden');
+      summaryPair.innerText = pairLabel;
+      summaryCounts.innerText = `${topoCount} topologies | ${cfgCount} configuration-rows with calc data`;
+
+      const keys = [
+        ["PLD", "pld", 3],
+        ["LCD", "lcd", 3],
+        ["GSA", "gsa", 1],
+        ["VSA", "vsa", 1],
+        ["Bulk (GPa)", "bulk_gpa", 3],
+        ["Shear (GPa)", "shear_gpa", 3],
+        ["Young (GPa)", "young_gpa", 3],
+        ["F0 (kJ/mol/atom)", "f0_kjmol_atom", 6],
+      ];
+
+      const boxes = [];
+      let missing = [];
+      keys.forEach(([lab, key, ndp])=>{
+        const range = statRange(cfgRows.map(r=>r[key]));
+        if(!range){
+          boxes.push(statBox(lab, "—"));
+          missing.push(lab);
+          return;
+        }
+        const meanStd = statMeanStd(cfgRows.map(r=>r[key]));
+        const val = `${fmtNum(range.min, ndp)} – ${fmtNum(range.max, ndp)} (n=${range.n})`;
+        const ms = meanStd ? `mean ${fmtNum(meanStd.mean, ndp)} ± ${fmtNum(meanStd.std, ndp)}` : '';
+        boxes.push(statBox(lab, `${val}<span class="block text-[10px] text-slate-500 font-mono mt-1">${ms}</span>`));
+      });
+
+      summaryStats.innerHTML = boxes.join('');
+      summaryNote.innerText = missing.length ? `Missing columns in this selection: ${missing.join(', ')}` : '';
+
+      const pairSelected = (obb1Filter.value !== '' && obb2Filter.value !== '');
+      if(pairSelected){
+        chartsWrap.style.display = 'block';
+        const chartDefs = [
+          ['Thermo F0', 'f0_kjmol_atom', 6],
+          ['Bulk modulus', 'bulk_gpa', 3],
+          ['Shear modulus', 'shear_gpa', 3],
+          ['Young\'s modulus', 'young_gpa', 3],
+          ['PLD', 'pld', 3],
+          ['LCD', 'lcd', 3],
+          ['GSA', 'gsa', 1],
+          ['VSA', 'vsa', 1],
+          ['min eigen (0K)', 'min_eigen_0k', 6],
+          ['min eigen (298K)', 'min_eigen_298k', 6]
+        ];
+        chartsGrid.innerHTML = (
+          renderScatterDensityEnergy(cfgRows) +
+          renderGroupedBars(cfgRows,
+            [{key:'bulk_gpa',label:'Bulk (K)'},{key:'shear_gpa',label:'Shear (G)'},{key:'young_gpa',label:'Young (E)'}],
+            'Modulus (at 0 K)', 'Modulus (GPa)', 3, false) +
+          renderGroupedBars(cfgRows,
+            [{key:'min_eigen_0k',label:'0 K'},{key:'min_eigen_298k',label:'298 K'}],
+            'Minimum eigenvalue', 'Minimum eigenvalue', 6, true)
+        );
+      }else{
+        chartsWrap.style.display = 'none';
+        chartsGrid.innerHTML = '';
+      }
+    }
+
+    function downloadText(filename, text){
+      const blob = new Blob([text], {type:'text/csv;charset=utf-8;'});
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+    }
+
+    function toCSV(rows){
+      if(!rows.length) return '';
+      const headers = Object.keys(rows[0]);
+      const esc = (v)=>{
+        if(v===null||v===undefined) return '';
+        const s = String(v);
+        if(s.includes('"') || s.includes(',') || s.includes('\n')){
+          return `"${s.replaceAll('"','""')}"`;
+        }
+        return s;
+      };
+      const lines = [headers.join(',')];
+      rows.forEach(r=>{
+        lines.push(headers.map(h=>esc(r[h])).join(','));
+      });
+      return lines.join('\n');
+    }
+
+    exportBtn.addEventListener('click', ()=>{
+      const rows = collectConfigRows(lastFilteredTopos);
+      const o1 = obb1Filter.value || 'any';
+      const o2 = obb2Filter.value || 'any';
+      const filename = `cof_export__obb1-${o1}__obb2-${o2}__nTopo-${lastFilteredTopos.length}__nCfg-${rows.length}.csv`;
+      downloadText(filename, toCSV(rows));
+    });
+
+    [searchInput, topologyFilter, cnFilter, obb1Filter, obb2Filter, hasDataFilter, groupToggle].forEach(el=>{
       el.addEventListener('input', applyFilters);
       el.addEventListener('change', applyFilters);
     });
 
     async function init(){
       try{
-        const res = await fetch('./data.json', {cache:'no-store'});
-        if(!res.ok) throw new Error('fetch failed');
+        let res = await fetch('./data.json', { cache:'no-store' }).catch(()=>null);
+        if(!res || !res.ok){
+          res = await fetch('./data_integrated.json', { cache:'no-store' });
+        }
+        if(!res.ok) throw new Error('fetch data failed');
+
         data = await res.json();
+
+        // normalize + sort
+        data.forEach(item=>{
+          item.topology = (item.topology || item.id || '').toLowerCase();
+        });
+        data.sort((a,b)=> (a.topology||'').localeCompare(b.topology||''));
+
         data.forEach(item=>{
           item._search = buildSearchText(item);
-          byId.set(item.id, item);
+          byTopo.set(item.topology, item);
         });
+
+        // populate filters
         uniqSorted(data.map(x=>x.topology)).forEach(t=>{
           const opt=document.createElement('option');
           opt.value=t; opt.textContent=t;
           topologyFilter.appendChild(opt);
         });
-        document.getElementById('datasetCount').innerText = `${data.length} Candidates`;
+
+        uniqSorted(data.map(x=>topoCN(x))).filter(Boolean).forEach(v=>{
+          const opt=document.createElement('option');
+          opt.value=v; opt.textContent=v;
+          cnFilter.appendChild(opt);
+        });
+
+        uniqSorted(data.map(x=>obb1Type(x))).filter(Boolean).forEach(v=>{
+          const opt=document.createElement('option');
+          opt.value=v; opt.textContent=v;
+          obb1Filter.appendChild(opt);
+        });
+
+        uniqSorted(data.map(x=>obb2Type(x))).filter(Boolean).forEach(v=>{
+          const opt=document.createElement('option');
+          opt.value=v; opt.textContent=v;
+          obb2Filter.appendChild(opt);
+        });
+
         applyFilters();
       }catch(err){
         console.error(err);
         loadError.classList.remove('hidden');
       }
     }
+
     init();
   </script>
 </body>
